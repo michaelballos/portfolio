@@ -8,6 +8,7 @@ export const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
+    height: 'calc(100vh - 56px)',
   },
 
   container: {
