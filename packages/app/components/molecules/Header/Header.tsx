@@ -5,15 +5,16 @@ import {
   ActionIcon,
   Container,
   Burger,
-  Center, Stack,
 } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 import ColorSchemeToggle from '../../atoms/ColorSchemeToggle/ColorSchemeToggle';
 import {
   BrandTwitter,
-  BrandYoutube,
-  BrandInstagram
+  BrandLinkedin,
 } from 'tabler-icons-react';
+import {
+  IconMail
+} from '@tabler/icons';
 import Logo from '../../atoms/Logo/Logo';
 import { useStyles } from './Header.styles';
 
@@ -80,14 +81,26 @@ export default function Header({
           >
             <ColorSchemeToggle />
           </div>
-          <ActionIcon size="lg">
+          <ActionIcon<'a'>
+            component="a"
+            href="https://www.twitter.com/michael_ballos"
+            target="_blank"
+            size="lg"
+          >
             <BrandTwitter size={18} />
           </ActionIcon>
-          <ActionIcon size="lg">
-            <BrandYoutube size={18} />
+          <ActionIcon<'a'>
+            component="a"
+            href="https://www.linkedin.com/in/michaelballos/"
+            target="_blank"
+            size="lg"
+          >
+            <BrandLinkedin size={18} />
           </ActionIcon>
-          <ActionIcon size="lg">
-            <BrandInstagram size={18} />
+          <ActionIcon
+            size="lg"
+          >
+            <IconMail size={18} />
           </ActionIcon>
         </Group>
       </Container>
