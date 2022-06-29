@@ -3,8 +3,7 @@ import { createStyles } from '@mantine/core';
 export const useStyles = createStyles((theme) => ({
   hero: {
     position: 'relative',
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)',
+    backgroundImage: 'url(/hero.jpeg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -49,8 +48,8 @@ export const useStyles = createStyles((theme) => ({
     maxWidth: 600,
 
     [theme.fn.smallerThan('sm')]: {
-      maxWidth: '100%',
       fontSize: theme.fontSizes.sm,
+      maxWidth: 400,
     },
   },
 
@@ -58,7 +57,6 @@ export const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.xl * 1.5,
 
     [theme.fn.smallerThan('sm')]: {
-      width: '100%',
     },
   },
 }));

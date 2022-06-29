@@ -2,13 +2,14 @@ import { useCallback } from 'react';
 import Hero from '../../molecules/Hero/Hero';
 import {
   ScrollArea,
-  Group,
   Stack,
   Text,
 } from '@mantine/core';
 import StatsRing from '../../molecules/StatsRing/StatsRing';
+import { useStyles } from './Home.styles';
 
 export default function Home() {
+  const { classes } = useStyles();
   const scroll = useCallback(() => {
     const element = document.querySelector('#projects');
     element && element.scrollIntoView({ behavior: 'smooth' });
@@ -22,30 +23,14 @@ export default function Home() {
     >
       <Hero onClick={scroll} />
       <div
+        className={classes.projectPage}
         id="projects"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '20em',
-          height: '100vh',
-        }}
       >
         <Stack spacing="md">
-          <Text
-            style={{
-              fontWeight: 'bold',
-              fontSize: '2em',
-            }}
-          >
+          <Text className={classes.projectLabel}>
             Projects
           </Text>
-        <ScrollArea
-         style={{
-           height: '30em',
-           width: '20em',
-         }}
-        >
+        <ScrollArea className={classes.projectCardsScrollArea}>
           <StatsRing
             data={[
               {
@@ -87,7 +72,11 @@ export default function Home() {
           />
         </ScrollArea>
         </Stack>
-        <div>
+        <div
+          style={{
+            width: '30em',
+          }}
+        >
           <Text
             style={{
               fontFamily: 'tgHaidoGrotesk, sans-serif',
@@ -124,6 +113,24 @@ export default function Home() {
             }}
           >
             React, Next JS, Nest JS
+          </Text>
+          <Text
+            style={{
+              fontFamily: 'tgHaidoGrotesk, sans-serif',
+              fontSize: '2em',
+            }}
+          >
+            Others:
+          </Text>
+          <Text
+            style={{
+              fontSize: '1.2em',
+            }}
+          >
+            Docker, Prisma, Rest, Node, Express, Jest, ESLint Hardcore, Lerna,
+            Git, Postman, Photoshop, Figma, Axios, PHP, Phalcon, Swagger, Prettier
+            Prisma, Mantine, Three/Fiber, Three/Drei, Auth0, Passport JS, Bootstrap,
+            Babel, Puppeteer, Webkit, SCSS, Tailwind, Styled Components,
           </Text>
         </div>
       </div>

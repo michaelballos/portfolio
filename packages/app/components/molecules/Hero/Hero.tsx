@@ -43,7 +43,7 @@ export default function Hero({ onClick }: HeroProps) {
           className={classes.control}
           onClick={onClick}
         >
-          Get started
+          View my Stack
         </Button>
       </Container>
     </div>
