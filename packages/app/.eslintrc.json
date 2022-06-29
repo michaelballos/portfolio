@@ -19,7 +19,11 @@
   "overrides": [
     {
       "files": ["server/**/*.ts"],
-      "extends": ["hardcore/node"],
+      "extends": [
+        "hardcore/node",
+        "eslint:recommended",
+        "next"
+      ],
       "env": {
         "browser": false
       }
