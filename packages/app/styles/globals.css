@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'tgHaidoGrotesk';
+  src: url('../assets/tg-haido-grotesk/fontspring-DEMO-tghaidogrotesk-extrabolditalic.otf');
+  font-weight: 800;
+  font-style: normal;
+}

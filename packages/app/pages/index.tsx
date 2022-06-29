@@ -1,11 +1,7 @@
-import Welcome from '../components/molecules/Welcome/Welcome';
-import ColorSchemeToggle from '../components/atoms/ColorSchemeToggle/ColorSchemeToggle';
+import Home from '../components/organisms/Home/Home';
 
 export default function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Home />
   );
 }
