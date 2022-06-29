@@ -2,21 +2,19 @@ import React, { useState } from 'react';
 import {
   Header as MantineHeader,
   Group,
-  ActionIcon,
   Container,
   Burger,
 } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 import ColorSchemeToggle from '../../atoms/ColorSchemeToggle/ColorSchemeToggle';
+import Logo from '../../atoms/Logo/Logo';
+import Socials from '../Socials/Socials';
+import { useStyles } from './Header.styles';
 import {
   BrandTwitter,
   BrandLinkedin,
 } from 'tabler-icons-react';
-import {
-  IconMail
-} from '@tabler/icons';
-import Logo from '../../atoms/Logo/Logo';
-import { useStyles } from './Header.styles';
+import { IconMail } from '@tabler/icons';
 
 interface HeaderMiddleProps {
   links: {
@@ -81,27 +79,22 @@ export default function Header({
           >
             <ColorSchemeToggle />
           </div>
-          <ActionIcon<'a'>
-            component="a"
-            href="https://www.twitter.com/michael_ballos"
-            target="_blank"
-            size="lg"
-          >
-            <BrandTwitter size={18} />
-          </ActionIcon>
-          <ActionIcon<'a'>
-            component="a"
-            href="https://www.linkedin.com/in/michaelballos/"
-            target="_blank"
-            size="lg"
-          >
-            <BrandLinkedin size={18} />
-          </ActionIcon>
-          <ActionIcon
-            size="lg"
-          >
-            <IconMail size={18} />
-          </ActionIcon>
+          <Socials
+            links={[
+              {
+                link: 'https://twitter.com/michael_ballos',
+                icon: (<BrandTwitter size={20} />),
+              },
+              {
+                link: 'https://www.linkedin.com/in/michaelballos/',
+                icon: (<BrandLinkedin size={20} />),
+              },
+              {
+                link: 'mailto:ballos.michael@gmail.com',
+                icon: (<IconMail size={20} />),
+              }
+            ]}
+          />
         </Group>
       </Container>
      </MantineHeader>
