@@ -1,7 +1,4 @@
 import { Text } from '@mantine/core';
-import {
-  themeColor
-} from '@mantine/styles/lib/theme/functions/fns/theme-color/theme-color';
 
 interface LogoProps {
   size: string;
