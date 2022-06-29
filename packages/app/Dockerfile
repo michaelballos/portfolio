@@ -2,17 +2,15 @@ FROM node:lts
 ENV PORT 3000
 
 # app directory
-RUN mkdir -p /packages/app
-WORKDIR /packages/app
+RUN mkdir /app
+WORKDIR /app
 
 # install dependencies
 COPY package*.json ./
-RUN yarn
+RUN yarn install
 
-# copy source files
-COPY . .
+# copy rest of next js into app image directory
 
-# build and run
-RUN yarn build
+# expose port and run
 EXPOSE 3000
 CMD ["yarn", "dev"]

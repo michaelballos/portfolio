@@ -1,15 +1,17 @@
 version: "3.9"
 services:
-  web:
+  frontend:
+    container_name: frontend
+    restart: always
     ports:
       - "3000:3000"
     build:
       context: packages/app
       dockerfile: Dockerfile
     volumes:
-      - ./packages/app:/src/app
-      - /src/app/node_modules
-      - /src/app/.next
+      - ./packages/app:/app
+      - /packages/app/node_modules
+      - /packages/app/.next
     env_file:
       - .env
   db:

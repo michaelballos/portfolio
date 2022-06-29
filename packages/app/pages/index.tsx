@@ -1,22 +1,19 @@
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
-  return (
+const Home: NextPage = () => (
     <div className={styles.container}>
       <Head>
         <title>Michael Ballos</title>
         <meta name="description" content="A Software Developer Portfolio" />
       </Head>
-
       <main className={styles.main}>
         <p>
-          Hello Next.js
+          Hello from Next.js
         </p>
       </main>
     </div>
-  )
-}
+);
 
-export default Home
+export default Home;
