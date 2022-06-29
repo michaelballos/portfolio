@@ -4,9 +4,11 @@ import {
   Group,
   ActionIcon,
   Container,
-  Burger
+  Burger,
+  Center, Stack,
 } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
+import ColorSchemeToggle from '../../atoms/ColorSchemeToggle/ColorSchemeToggle';
 import {
   BrandTwitter,
   BrandYoutube,
@@ -22,11 +24,12 @@ interface HeaderMiddleProps {
   }[];
 }
 
-export function Header({ links }: HeaderMiddleProps) {
+export default function Header({
+  links,
+}: HeaderMiddleProps) {
   const [opened, toggleOpened] = useBooleanToggle(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
-
   const items = links.map((link) => (
     <a
       key={link.label}
@@ -42,7 +45,10 @@ export function Header({ links }: HeaderMiddleProps) {
   ));
 
   return (
-    <MantineHeader height={56} mb={120}>
+    <MantineHeader
+      className={classes.header}
+      height={56}
+    >
       <Container className={classes.inner}>
         <Burger
           opened={opened}
@@ -57,7 +63,7 @@ export function Header({ links }: HeaderMiddleProps) {
           {items}
         </Group>
 
-        <Logo />
+        <Logo size="27px" />
 
         <Group
           className={classes.social}
@@ -65,6 +71,15 @@ export function Header({ links }: HeaderMiddleProps) {
           position="right"
           noWrap
         >
+          <div
+            style={{
+              display: 'flex',
+              alignSelf: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <ColorSchemeToggle />
+          </div>
           <ActionIcon size="lg">
             <BrandTwitter size={18} />
           </ActionIcon>
@@ -76,6 +91,6 @@ export function Header({ links }: HeaderMiddleProps) {
           </ActionIcon>
         </Group>
       </Container>
-    </MantineHeader>
+     </MantineHeader>
   );
 }

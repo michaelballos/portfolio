@@ -1,14 +1,26 @@
 import { Text } from '@mantine/core';
+import {
+  themeColor
+} from '@mantine/styles/lib/theme/functions/fns/theme-color/theme-color';
 
-export default function Logo() {
+interface LogoProps {
+  size: string;
+}
+
+export default function Logo({
+  size,
+}: LogoProps) {
   return (
     <Text
       style={{
-        fontSize: '1.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        fontSize: size,
         fontFamily: 'tgHaidoGrotesk, sans-serif',
       }}
     >
-      michaelballos
+      MB
     </Text>
+
   );
 }

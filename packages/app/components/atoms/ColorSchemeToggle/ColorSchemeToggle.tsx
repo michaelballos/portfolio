@@ -15,10 +15,12 @@ export default function ColorSchemeToggle() {
   } = useMantineColorScheme();
 
   return (
-    <Group position="center" mt="xl">
+    <Group
+      position="center"
+    >
       <ActionIcon
         onClick={() => toggleColorScheme()}
-        size="xl"
+        size="lg"
         sx={(theme) => ({
           backgroundColor:
             theme.colorScheme === 'dark'
