@@ -17,8 +17,18 @@ export const useStyles = createStyles((theme) => ({
         : '',
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'column',
-      height: '200vh',
       fontSize: theme.fontSizes.xs,
+      gap: '2em',
+    },
+  },
+
+  projectStack: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: '6em',
+    [theme.fn.smallerThan('sm')]: {
+      marginTop: '15em',
     },
   },
 
@@ -31,10 +41,21 @@ export const useStyles = createStyles((theme) => ({
     height: '30em',
     width: '20em',
     [theme.fn.smallerThan('sm')]: {
-      overflow: 'hidden !important',
+      width: '100%',
       height: 'max-content',
-      width: 'max-content',
     }
-  }
+  },
 
+  skillsContainer: {
+    width: '30em',
+  },
+
+  skillsLabel: {
+    fontFamily: 'tgHaidoGrotesk, sans-serif',
+    fontSize: '2em',
+  },
+
+  skillsDescription: {
+    fontSize: '1.2em',
+  }
 }));

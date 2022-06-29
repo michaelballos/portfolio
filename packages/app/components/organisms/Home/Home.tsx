@@ -26,10 +26,7 @@ export default function Home() {
         className={classes.projectPage}
         id="projects"
       >
-        <Stack spacing="md">
-          <Text className={classes.projectLabel}>
-            Projects
-          </Text>
+        <Stack className={classes.projectStack} spacing="md">
         <ScrollArea className={classes.projectCardsScrollArea}>
           <StatsRing
             data={[
@@ -44,52 +41,34 @@ export default function Home() {
                 status: 'onHold',
               },
               {
-                version: '3.0.2',
-                label: 'QrScribe',
+                version: '1.0.0',
+                label: 'Properly',
                 status: 'inProgress',
               },
               {
-                version: '3.0.2',
-                label: 'QrScribe',
-                status: 'inProgress',
+                version: '5.4.1',
+                label: 'Thundurus',
+                status: 'onHold',
               },
               {
-                version: '3.0.2',
-                label: 'QrScribe',
-                status: 'inProgress',
+                version: '1.0.0',
+                label: 'Properly',
+                status: 'done',
               },
               {
-                version: '3.0.2',
-                label: 'QrScribe',
-                status: 'inProgress',
+                version: '5.4.1',
+                label: 'Thundurus',
+                status: 'onHold',
               },
-              {
-                version: '3.0.2',
-                label: 'QrScribe',
-                status: 'inProgress',
-              }
            ]}
           />
         </ScrollArea>
         </Stack>
-        <div
-          style={{
-            width: '30em',
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: 'tgHaidoGrotesk, sans-serif',
-              fontSize: '2em',
-            }}
-          >
+        <div className={classes.skillsContainer}>
+          <Text className={classes.skillsLabel}>
             Languages:
           </Text>
-          <Text
-            style={{
-              fontSize: '1.2em',
-            }}
-          >
+          <Text className={classes.skillsDescription}>
             Typescript,
             Javascript,
             HTML,
@@ -99,34 +78,16 @@ export default function Home() {
             PHP
             Phalcon
           </Text>
-          <Text
-            style={{
-              fontFamily: 'tgHaidoGrotesk, sans-serif',
-              fontSize: '2em',
-            }}
-          >
+          <Text className={classes.skillsLabel}>
             Frameworks:
           </Text>
-          <Text
-            style={{
-              fontSize: '1.2em',
-            }}
-          >
+          <Text className={classes.skillsDescription}>
             React, Next JS, Nest JS
           </Text>
-          <Text
-            style={{
-              fontFamily: 'tgHaidoGrotesk, sans-serif',
-              fontSize: '2em',
-            }}
-          >
+          <Text className={classes.skillsLabel}>
             Others:
           </Text>
-          <Text
-            style={{
-              fontSize: '1.2em',
-            }}
-          >
+          <Text className={classes.skillsDescription}>
             Docker, Prisma, Rest, Node, Express, Jest, ESLint Hardcore, Lerna,
             Git, Postman, Photoshop, Figma, Axios, PHP, Phalcon, Swagger, Prettier
             Prisma, Mantine, Three/Fiber, Three/Drei, Auth0, Passport JS, Bootstrap,

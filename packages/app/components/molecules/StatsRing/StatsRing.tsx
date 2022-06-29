@@ -2,16 +2,17 @@ import React from 'react';
 import {
   RingProgress,
   Text,
-  SimpleGrid,
+  createStyles,
   Paper,
   Center,
-  Group
+  Group, SimpleGrid,
 } from '@mantine/core';
 import {
   IconChecks,
   IconPlayerPause,
   IconTool
 } from '@tabler/icons';
+import { useStyles } from './StatsRing.styles';
 
 interface StatsRingProps {
   data: {
@@ -28,6 +29,7 @@ const icons = {
 };
 
 export default function StatsRing({ data }: StatsRingProps) {
+  const { classes } = useStyles();
   const cards = data.map((stat) => {
     const {
       status,
@@ -43,6 +45,7 @@ export default function StatsRing({ data }: StatsRingProps) {
         : 'green';
     return (
       <Paper
+        className={classes.card}
         withBorder
         radius="md"
         p="xs"
@@ -87,15 +90,8 @@ export default function StatsRing({ data }: StatsRingProps) {
   });
 
   return (
-    <SimpleGrid
-      cols={1}
-      breakpoints={[
-        {
-          maxWidth: 'sm',
-          cols: 1
-        }
-      ]}>
+    <div className={classes.cardsContainer}>
       {cards}
-    </SimpleGrid>
+    </div>
   );
 }
