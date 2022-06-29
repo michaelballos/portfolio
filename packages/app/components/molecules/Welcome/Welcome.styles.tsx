@@ -1,6 +1,6 @@
 import { createStyles } from '@mantine/core';
 
-export default createStyles((theme) => ({
+export const useStyles = createStyles((theme) => ({
   title: {
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontSize: 100,

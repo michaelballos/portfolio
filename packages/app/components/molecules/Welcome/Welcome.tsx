@@ -3,7 +3,7 @@ import {
   Text,
   Anchor
 } from '@mantine/core';
-import useStyles from './Welcome.styles';
+import { useStyles } from './Welcome.styles';
 
 export default function Welcome() {
   const { classes } = useStyles();

@@ -8,7 +8,7 @@ import {
   MoonIcon
 } from '@modulz/radix-icons';
 
-export function ColorSchemeToggle() {
+export default function ColorSchemeToggle() {
   const {
     colorScheme,
     toggleColorScheme
