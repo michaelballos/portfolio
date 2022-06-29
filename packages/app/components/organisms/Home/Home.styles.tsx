@@ -15,26 +15,26 @@ export const useStyles = createStyles((theme) => ({
       theme.colorScheme === 'light'
         ? 'white'
         : '',
+
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'column',
       fontSize: theme.fontSizes.xs,
-      gap: '2em',
+      gap: '1em',
     },
   },
 
-  projectStack: {
+  projectAndKey: {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
     marginTop: '6em',
     [theme.fn.smallerThan('sm')]: {
-      marginTop: '15em',
-    },
+      flexDirection: 'column',
+    }
   },
 
   projectLabel: {
     fontWeight: 'bold',
     fontSize: '2em',
+
   },
 
   projectCardsScrollArea: {
@@ -45,17 +45,4 @@ export const useStyles = createStyles((theme) => ({
       height: 'max-content',
     }
   },
-
-  skillsContainer: {
-    width: '30em',
-  },
-
-  skillsLabel: {
-    fontFamily: 'tgHaidoGrotesk, sans-serif',
-    fontSize: '2em',
-  },
-
-  skillsDescription: {
-    fontSize: '1.2em',
-  }
 }));

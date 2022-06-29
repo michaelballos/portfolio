@@ -2,10 +2,9 @@ import React from 'react';
 import {
   RingProgress,
   Text,
-  createStyles,
   Paper,
   Center,
-  Group, SimpleGrid,
+  Group
 } from '@mantine/core';
 import {
   IconChecks,
@@ -41,7 +40,7 @@ export default function StatsRing({ data }: StatsRingProps) {
       status === 'inProgress'
         ? '#00A8FF'
         : status === 'onHold'
-        ? 'red'
+        ? 'orange'
         : 'green';
     return (
       <Paper
