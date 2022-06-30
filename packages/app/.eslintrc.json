@@ -9,14 +9,17 @@
     "airbnb-typescript"
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, {
-      "extensions": [
-        ".js",
-        ".jsx",
-        ".ts",
-        ".tsx"
-      ]
-    }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
     "import/no-unresolved": [1, {
       "commonjs": false,
       "amd": false

@@ -1,6 +1,4 @@
-// eslint-disable-next-line max-len
-/* eslint-disable react/react-in-jsx-scope,react/jsx-filename-extension,import/extensions,import/no-unresolved */
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import {
   ScrollArea,
   Group,
