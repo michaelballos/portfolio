@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { GetServerSidePropsContext } from 'next';
-import { AppProps } from 'next/app';
+import React, { useState } from "react";
+import { GetServerSidePropsContext } from "next";
+import { AppProps } from "next/app";
 import {
   getCookie,
   setCookies,
-} from 'cookies-next';
-import Head from 'next/head';
+} from "cookies-next";
+import Head from "next/head";
 import {
   ColorScheme,
   MantineProvider,
   ColorSchemeProvider,
   createStyles,
-} from '@mantine/core';
-import { NotificationsProvider } from '@mantine/notifications';
-import Header from '../components/molecules/Header/Header';
-import '../styles/globals.css';
+} from "@mantine/core";
+import { NotificationsProvider } from "@mantine/notifications";
+import Header from "../components/molecules/Header/Header";
+import "../styles/globals.css";
 
 const useStyles = createStyles(() => ({
   pageMargin: {
@@ -34,24 +34,24 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   );
 
   const toggleColorScheme = (value?: ColorScheme) => {
-    const nextColorScheme = value || (colorScheme === 'dark'
-      ? 'light'
-      : 'dark'
+    const nextColorScheme = value || (colorScheme === "dark"
+      ? "light"
+      : "dark"
     );
     setColorScheme(nextColorScheme);
-    setCookies('mantine-color-scheme', nextColorScheme, {
+    setCookies("mantine-color-scheme", nextColorScheme, {
       maxAge: 60 * 60 * 24 * 30,
     });
   };
 
   const headerLinks = [
     {
-      link: '/home',
+      link: "/home",
       label: 'Home',
     },
     {
-      link: '/about',
-      label: 'About',
+      link: "/about",
+      label: "About",
     },
   ];
   return (
