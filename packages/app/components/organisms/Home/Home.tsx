@@ -43,26 +43,32 @@ export default function Home() {
             <StatsRing
               data={[
                 {
+                  id: '1',
                   version: '1.0.0',
                   label: 'Properly',
                   status: 'done',
                 }, {
+                  id: '2',
                   version: '5.4.1',
                   label: 'Thundurus',
                   status: 'onHold',
                 }, {
+                  id: '3',
                   version: '1.0.0',
                   label: 'Properly',
                   status: 'inProgress',
                 }, {
+                  id: '4',
                   version: '5.4.1',
                   label: 'Thundurus',
                   status: 'onHold',
                 }, {
+                  id: '5',
                   version: '1.0.0',
                   label: 'Properly',
                   status: 'done',
                 }, {
+                  id: '6',
                   version: '5.4.1',
                   label: 'Thundurus',
                   status: 'onHold',

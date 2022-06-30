@@ -15,6 +15,7 @@ import { useStyles } from './StatsRing.styles';
 
 interface StatsRingProps {
   data: {
+    id: string;
     version: string;
     label: string;
     status: 'inProgress' | 'onHold' | 'done';
@@ -34,6 +35,7 @@ export default function StatsRing({ data }: StatsRingProps) {
       status,
       version,
       label,
+      id,
     } = stat;
     const Icon = icons[status];
     // eslint-disable-next-line no-nested-ternary
@@ -48,11 +50,11 @@ export default function StatsRing({ data }: StatsRingProps) {
         withBorder
         radius="md"
         p="xs"
-        key={version}
+        key={id}
       >
         <Group>
           <RingProgress
-            key={version}
+            key={color}
             size={80}
             roundCaps
             thickness={8}
@@ -70,6 +72,7 @@ export default function StatsRing({ data }: StatsRingProps) {
           />
           <div>
             <Text
+              key={version}
               color="dimmed"
               size="xs"
               transform="uppercase"
@@ -78,6 +81,7 @@ export default function StatsRing({ data }: StatsRingProps) {
               {version}
             </Text>
             <Text
+              key={label}
               weight={700}
               size="xl"
             >
