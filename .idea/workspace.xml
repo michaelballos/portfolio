@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="new" />
+                    <option name="lastUsedInstant" value="1656575060" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1656574345" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="projects" />
+                    <option name="lastUsedInstant" value="1656574322" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2B8IuS4wqkbymnTArWtzf1NsF4T" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/app/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/app" />
+      <recent name="$PROJECT_DIR$/packages/app/components/molecules" />
+      <recent name="$PROJECT_DIR$/packages/app/components/molecules/Hero" />
+      <recent name="$PROJECT_DIR$/packages/app/components/atoms" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="" />
+      <created>1656281508225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656281508225</updated>
+      <workItem from="1656281509461" duration="782000" />
+      <workItem from="1656400566333" duration="6714000" />
+      <workItem from="1656408320864" duration="4458000" />
+      <workItem from="1656439234821" duration="871000" />
+      <workItem from="1656465702169" duration="11714000" />
+      <workItem from="1656488533102" duration="47985000" />
+    </task>
+    <task id="LOCAL-00001" summary="Move Next into packages directory">
+      <created>1656402812595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656402812596</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add README">
+      <created>1656407128845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656407128845</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add jest">
+      <created>1656474231451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656474231451</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add typescript support for jest">
+      <created>1656474861288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656474861288</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add jest config">
+      <created>1656474881362</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656474881362</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ignore env file">
+      <created>1656474902666</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656474902666</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add mantine">
+      <created>1656480423078</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656480423078</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add welcome">
+      <created>1656481629417</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656481629417</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add extra bold tg haido grotesk">
+      <created>1656485687218</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656485687218</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add hero and smooth scrolling">
+      <created>1656520037743</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656520037744</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Extras from last commit">
+      <created>1656520069207</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656520069207</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Extract action icons to own component for reusability">
+      <created>1656523230009</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656523230009</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Resolve font">
+      <created>1656574355236</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656574355236</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Resolve font">
+      <created>1656575157054</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1656575157054</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Move Next into packages directory" />
+    <MESSAGE value="Add README" />
+    <MESSAGE value="Add jest" />
+    <MESSAGE value="Add typescript support for jest" />
+    <MESSAGE value="Add jest config" />
+    <MESSAGE value="Ignore env file" />
+    <MESSAGE value="Add mantine" />
+    <MESSAGE value="Add Welcome and react testing" />
+    <MESSAGE value="Add welcome" />
+    <MESSAGE value="Add extra bold tg haido grotesk" />
+    <MESSAGE value="Add hero and smooth scrolling" />
+    <MESSAGE value="Extras from last commit" />
+    <MESSAGE value="Extract action icons to own component for reusability" />
+    <MESSAGE value="Resolve font" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolve font" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
