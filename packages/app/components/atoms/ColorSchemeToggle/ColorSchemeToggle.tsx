@@ -1,17 +1,18 @@
+import React from 'react';
 import {
   ActionIcon,
   Group,
-  useMantineColorScheme
+  useMantineColorScheme,
 } from '@mantine/core';
 import {
   SunIcon,
-  MoonIcon
+  MoonIcon,
 } from '@modulz/radix-icons';
 
 export default function ColorSchemeToggle() {
   const {
     colorScheme,
-    toggleColorScheme
+    toggleColorScheme,
   } = useMantineColorScheme();
 
   return (
@@ -32,7 +33,7 @@ export default function ColorSchemeToggle() {
               theme.colorScheme === 'dark'
                 ? theme.colors.dark[5]
                 : theme.colors.gray[2],
-          }
+          },
         })}
       >
         {

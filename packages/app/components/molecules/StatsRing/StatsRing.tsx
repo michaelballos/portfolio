@@ -4,12 +4,12 @@ import {
   Text,
   Paper,
   Center,
-  Group
+  Group,
 } from '@mantine/core';
 import {
   IconChecks,
   IconPlayerPause,
-  IconTool
+  IconTool,
 } from '@tabler/icons';
 import { useStyles } from './StatsRing.styles';
 
@@ -17,7 +17,7 @@ interface StatsRingProps {
   data: {
     version: string;
     label: string;
-    status: 'inProgress' | 'onHold' |'done';
+    status: 'inProgress' | 'onHold' | 'done';
   }[];
 }
 
@@ -33,13 +33,13 @@ export default function StatsRing({ data }: StatsRingProps) {
     const {
       status,
       version,
-      label
+      label,
     } = stat;
     const Icon = icons[status];
-    const color =
-      status === 'inProgress'
-        ? '#00A8FF'
-        : status === 'onHold'
+    // eslint-disable-next-line no-nested-ternary
+    const color = status === 'inProgress'
+      ? '#00A8FF'
+      : status === 'onHold'
         ? 'orange'
         : 'green';
     return (
@@ -58,14 +58,14 @@ export default function StatsRing({ data }: StatsRingProps) {
             sections={[
               {
                 value: 100,
-                color: color
-              }
+                color,
+              },
             ]}
-            label={
+            label={(
               <Center>
                 <Icon size={22} />
               </Center>
-            }
+            )}
           />
           <div>
             <Text

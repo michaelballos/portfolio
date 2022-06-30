@@ -1,5 +1,6 @@
 import { createStyles } from '@mantine/core';
 
+// eslint-disable-next-line import/prefer-default-export
 export const useStyles = createStyles(() => ({
   skillsContainer: {
     width: '30em',
@@ -12,5 +13,5 @@ export const useStyles = createStyles(() => ({
 
   skillsDescription: {
     fontSize: '1.2em',
-  }
+  },
 }));

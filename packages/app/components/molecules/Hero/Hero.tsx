@@ -4,9 +4,10 @@ import {
   Container,
   Title,
   Button,
-  Text
+  Text,
 } from '@mantine/core';
 import { useStyles } from './Hero.styles';
+
 export interface HeroProps {
   onClick: () => void;
 }
@@ -32,8 +33,9 @@ export default function Hero({ onClick }: HeroProps) {
           size="xl"
           mt="xl"
         >
-          I'm a Full-Stack Software Developer
-          with a passion for the end to end production of software and applications.
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          I'm a Full-Stack Software Developer with a passion
+          for the end to end production of software and applications.
         </Text>
 
         <Button

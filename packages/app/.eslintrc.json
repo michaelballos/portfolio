@@ -1,32 +1,33 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": [
-    "hardcore",
-    "hardcore/react",
-    "hardcore/react-testing-library",
-    "hardcore/jest",
-    "hardcore/fp",
-    "hardcore/ts"
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript"
   ],
-
+  "rules": {
+    "react/jsx-filename-extension": [1, {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+      ]
+    }],
+    "import/no-unresolved": [1, {
+      "commonjs": false,
+      "amd": false
+    }]
+  },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-
-  "env": {
-    "browser": true
-  },
-
-  "overrides": [
-    {
-      "files": ["server/**/*.ts"],
-      "extends": [
-        "hardcore/node",
-        "eslint:recommended",
-        "next"
-      ],
-      "env": {
-        "browser": false
-      }
-    }
+  "plugins": [
+    "react",
+    "@typescript-eslint"
   ]
 }

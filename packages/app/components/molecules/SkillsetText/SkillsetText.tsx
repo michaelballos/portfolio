@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text } from '@mantine/core';
 import { useStyles } from './SkillsetText.styles';
 
@@ -34,5 +35,5 @@ export default function SkillsetText() {
         Babel, Puppeteer, Webkit, SCSS, Tailwind, Styled Components,
       </Text>
     </div>
-  )
+  );
 }

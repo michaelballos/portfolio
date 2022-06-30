@@ -1,5 +1,6 @@
 import { createStyles } from '@mantine/core';
 
+// eslint-disable-next-line import/prefer-default-export
 export const useStyles = createStyles((theme) => ({
   cardsContainer: {
     display: 'flex',
@@ -7,11 +8,11 @@ export const useStyles = createStyles((theme) => ({
     gap: '1em',
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'row',
-      width: '30em'
-    }
+      width: '30em',
+    },
   },
 
   card: {
-    width: '19em'
-  }
+    width: '19em',
+  },
 }));

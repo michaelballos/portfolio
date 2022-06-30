@@ -2,7 +2,7 @@ import {
   Text,
   Group,
   RingProgress,
-  createStyles
+  createStyles,
 } from '@mantine/core';
 import React from 'react';
 
@@ -14,14 +14,14 @@ export const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'row',
       justifyContent: 'space-around',
-    }
+    },
   },
 
   label: {
     fontSize: '15px',
     width: 'max-content',
     flexWrap: 'nowrap',
-  }
+  },
 }));
 
 export default function ProjectKey() {
@@ -38,13 +38,12 @@ export default function ProjectKey() {
     {
       color: 'orange',
       label: 'On Hold',
-    }
-  ]
-
-  const ProjectKey = keys.map((key) => {
+    },
+  ];
+  const projectKey = keys.map((key) => {
     const {
       color,
-      label
+      label,
     } = key;
     return (
       <Group noWrap>
@@ -55,8 +54,8 @@ export default function ProjectKey() {
           sections={[
             {
               value: 100,
-              color: color
-            }
+              color,
+            },
           ]}
         />
         <Text
@@ -71,7 +70,7 @@ export default function ProjectKey() {
   return (
     <div>
       <div className={classes.projectKey}>
-        {ProjectKey}
+        {projectKey}
       </div>
     </div>
   );

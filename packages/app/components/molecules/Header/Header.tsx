@@ -5,16 +5,16 @@ import {
   Container,
   Burger,
 } from '@mantine/core';
-import { useBooleanToggle } from '@mantine/hooks';
-import ColorSchemeToggle from '../../atoms/ColorSchemeToggle/ColorSchemeToggle';
-import Logo from '../../atoms/Logo/Logo';
-import Socials from '../Socials/Socials';
-import { useStyles } from './Header.styles';
 import {
   BrandTwitter,
   BrandLinkedin,
 } from 'tabler-icons-react';
+import { useBooleanToggle } from '@mantine/hooks';
 import { IconMail } from '@tabler/icons';
+import ColorSchemeToggle from '../../atoms/ColorSchemeToggle/ColorSchemeToggle';
+import Logo from '../../atoms/Logo/Logo';
+import Socials from '../Socials/Socials';
+import { useStyles } from './Header.styles';
 
 interface HeaderMiddleProps {
   links: {
@@ -92,11 +92,11 @@ export default function Header({
               {
                 link: 'mailto:ballos.michael@gmail.com',
                 icon: (<IconMail size={20} />),
-              }
+              },
             ]}
           />
         </Group>
       </Container>
-     </MantineHeader>
+    </MantineHeader>
   );
 }
