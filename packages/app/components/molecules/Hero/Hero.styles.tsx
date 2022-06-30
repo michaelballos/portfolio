@@ -1,26 +1,26 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from "@mantine/core";
 
+// eslint-disable-next-line import/prefer-default-export
 export const useStyles = createStyles((theme) => ({
   hero: {
-    position: 'relative',
-    backgroundImage: 'url(/hero.jpeg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    height: 'calc(100vh - 56px)',
+    position: "relative",
+    backgroundImage: "url(/hero.jpeg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "calc(100vh - 56px)",
   },
 
   container: {
     height: 700,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'flex-end',
-    alignItems: 'flex-start',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "flex-start",
     paddingBottom: theme.spacing.xl * 6,
     zIndex: 1,
-    position: 'relative',
-
-    [theme.fn.smallerThan('sm')]: {
+    position: "relative",
+    [theme.fn.smallerThan("sm")]: {
       height: 500,
       paddingBottom: theme.spacing.xl * 3,
     },
@@ -31,13 +31,11 @@ export const useStyles = createStyles((theme) => ({
     fontSize: 60,
     fontWeight: 900,
     lineHeight: 1.1,
-
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       fontSize: 40,
       lineHeight: 1.2,
     },
-
-    [theme.fn.smallerThan('xs')]: {
+    [theme.fn.smallerThan("xs")]: {
       fontSize: 28,
       lineHeight: 1.3,
     },
@@ -46,8 +44,7 @@ export const useStyles = createStyles((theme) => ({
   description: {
     color: theme.white,
     maxWidth: 600,
-
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       fontSize: theme.fontSizes.sm,
       maxWidth: 400,
     },
@@ -55,8 +52,6 @@ export const useStyles = createStyles((theme) => ({
 
   control: {
     marginTop: theme.spacing.xl * 1.5,
-
-    [theme.fn.smallerThan('sm')]: {
-    },
+    [theme.fn.smallerThan("sm")]: {},
   },
 }));

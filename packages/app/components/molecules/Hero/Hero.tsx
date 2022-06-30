@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
   Overlay,
   Container,
   Title,
   Button,
-  Text,
-} from '@mantine/core';
-import { useStyles } from './Hero.styles';
+  Text
+} from "@mantine/core";
+import { useStyles } from "./Hero.styles";
 
 export interface HeroProps {
   onClick: () => void;
@@ -33,9 +33,8 @@ export default function Hero({ onClick }: HeroProps) {
           size="xl"
           mt="xl"
         >
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          I'm a Full-Stack Software Developer with a passion
-          for the end to end production of software and applications.
+          I'm a Full-Stack Software Developer with a passion for the end to end
+          production of software and applications.
         </Text>
 
         <Button

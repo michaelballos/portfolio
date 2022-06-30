@@ -1,24 +1,14 @@
-import React from 'react';
-import {
-  RingProgress,
-  Text,
-  Paper,
-  Center,
-  Group,
-} from '@mantine/core';
-import {
-  IconChecks,
-  IconPlayerPause,
-  IconTool,
-} from '@tabler/icons';
-import { useStyles } from './StatsRing.styles';
+import React from "react";
+import { RingProgress, Text, Paper, Center, Group } from "@mantine/core";
+import { IconChecks, IconPlayerPause, IconTool } from "@tabler/icons";
+import { useStyles } from "./StatsRing.styles";
 
 interface StatsRingProps {
   data: {
     id: string;
     version: string;
     label: string;
-    status: 'inProgress' | 'onHold' | 'done';
+    status: "inProgress" | "onHold" | "done";
   }[];
 }
 
@@ -31,27 +21,17 @@ const icons = {
 export default function StatsRing({ data }: StatsRingProps) {
   const { classes } = useStyles();
   const cards = data.map((stat) => {
-    const {
-      status,
-      version,
-      label,
-      id,
-    } = stat;
+    const { status, version, label, id } = stat;
     const Icon = icons[status];
     // eslint-disable-next-line no-nested-ternary
-    const color = status === 'inProgress'
-      ? '#00A8FF'
-      : status === 'onHold'
-        ? 'orange'
-        : 'green';
+    const color =
+      status === "inProgress"
+        ? "#00A8FF"
+        : status === "onHold"
+        ? "orange"
+        : "green";
     return (
-      <Paper
-        className={classes.card}
-        withBorder
-        radius="md"
-        p="xs"
-        key={id}
-      >
+      <Paper className={classes.card} withBorder radius="md" p="xs" key={id}>
         <Group>
           <RingProgress
             key={color}
@@ -64,11 +44,11 @@ export default function StatsRing({ data }: StatsRingProps) {
                 color,
               },
             ]}
-            label={(
+            label={
               <Center>
                 <Icon size={22} />
               </Center>
-            )}
+            }
           />
           <div>
             <Text
@@ -80,11 +60,7 @@ export default function StatsRing({ data }: StatsRingProps) {
             >
               {version}
             </Text>
-            <Text
-              key={label}
-              weight={700}
-              size="xl"
-            >
+            <Text key={label} weight={700} size="xl">
               {label}
             </Text>
           </div>
@@ -93,9 +69,5 @@ export default function StatsRing({ data }: StatsRingProps) {
     );
   });
 
-  return (
-    <div className={classes.cardsContainer}>
-      {cards}
-    </div>
-  );
+  return <div className={classes.cardsContainer}>{cards}</div>;
 }

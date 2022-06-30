@@ -1,28 +1,23 @@
-import React, {
-  ReactNode,
-} from 'react';
-import { ActionIcon } from '@mantine/core';
+import React, { ReactNode } from "react";
+import { ActionIcon } from "@mantine/core";
 
 export interface ISocialsProps {
   links: {
-    link: string
-    icon: ReactNode
+    link: string;
+    icon: ReactNode;
   }[];
 }
 
 export default function Socials({ links }: ISocialsProps) {
   const iconLinks = links.map((iconLink) => {
-    const {
-      link,
-      icon,
-    } = iconLink;
+    const { link, icon } = iconLink;
     return (
-      <ActionIcon<'a'>
+      <ActionIcon<"a">
         key={link}
         sx={(theme) => ({
-          '&:hover': {
+          "&:hover": {
             backgroundColor:
-              theme.colorScheme === 'dark'
+              theme.colorScheme === "dark"
                 ? theme.colors.dark[5]
                 : theme.colors.gray[2],
           },
@@ -37,7 +32,6 @@ export default function Socials({ links }: ISocialsProps) {
     );
   });
   return (
-    // eslint-disable-next-line react/jsx-no-useless-fragment
     <>
       {iconLinks}
     </>

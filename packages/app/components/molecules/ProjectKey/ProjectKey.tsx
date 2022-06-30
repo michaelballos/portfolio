@@ -1,26 +1,21 @@
-import {
-  Text,
-  Group,
-  RingProgress,
-  createStyles,
-} from '@mantine/core';
-import React from 'react';
+import { Text, Group, RingProgress, createStyles } from "@mantine/core";
+import React from "react";
 
 export const useStyles = createStyles((theme) => ({
   projectKey: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '25px',
-    [theme.fn.smallerThan('sm')]: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
+    display: "flex",
+    flexDirection: "column",
+    gap: "25px",
+    [theme.fn.smallerThan("sm")]: {
+      flexDirection: "row",
+      justifyContent: "space-around",
     },
   },
 
   label: {
-    fontSize: '15px',
-    width: 'max-content',
-    flexWrap: 'nowrap',
+    fontSize: "15px",
+    width: "max-content",
+    flexWrap: "nowrap",
   },
 }));
 
@@ -28,32 +23,25 @@ export default function ProjectKey() {
   const { classes } = useStyles();
   const keys = [
     {
-      color: '#00A8FF',
-      label: 'In Progress',
-      groupKey: 'blueProg',
+      color: "#00A8FF",
+      label: "In Progress",
+      groupKey: "blueProg",
     },
     {
-      color: 'green',
-      label: 'Completed',
-      groupKey: 'greenProg',
+      color: "green",
+      label: "Completed",
+      groupKey: "greenProg",
     },
     {
-      color: 'orange',
-      label: 'On Hold',
-      groupKey: 'orangeProg',
+      color: "orange",
+      label: "On Hold",
+      groupKey: "orangeProg",
     },
   ];
   const projectKey = keys.map((key) => {
-    const {
-      color,
-      label,
-      groupKey,
-    } = key;
+    const { color, label, groupKey } = key;
     return (
-      <Group
-        key={groupKey}
-        noWrap
-      >
+      <Group key={groupKey} noWrap>
         <RingProgress
           key={color}
           size={20}
@@ -66,10 +54,7 @@ export default function ProjectKey() {
             },
           ]}
         />
-        <Text
-          key={label}
-          className={classes.label}
-        >
+        <Text key={label} className={classes.label}>
           {label}
         </Text>
       </Group>
@@ -78,9 +63,7 @@ export default function ProjectKey() {
 
   return (
     <div>
-      <div className={classes.projectKey}>
-        {projectKey}
-      </div>
+      <div className={classes.projectKey}>{projectKey}</div>
     </div>
   );
 }

@@ -1,9 +1,10 @@
+import React from "react";
 import {
   Title,
   Text,
   Anchor
-} from '@mantine/core';
-import { useStyles } from './Welcome.styles';
+} from "@mantine/core";
+import { useStyles } from "./Welcome.styles";
 
 export default function Welcome() {
   const { classes } = useStyles();
@@ -14,7 +15,7 @@ export default function Welcome() {
         align="center"
         mt={100}
       >
-        Welcome to{' '}
+        Welcome to{" "}
         <Text
           inherit
           variant="gradient"
@@ -28,13 +29,14 @@ export default function Welcome() {
         align="center"
         size="lg"
         sx={{
-          maxWidth: 580
+          maxWidth: 580,
         }}
         mx="auto"
         mt="xl"
       >
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
+        This starter Next.js project includes a minimal setup for server side
+        rendering, if you want to learn more on Mantine + Next.js integration
+        follow{" "}
         <Anchor
           href="https://mantine.dev/theming/next/"
           size="lg"
