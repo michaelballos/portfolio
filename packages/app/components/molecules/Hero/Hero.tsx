@@ -33,7 +33,7 @@ export default function Hero({ onClick }: HeroProps) {
           size="xl"
           mt="xl"
         >
-          I'm a Full-Stack Software Developer with a passion for the end to end
+          I{`'`}m a Full-Stack Software Developer with a passion for the end to end
           production of software and applications.
         </Text>
 
