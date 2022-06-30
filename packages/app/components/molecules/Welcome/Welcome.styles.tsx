@@ -1,5 +1,6 @@
 import { createStyles } from '@mantine/core';
 
+// eslint-disable-next-line import/prefer-default-export
 export const useStyles = createStyles((theme) => ({
   title: {
     color:
