@@ -22,6 +22,17 @@ const useStyles = createStyles(() => ({
   },
 }));
 
+const headerLinks = [
+  {
+    link: "/home",
+    label: 'Home',
+  },
+  {
+    link: "/about",
+    label: "About",
+  },
+];
+
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { classes } = useStyles();
   const {
@@ -43,24 +54,10 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
     });
   };
 
-  const headerLinks = [
-    {
-      link: "/home",
-      label: 'Home',
-    },
-    {
-      link: "/about",
-      label: "About",
-    },
-  ];
   return (
     <>
       <Head>
         <title>Michael Ballos</title>
-        <meta
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-          name="viewport"
-        />
       </Head>
       <ColorSchemeProvider
         colorScheme={colorScheme}
@@ -76,7 +73,6 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           <NotificationsProvider>
             <Header links={headerLinks} />
             <div className={classes.pageMargin}>
-              {/* eslint-disable-next-line react/jsx-props-no-spreading */}
               <Component {...pageProps} />
             </div>
           </NotificationsProvider>
