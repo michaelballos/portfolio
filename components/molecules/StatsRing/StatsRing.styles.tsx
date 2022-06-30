@@ -4,7 +4,7 @@ export const useStyles = createStyles((theme) => ({
   cardsContainer: {
     display: "flex",
     flexDirection: "column",
-    gap: "1em",
+    gap: "1vw",
     width: "max-content",
     [theme.fn.smallerThan("sm")]: {
       flexDirection: "row",
@@ -16,7 +16,6 @@ export const useStyles = createStyles((theme) => ({
     width: "24em",
     border: '1px solid #2d2d2d',
     boxShadow: "0px 0px 10px rgb(0 0 0 / 75%)",
-    wordWrap: "unset",
     '&:hover': {
       cursor: "pointer",
       backgroundColor:

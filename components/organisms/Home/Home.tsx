@@ -39,6 +39,7 @@ export default function Home() {
         <Group className={classes.projectAndKey} noWrap>
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
+              setModalDetails={setModalDetails}
               isOpen={isOpen}
               setOpen={setOpen}
               data={[
@@ -104,6 +105,7 @@ export default function Home() {
         <SkillsetText />
       </div>
       <ProjectModal
+        modalDetails={modalDetails}
         isOpen={isOpen}
         setOpen={setOpen}
       />

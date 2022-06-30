@@ -33,7 +33,7 @@ export const useStyles = createStyles((theme) => ({
     height: "30em",
     width: "25em",
     [theme.fn.smallerThan("sm")]: {
-      width: "100%",
+      width: "90vw",
       height: "max-content",
     },
   },

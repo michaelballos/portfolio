@@ -3,6 +3,9 @@ import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
   skillsContainer: {
     width: "35em",
+    [theme.fn.smallerThan("xs")]: {
+      width: '20em'
+    },
   },
 
   skillsLabel: {
@@ -11,14 +14,17 @@ export const useStyles = createStyles((theme) => ({
     marginTop: "1em",
     [theme.fn.smallerThan("sm")]: {
       textAlign: "center",
+      fontSize: '1.5em'
     },
   },
 
   skillsDescription: {
     fontSize: "1.2em",
     [theme.fn.smallerThan("sm")]: {
+      fontSize: '1em',
       textAlign: "center",
       marginBottom: '1.5em',
     },
+
   },
 }));

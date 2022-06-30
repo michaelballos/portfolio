@@ -34,6 +34,7 @@ export default function ProjectKey() {
     return (
       <Group
         key={groupKey}
+        spacing={3}
         noWrap
       >
         <RingProgress

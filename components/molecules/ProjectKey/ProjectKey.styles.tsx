@@ -4,7 +4,7 @@ export const useStyles = createStyles((theme) => ({
   projectKey: {
     display: "flex",
     flexDirection: "column",
-    gap: "25px",
+    gap: "15px",
     [theme.fn.smallerThan("sm")]: {
       flexDirection: "row",
       justifyContent: "space-around",

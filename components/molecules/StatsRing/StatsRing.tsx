@@ -21,6 +21,7 @@ import { useStyles } from "./StatsRing.styles";
 interface StatsRingProps {
   isOpen: boolean;
   setOpen: (isOpen: boolean) => void;
+  setModalDetails: (modalDetails: boolean) => void;
   data: {
     id: string;
     category: string;
