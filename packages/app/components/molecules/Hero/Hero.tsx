@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 import {
   Overlay,
   Container,
   Title,
   Button,
   Text
-} from '@mantine/core';
-import { useStyles } from './Hero.styles';
+} from "@mantine/core";
+import { useStyles } from "./Hero.styles";
+
 export interface HeroProps {
   onClick: () => void;
 }
@@ -32,8 +33,8 @@ export default function Hero({ onClick }: HeroProps) {
           size="xl"
           mt="xl"
         >
-          I'm a Full-Stack Software Developer
-          with a passion for the end to end production of software and applications.
+          I{`'`}m a Full-Stack Software Developer with a passion for the end to end
+          production of software and applications.
         </Text>
 
         <Button
@@ -43,7 +44,7 @@ export default function Hero({ onClick }: HeroProps) {
           className={classes.control}
           onClick={onClick}
         >
-          Get started
+          View my Stack
         </Button>
       </Container>
     </div>

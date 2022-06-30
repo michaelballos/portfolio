@@ -1,26 +1,26 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from "@mantine/core";
 
+// eslint-disable-next-line import/prefer-default-export
 export const useStyles = createStyles((theme) => ({
   hero: {
-    position: 'relative',
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
+    position: "relative",
+    backgroundImage: "url(/hero.jpeg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "calc(100vh - 56px)",
   },
 
   container: {
     height: 700,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'flex-end',
-    alignItems: 'flex-start',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "flex-start",
     paddingBottom: theme.spacing.xl * 6,
     zIndex: 1,
-    position: 'relative',
-
-    [theme.fn.smallerThan('sm')]: {
+    position: "relative",
+    [theme.fn.smallerThan("sm")]: {
       height: 500,
       paddingBottom: theme.spacing.xl * 3,
     },
@@ -31,13 +31,11 @@ export const useStyles = createStyles((theme) => ({
     fontSize: 60,
     fontWeight: 900,
     lineHeight: 1.1,
-
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       fontSize: 40,
       lineHeight: 1.2,
     },
-
-    [theme.fn.smallerThan('xs')]: {
+    [theme.fn.smallerThan("xs")]: {
       fontSize: 28,
       lineHeight: 1.3,
     },
@@ -46,18 +44,14 @@ export const useStyles = createStyles((theme) => ({
   description: {
     color: theme.white,
     maxWidth: 600,
-
-    [theme.fn.smallerThan('sm')]: {
-      maxWidth: '100%',
+    [theme.fn.smallerThan("sm")]: {
       fontSize: theme.fontSizes.sm,
+      maxWidth: 400,
     },
   },
 
   control: {
     marginTop: theme.spacing.xl * 1.5,
-
-    [theme.fn.smallerThan('sm')]: {
-      width: '100%',
-    },
+    [theme.fn.smallerThan("sm")]: {},
   },
 }));
