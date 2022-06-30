@@ -1,4 +1,6 @@
-import React, { useCallback } from "react";
+import React, {
+  useCallback,
+} from "react";
 import {
   ScrollArea,
   Group
@@ -8,70 +10,81 @@ import StatsRing from "../../molecules/StatsRing/StatsRing";
 import SkillsetText from "../../molecules/SkillsetText/SkillsetText";
 import ProjectKey from "../../molecules/ProjectKey/ProjectKey";
 import { useStyles } from "./Home.styles";
+import styles from './HideStatusScroll.module.css';
 
 export default function Home() {
   const { classes } = useStyles();
   const scrollToProject = useCallback(() => {
     const element = document.querySelector("#projects");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    } else {
-      // eslint-disable-next-line no-console
-      console.log("element not found");
-    }
+    element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
   return (
-    <ScrollArea
-      style={{
-        marginTop: 56,
-        height: "max-content",
-      }}
+    <div
+       className={styles.scrollArea}
     >
       <Hero onClick={scrollToProject} />
       <div className={classes.projectPage} id="projects">
         <Group
           className={classes.projectAndKey}
-          noWrap
           spacing="md"
+          noWrap
         >
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
               data={[
                 {
                   id: "1",
-                  version: "1.0.0",
+                  category: "Particle Space",
+                  label: "RE Template",
+                  status: "inProgress",
+                },
+                {
+                  id: "2",
+                  category: "Particle Space",
                   label: "Properly",
                   status: "done",
                 },
                 {
-                  id: "2",
-                  version: "5.4.1",
-                  label: "Thundurus",
-                  status: "onHold",
-                },
-                {
                   id: "3",
-                  version: "1.0.0",
-                  label: "Properly",
+                  category: "Web Development",
+                  label: "JN Brand",
                   status: "inProgress",
                 },
                 {
                   id: "4",
-                  version: "5.4.1",
+                  category: "UI Library",
                   label: "Thundurus",
                   status: "onHold",
                 },
                 {
                   id: "5",
-                  version: "1.0.0",
-                  label: "Properly",
+                  category: "Bot Crawler",
+                  label: "Archillect Bot",
                   status: "done",
                 },
                 {
                   id: "6",
-                  version: "5.4.1",
-                  label: "Thundurus",
-                  status: "onHold",
+                  category: "Particle Space",
+                  label: "Documentation",
+                  status: "done",
+                },
+                {
+                  id: "7",
+                  category: "Hackathon",
+                  label: "Electa",
+                  status: "done",
+                },
+                {
+                  id: "8",
+                  category: "Learning",
+                  label: "React Calculator",
+                  status: "done",
+                },
+                {
+                  id: "10",
+                  category: "Learning",
+                  label: "Counter",
+                  status: "done",
                 },
               ]}
             />
@@ -80,6 +93,6 @@ export default function Home() {
         </Group>
         <SkillsetText />
       </div>
-    </ScrollArea>
+    </div>
   );
 }

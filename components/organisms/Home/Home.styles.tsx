@@ -9,7 +9,6 @@ export const useStyles = createStyles((theme) => ({
     gap: "15em",
     height: "100vh",
     color: theme.colorScheme === "light" ? "white" : "",
-
     [theme.fn.smallerThan("lg")]: {
       flexDirection: "column",
       fontSize: theme.fontSizes.xs,
@@ -19,7 +18,7 @@ export const useStyles = createStyles((theme) => ({
 
   projectAndKey: {
     display: "flex",
-    marginTop: "6em",
+    marginTop: "3em",
     [theme.fn.smallerThan("sm")]: {
       flexDirection: "column",
     },
@@ -32,7 +31,7 @@ export const useStyles = createStyles((theme) => ({
 
   projectCardsScrollArea: {
     height: "30em",
-    width: "20em",
+    width: "25em",
     [theme.fn.smallerThan("sm")]: {
       width: "100%",
       height: "max-content",

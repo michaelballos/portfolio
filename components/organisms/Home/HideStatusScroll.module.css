@@ -1,0 +1,9 @@
+.scrollArea::-webkit-scrollbar {
+  display: none !important;
+  background-color: transparent !important;
+}
+
+.scrollArea {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
