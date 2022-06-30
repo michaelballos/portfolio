@@ -36,7 +36,7 @@ export default function Home() {
     <div className={styles.scrollArea}>
       <Hero onClick={scrollToProject} />
       <div className={classes.projectPage} id="projects">
-        <Group noWrap>
+        <Group className={classes.projectAndKey} noWrap>
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
               isOpen={isOpen}

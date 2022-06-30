@@ -19,6 +19,11 @@ export default function ProjectModal({
   }, [setOpen]);
   return (
     <Modal
+      sx={(theme) => ({
+        root: {
+          width: '80em !important',
+        }
+      })}
       opened={isOpen}
       onClose={onClose}
       title="Introduce yourself!"
