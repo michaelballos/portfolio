@@ -1,10 +1,13 @@
-import React from "react";
+import React, {
+  useState
+} from "react";
 import {
   RingProgress,
   Text,
   Paper,
   Center,
-  Group
+  Group,
+  Button
 } from "@mantine/core";
 import {
   IconChecks,
@@ -19,6 +22,9 @@ interface StatsRingProps {
     category: string;
     label: string;
     status: "inProgress" | "onHold" | "done";
+    modal?: JSX.Element | JSX.Element[];
+    isOpen?: boolean;
+    setOpen?: (isOpen: boolean) => void;
   }[];
 }
 
@@ -35,7 +41,10 @@ export default function StatsRing({ data }: StatsRingProps) {
       status,
       category,
       label,
-      id
+      id,
+      modal,
+      isOpen,
+      setOpen,
     } = stat;
     const Icon = icons[status];
     const color =
@@ -45,7 +54,13 @@ export default function StatsRing({ data }: StatsRingProps) {
         ? "orange"
         : "green";
     return (
-      <Paper className={classes.card} withBorder radius="md" p="xs" key={id}>
+      <Paper
+        className={classes.card}
+        withBorder
+        radius="md"
+        p="xs"
+        key={id}
+      >
         <Group noWrap>
           <RingProgress
             key={color}
@@ -89,6 +104,7 @@ export default function StatsRing({ data }: StatsRingProps) {
             </Text>
           </div>
         </Group>
+        {modal}
       </Paper>
     );
   });

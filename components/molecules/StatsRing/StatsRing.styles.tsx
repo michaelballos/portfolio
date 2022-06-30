@@ -17,5 +17,12 @@ export const useStyles = createStyles((theme) => ({
     border: '1px solid #2d2d2d',
     boxShadow: "0px 0px 15px rgb(46 45 45 / 50%)",
     wordWrap: "unset",
+    '&:hover': {
+      cursor: "pointer",
+      backgroundColor:
+        theme.colorScheme === "dark"
+          ? theme.colors.dark[5]
+          : theme.colors.gray[2],
+    }
   },
 }));

@@ -1,5 +1,6 @@
 import React, {
   useCallback,
+  useState
 } from "react";
 import {
   ScrollArea,
@@ -13,6 +14,7 @@ import { useStyles } from "./Home.styles";
 import styles from './HideStatusScroll.module.css';
 
 export default function Home() {
+  const [isOpen, setOpen] = useState(false);
   const { classes } = useStyles();
   const scrollToProject = useCallback(() => {
     const element = document.querySelector("#projects");
