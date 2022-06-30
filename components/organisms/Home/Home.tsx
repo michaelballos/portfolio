@@ -15,22 +15,32 @@ import { useStyles } from "./Home.styles";
 import styles from './HideStatusScroll.module.css';
 
 export interface IModalDetails {
-  projectTitle: string;
+  title: string;
   overview: string;
+  link: string;
+  goal: string[];
+  significance: string;
+  images: string[];
 }
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState({
-    overview: null,
-
+    title: 'Project',
+    overview: 'default',
+    link: 'sdfsdfas',
+    goal: ['default', 'tyooo'],
+    significance: 'it matters bro',
+    images: [
+      'default',
+      'cool',
+    ]
   });
   const { classes } = useStyles();
   const scrollToProject = useCallback(() => {
     const element = document.querySelector("#projects");
     element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
-
 
   return (
     <div className={styles.scrollArea}>

@@ -1,4 +1,5 @@
 import React, {
+  useMemo,
   useState,
   useCallback
 } from "react";
@@ -16,12 +17,13 @@ import {
   IconTool
 } from "@tabler/icons";
 import ProjectModal from '../../organisms/ProjectModal/ProjectModal';
+import { IModalDetails } from '../../organisms/Home/Home';
 import { useStyles } from "./StatsRing.styles";
 
 interface StatsRingProps {
   isOpen: boolean;
   setOpen: (isOpen: boolean) => void;
-  setModalDetails: (modalDetails: boolean) => void;
+  setModalDetails: (setModalDetails: IModalDetails) => void;
   data: {
     id: string;
     category: string;
@@ -36,10 +38,42 @@ const icons = {
   inProgress: IconTool,
 };
 
+const projectDetails = [
+  {
+    title: 'RE Template',
+    link: 'https://github.com/particlespace/real-estate-listing-platform-starter-template',
+    overview: 'This was an open source template meant for creating listing platforms',
+    goal: [
+      'Create Listing Template',
+      'DFASDFSADF'
+    ],
+    significance: 'it matters okay',
+    images: [
+      'image',
+      'image two'
+    ]
+  },
+  {
+    title: 'Properly',
+    link: 'https://chrome.google.com/webstore/detail/properly-by-particle-spac/fgbbcngkdhfkahipapobpdbkijlanpeb',
+    overview: 'This was an open source template meant for creating listing platforms',
+    goal: [
+      'Create Listing Template',
+      'DFASDFSADF'
+    ],
+    significance: 'it matters okay',
+    images: [
+      'image',
+      'image two'
+    ]
+  },
+]
+
 export default function StatsRing({
   data,
   isOpen,
-  setOpen
+  setOpen,
+  setModalDetails,
 }: StatsRingProps) {
   const { classes } = useStyles();
   const cards = data.map((stat) => {
@@ -57,9 +91,15 @@ export default function StatsRing({
         ? "orange"
         : "green";
     const openModelOnClick = useCallback(() => {
-      console.log('opened modal')
+      const project = projectDetails.filter((project) => {
+        const { title } = project;
+        return label === title;
+      })
+      const [{...details}] = project;
+      setModalDetails(details)
       setOpen(true)
     }, [setOpen])
+
     return (
       <Paper
         className={classes.card}
@@ -103,9 +143,10 @@ export default function StatsRing({
             <Text
               style={{
                 whiteSpace: "nowrap",
+                fontFamily: 'tgHaidoGrotesk, sans-serif'
               }}
               key={label}
-              weight={700}
+              weight={800}
               size="xl"
             >
               {label}

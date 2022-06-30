@@ -31,10 +31,11 @@ export const useStyles = createStyles((theme) => ({
 
   projectCardsScrollArea: {
     height: "30em",
-    width: "25em",
+    width: "26em",
     [theme.fn.smallerThan("sm")]: {
-      width: "90vw",
+      width: "100vw",
       height: "max-content",
+      paddingBottom: '1em',
     },
   },
 }));

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font" />
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
+      <change afterPath="$PROJECT_DIR$/components/organisms/ProjectModal/ProjectModal.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/SkillsetText/SkillsetText.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/SkillsetText/SkillsetText.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/organisms/Home/Home.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/Home/Home.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/organisms/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/organisms/ProjectModal/ProjectModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/ProjectModal/ProjectModal.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,27 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michael/IdeaProjects/portfolio/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michael/IdeaProjects/portfolio/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -109,7 +118,9 @@
       <workItem from="1656439234821" duration="871000" />
       <workItem from="1656465702169" duration="11714000" />
       <workItem from="1656488533102" duration="50258000" />
-      <workItem from="1656609181345" duration="8506000" />
+      <workItem from="1656609181345" duration="9907000" />
+      <workItem from="1656622322185" duration="296000" />
+      <workItem from="1656623979933" duration="5324000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
