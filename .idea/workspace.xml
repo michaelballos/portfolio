@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
-      <change afterPath="$PROJECT_DIR$/components/organisms/ProjectModal/ProjectModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/organisms/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/Home/Home.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -31,16 +28,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="project-modal" />
-                    <option name="lastUsedInstant" value="1656578266" />
+                    <option name="branchName" value="new" />
+                    <option name="lastUsedInstant" value="1656575060" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1656578151" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="new" />
-                    <option name="lastUsedInstant" value="1656575060" />
+                    <option name="lastUsedInstant" value="1656574345" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="projects" />
@@ -62,7 +55,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2B8IuS4wqkbymnTArWtzf1NsF4T" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -73,6 +66,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/public",
     "node.js.detected.package.eslint": "true",
@@ -85,8 +79,8 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/michaelballos/IdeaProjects/portfolio/node_modules/typescript/lib"
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -113,7 +107,8 @@
       <workItem from="1656408320864" duration="4458000" />
       <workItem from="1656439234821" duration="871000" />
       <workItem from="1656465702169" duration="11714000" />
-      <workItem from="1656488533102" duration="63962000" />
+      <workItem from="1656488533102" duration="50258000" />
+      <workItem from="1656609181345" duration="1516000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>

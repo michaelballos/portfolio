@@ -1,5 +1,6 @@
 import React, {
-  useState
+  useState,
+  useCallback
 } from "react";
 import {
   RingProgress,
@@ -22,7 +23,6 @@ interface StatsRingProps {
     category: string;
     label: string;
     status: "inProgress" | "onHold" | "done";
-    modal?: JSX.Element | JSX.Element[];
     isOpen?: boolean;
     setOpen?: (isOpen: boolean) => void;
   }[];
@@ -42,7 +42,6 @@ export default function StatsRing({ data }: StatsRingProps) {
       category,
       label,
       id,
-      modal,
       isOpen,
       setOpen,
     } = stat;
@@ -53,6 +52,9 @@ export default function StatsRing({ data }: StatsRingProps) {
         : status === "onHold"
         ? "orange"
         : "green";
+    const openModelOnClick = useCallback(() => {
+      console.log('Modal opened')
+    }, [])
     return (
       <Paper
         className={classes.card}
@@ -60,6 +62,7 @@ export default function StatsRing({ data }: StatsRingProps) {
         radius="md"
         p="xs"
         key={id}
+        onClick={openModelOnClick}
       >
         <Group noWrap>
           <RingProgress
@@ -104,7 +107,6 @@ export default function StatsRing({ data }: StatsRingProps) {
             </Text>
           </div>
         </Group>
-        {modal}
       </Paper>
     );
   });

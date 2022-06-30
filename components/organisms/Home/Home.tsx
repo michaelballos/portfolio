@@ -21,16 +21,10 @@ export default function Home() {
     element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
   return (
-    <div
-       className={styles.scrollArea}
-    >
+    <div className={styles.scrollArea}>
       <Hero onClick={scrollToProject} />
       <div className={classes.projectPage} id="projects">
-        <Group
-          className={classes.projectAndKey}
-          spacing="md"
-          noWrap
-        >
+        <Group noWrap>
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
               data={[
