@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +104,7 @@
       <workItem from="1656408320864" duration="4458000" />
       <workItem from="1656439234821" duration="871000" />
       <workItem from="1656465702169" duration="11714000" />
-      <workItem from="1656488533102" duration="49780000" />
+      <workItem from="1656488533102" duration="50258000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
