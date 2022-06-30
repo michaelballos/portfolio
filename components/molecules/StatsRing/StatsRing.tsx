@@ -15,16 +15,17 @@ import {
   IconPlayerPause,
   IconTool
 } from "@tabler/icons";
+import ProjectModal from '../../organisms/ProjectModal/ProjectModal';
 import { useStyles } from "./StatsRing.styles";
 
 interface StatsRingProps {
+  isOpen: boolean;
+  setOpen: (isOpen: boolean) => void;
   data: {
     id: string;
     category: string;
     label: string;
     status: "inProgress" | "onHold" | "done";
-    isOpen?: boolean;
-    setOpen?: (isOpen: boolean) => void;
   }[];
 }
 
@@ -34,7 +35,11 @@ const icons = {
   inProgress: IconTool,
 };
 
-export default function StatsRing({ data }: StatsRingProps) {
+export default function StatsRing({
+  data,
+  isOpen,
+  setOpen
+}: StatsRingProps) {
   const { classes } = useStyles();
   const cards = data.map((stat) => {
     const {
@@ -42,8 +47,6 @@ export default function StatsRing({ data }: StatsRingProps) {
       category,
       label,
       id,
-      isOpen,
-      setOpen,
     } = stat;
     const Icon = icons[status];
     const color =
@@ -53,8 +56,9 @@ export default function StatsRing({ data }: StatsRingProps) {
         ? "orange"
         : "green";
     const openModelOnClick = useCallback(() => {
-      console.log('Modal opened')
-    }, [])
+      console.log('opened modal')
+      setOpen(true)
+    }, [setOpen])
     return (
       <Paper
         className={classes.card}

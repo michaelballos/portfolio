@@ -11,3 +11,8 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'tgHaidoGrotesk';
+  src: url('../public/tg-haido-grotesk.otf');
+  font-weight: 800;
+}

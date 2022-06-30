@@ -17,7 +17,7 @@ export default function SkillsetText() {
         Docker, Prisma, Rest, Node, Express, Jest, ESLint Hardcore, Lerna, Git,
         Postman, Photoshop, Figma, Axios, PHP, Phalcon, Swagger, Prettier
         Prisma, Mantine, Three/Fiber, Three/Drei, Auth0, Passport JS, Bootstrap,
-        Babel, Puppeteer, Webkit, SCSS, Tailwind, Styled Components,
+        Babel, Puppeteer, Webkit, SCSS, Tailwind, Styled Components
       </Text>
     </div>
   );

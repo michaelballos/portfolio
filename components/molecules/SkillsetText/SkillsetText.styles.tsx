@@ -2,7 +2,7 @@ import { createStyles } from "@mantine/core";
 
 export const useStyles = createStyles((theme) => ({
   skillsContainer: {
-    width: "30em",
+    width: "35em",
   },
 
   skillsLabel: {

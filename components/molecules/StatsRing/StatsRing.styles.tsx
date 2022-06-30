@@ -15,7 +15,7 @@ export const useStyles = createStyles((theme) => ({
   card: {
     width: "24em",
     border: '1px solid #2d2d2d',
-    boxShadow: "0px 0px 15px rgb(46 45 45 / 50%)",
+    boxShadow: "0px 0px 10px rgb(0 0 0 / 75%)",
     wordWrap: "unset",
     '&:hover': {
       cursor: "pointer",

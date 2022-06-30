@@ -10,16 +10,28 @@ import Hero from "../../molecules/Hero/Hero";
 import StatsRing from "../../molecules/StatsRing/StatsRing";
 import SkillsetText from "../../molecules/SkillsetText/SkillsetText";
 import ProjectKey from "../../molecules/ProjectKey/ProjectKey";
+import ProjectModal from '../ProjectModal/ProjectModal';
 import { useStyles } from "./Home.styles";
 import styles from './HideStatusScroll.module.css';
 
+export interface IModalDetails {
+  projectTitle: string;
+  overview: string;
+}
+
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
+  const [modalDetails, setModalDetails] = useState({
+    overview: null,
+
+  });
   const { classes } = useStyles();
   const scrollToProject = useCallback(() => {
     const element = document.querySelector("#projects");
     element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
+
+
   return (
     <div className={styles.scrollArea}>
       <Hero onClick={scrollToProject} />
@@ -27,6 +39,8 @@ export default function Home() {
         <Group noWrap>
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
+              isOpen={isOpen}
+              setOpen={setOpen}
               data={[
                 {
                   id: "1",
@@ -89,6 +103,10 @@ export default function Home() {
         </Group>
         <SkillsetText />
       </div>
+      <ProjectModal
+        isOpen={isOpen}
+        setOpen={setOpen}
+      />
     </div>
   );
 }
