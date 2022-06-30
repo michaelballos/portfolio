@@ -21,9 +21,9 @@ export default function Socials({ links }: ISocialsProps) {
         sx={(theme) => ({
           '&:hover': {
             backgroundColor:
-                theme.colorScheme === 'dark'
-                  ? theme.colors.dark[5]
-                  : theme.colors.gray[2],
+              theme.colorScheme === 'dark'
+                ? theme.colors.dark[5]
+                : theme.colors.gray[2],
           },
         })}
         component="a"
