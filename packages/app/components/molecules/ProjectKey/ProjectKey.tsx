@@ -41,7 +41,6 @@ export default function ProjectKey() {
     }
   ]
 
-
   const ProjectKey = keys.map((key) => {
     const {
       color,

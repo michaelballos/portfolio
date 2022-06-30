@@ -20,7 +20,6 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
 
   return (
     <>
-
       <Head>
         <title>Michael Ballos</title>
         <meta

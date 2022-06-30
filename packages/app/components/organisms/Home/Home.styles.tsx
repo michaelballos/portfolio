@@ -16,7 +16,7 @@ export const useStyles = createStyles((theme) => ({
         ? 'white'
         : '',
 
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan('lg')]: {
       flexDirection: 'column',
       fontSize: theme.fontSizes.xs,
       gap: '1em',
