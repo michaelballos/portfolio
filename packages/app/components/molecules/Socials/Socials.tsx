@@ -18,6 +18,7 @@ export default function Socials({ links }: ISocialsProps) {
     } = iconLink;
     return (
       <ActionIcon<'a'>
+        key={link}
         sx={(theme) => ({
           '&:hover': {
             backgroundColor:

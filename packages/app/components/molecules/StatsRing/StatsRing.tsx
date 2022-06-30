@@ -52,6 +52,7 @@ export default function StatsRing({ data }: StatsRingProps) {
       >
         <Group>
           <RingProgress
+            key={version}
             size={80}
             roundCaps
             thickness={8}

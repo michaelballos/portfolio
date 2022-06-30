@@ -30,24 +30,32 @@ export default function ProjectKey() {
     {
       color: '#00A8FF',
       label: 'In Progress',
+      groupKey: 'blueProg',
     },
     {
       color: 'green',
       label: 'Completed',
+      groupKey: 'greenProg',
     },
     {
       color: 'orange',
       label: 'On Hold',
+      groupKey: 'orangeProg',
     },
   ];
   const projectKey = keys.map((key) => {
     const {
       color,
       label,
+      groupKey,
     } = key;
     return (
-      <Group noWrap>
+      <Group
+        key={groupKey}
+        noWrap
+      >
         <RingProgress
+          key={color}
           size={20}
           roundCaps
           thickness={3}
@@ -59,6 +67,7 @@ export default function ProjectKey() {
           ]}
         />
         <Text
+          key={label}
           className={classes.label}
         >
           {label}
