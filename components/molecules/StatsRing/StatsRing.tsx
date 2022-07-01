@@ -100,24 +100,16 @@ export default function StatsRing({
   setOpen,
   setModalDetails,
 }: StatsRingProps) {
-  const { classes } = useStyles();
+  const {classes} = useStyles();
   const cards = data.map((stat) => {
     const {
-      status,
-      category,
-      label,
-      id,
+      status, category, label, id,
     } = stat;
     const Icon = icons[status];
-    const color =
-      status === "inProgress"
-        ? "#00A8FF"
-        : status === "onHold"
-        ? "orange"
-        : "green";
+    const color = status === "inProgress" ? "#00A8FF" : status === "onHold" ? "orange" : "green";
     const openModelOnClick = useCallback(() => {
       const project = projectDetails.filter((project) => {
-        const { title } = project;
+        const {title} = project;
         return label === title;
       })
       const [{...details}] = project;
@@ -125,8 +117,7 @@ export default function StatsRing({
       setOpen(true)
     }, [setOpen])
 
-    return (
-      <Paper
+    return (<Paper
         className={classes.card}
         withBorder
         radius="md"
@@ -140,17 +131,12 @@ export default function StatsRing({
             size={80}
             roundCaps
             thickness={8}
-            sections={[
-              {
-                value: 100,
-                color,
-              },
-            ]}
-            label={
-              <Center>
-                <Icon size={22} />
-              </Center>
-            }
+            sections={[{
+              value: 100, color,
+            },]}
+            label={<Center>
+              <Icon size={22}/>
+            </Center>}
           />
           <div>
             <Text
@@ -167,8 +153,7 @@ export default function StatsRing({
             </Text>
             <Text
               style={{
-                whiteSpace: "nowrap",
-                fontFamily: 'tgHaidoGrotesk, sans-serif'
+                whiteSpace: "nowrap", fontFamily: 'tgHaidoGrotesk, sans-serif'
               }}
               key={label}
               weight={800}
@@ -178,8 +163,7 @@ export default function StatsRing({
             </Text>
           </div>
         </Group>
-      </Paper>
-    );
+      </Paper>);
   });
   return <div className={classes.cardsContainer}>{cards}</div>;
 }
