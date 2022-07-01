@@ -23,7 +23,7 @@ export interface IModalDetails {
   images: string[];
 }
 
-export default function Home() {
+export default function HomePage() {
   const [isOpen, setOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState({
     title: 'Project X',

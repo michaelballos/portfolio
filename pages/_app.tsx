@@ -15,6 +15,7 @@ import {
 import { NotificationsProvider } from "@mantine/notifications";
 import Header from "../components/molecules/Header/Header";
 import "../styles/globals.css";
+import '../styles/BlogCard.scss';
 
 const useStyles = createStyles(() => ({
   pageMargin: {
@@ -28,8 +29,8 @@ const headerLinks = [
     label: 'Home',
   },
   {
-    link: "/about",
-    label: "About",
+    link: "/blogs",
+    label: "Blogs",
   },
 ];
 
@@ -40,7 +41,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
     pageProps,
   } = props;
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
-    props.colorScheme,
+    'dark',
   );
 
   const toggleColorScheme = (value?: ColorScheme) => {

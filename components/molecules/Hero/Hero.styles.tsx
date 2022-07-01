@@ -48,6 +48,7 @@ export const useStyles = createStyles((theme) => ({
 
   control: {
     marginTop: theme.spacing.xl * 1.5,
+    backgroundImage: 'linear-gradient(45deg, #293758 0%, #445b91 100%)',
     [theme.fn.smallerThan("sm")]: {},
   },
 }));

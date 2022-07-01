@@ -52,7 +52,7 @@ const projectDetails = [
     significance: [
       'Provides an easy starting point to integrate Particle Space API for developers at HackMidwest or anyone building a listing platform.',
       'In terms of the UI I handled the Header, provided solutions for UI problems such as Listing Cards and Map responsiveness, mocked the data in a JSON file, assisted with connecting the map markers based on longitude and latitude, finished the property details modal, and created Type Safe UI data query and manipulation.',
-      'Overall the project ended with a success only facing simple code conflict, typescript, and unique key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal.',
+      'Overall the project has only faced simple code conflicts, typescript, and unique key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal. The last thing I will add is removing the mock data property details and have the API Queried onClick of the property listing card.'
     ],
     images: [
       '/templateHome.png',

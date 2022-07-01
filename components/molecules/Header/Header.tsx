@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import React, {
+  useEffect,
+  useState
+} from "react";
+import Link from "next/link";
 import {
   Header as MantineHeader,
   Group,
@@ -15,6 +19,7 @@ import ColorSchemeToggle from "../../atoms/ColorSchemeToggle/ColorSchemeToggle";
 import Logo from "../../atoms/Logo/Logo";
 import Socials from "../Socials/Socials";
 import { useStyles } from "./Header.styles";
+import { useRouter } from "next/router";
 
 interface HeaderMiddleProps {
   links: {
@@ -24,6 +29,7 @@ interface HeaderMiddleProps {
 }
 
 export default function Header({ links }: HeaderMiddleProps) {
+  const router = useRouter();
   const [
     opened,
     toggleOpened
@@ -42,16 +48,22 @@ export default function Header({ links }: HeaderMiddleProps) {
       href={link.link}
       className={cx(classes.link, {
         [classes.linkActive]: active === link.link,
-
       })}
       onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
+        event.preventDefault()
+        setActive(link.link)
+        router.push(link.link);
       }}
     >
       {link.label}
     </a>
   ));
+  const path = router.pathname;
+  useEffect(() => {
+    path === '/'
+      ? setActive('/')
+      : setActive(path)
+  }, [path]);
 
   return (
     <MantineHeader
