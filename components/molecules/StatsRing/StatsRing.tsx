@@ -1,7 +1,8 @@
 import React, {
   useMemo,
   useState,
-  useCallback
+  useCallback,
+  useEffect
 } from "react";
 import {
   RingProgress,
@@ -273,16 +274,15 @@ export default function StatsRing({
           ? "orange"
           : "green";
 
-
-    const openModelOnClick = useCallback(async() => {
-      const project = await projectDetails.filter((project) => {
-        const { title } = project;
-        return label === title;
-      })
-      const [{...details}] = project;
-      await setModalDetails(details);
-      await setOpen(true);
-    }, [])
+    const project = projectDetails.filter((project) => {
+      const { title } = project;
+      return label === title;
+    })
+    const [{...details}] = project;
+    const openModalOnClick = useCallback(() => {
+      setModalDetails(details);
+      setOpen(true);
+    }, [label])
 
     return (
       <Paper
@@ -291,7 +291,7 @@ export default function StatsRing({
         radius="md"
         p="xs"
         key={id}
-        onClick={openModelOnClick}
+        onClick={openModalOnClick}
       >
         <Group noWrap>
           <RingProgress
