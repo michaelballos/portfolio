@@ -19,21 +19,26 @@ export interface IModalDetails {
   overview: string;
   link: string;
   goal: string[];
-  significance: string;
+  significance: [string, string, string];
   images: string[];
 }
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState({
-    title: 'Project',
-    overview: 'default',
-    link: 'sdfsdfas',
+    title: 'Project X',
+    overview: 'if ur reading this u found my easter egg',
+    link: 'https://pornhub.com',
     goal: [
-      'default',
-      'tyooo'
+      'you',
+      'me',
+      'elmo'
     ],
-    significance: 'it matters bro',
+    significance: [
+      'it matters bro',
+      'take my word',
+      'stop questioning everything'
+      ],
     images: [
       '/templateHome.png',
       '/templateMap.png',

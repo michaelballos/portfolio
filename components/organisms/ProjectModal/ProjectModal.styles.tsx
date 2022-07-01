@@ -6,6 +6,8 @@ export const useStyles = createStyles((theme) => ({
   },
 
   link: {
+    color: 'white',
+    fontWeight: 600,
     padding: '.3em',
     paddingLeft: '1em',
     paddingRight: '1em',
@@ -13,12 +15,12 @@ export const useStyles = createStyles((theme) => ({
     backgroundColor:
       theme.colorScheme === 'dark'
         ? '#485c8c'
-        : '#f5c0c6',
+        : '#8c9fcc',
     '&:hover': {
       backgroundColor:
         theme.colorScheme === 'dark'
-          ? '#355091'
-          : '#eda1aa',
+          ? '#54658a'
+          : '#6578a2',
     },
   },
 

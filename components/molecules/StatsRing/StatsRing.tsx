@@ -42,14 +42,20 @@ const projectDetails = [
   {
     title: 'RE Template',
     link: 'https://github.com/particlespace/real-estate-listing-platform-starter-template',
-    overview: 'This was an Open Source project done at Particle Space. ' +
-      '',
+    overview: 'This was an Open Source project done at Particle Space. The project consisted of crafting a simple Next JS template for Real Estate listing platforms. ' +
+      'It utilized Particle Space API for property data and Google Maps API to pinpoint the property location. ' +
+      'The property modal is an incorporation of UI from a previous Chrome Extension project.',
     goal: [
-      'Create an Open Source template for building Real Estate Listing websites',
-      'Provide a starting point or example on how to integrate Particle Space API for developers at HackMidwest or anyone building a listing platform',
-      ''
+      'Create an Open Source template for building Real Estate Listing applications',
+      'Setup for easy integration of Particle Space API',
+      'Show map location of properties'
     ],
-    significance: 'it matters okay',
+    significance: [
+      'Provides an easy starting point to integrate Particle Space API for developers at HackMidwest or anyone building a listing platform. ',
+      'In terms of the UI I handled the Header, provided solutions for UI problems such as Listing ' +
+      'Cards and Map responsiveness, mocked the data in a JSON file, assisted with connecting the map markers based on longitude and latitude, finished the property details modal, and created Type Safe UI data query and manipulation.',
+      'Overall the project ended with a success only facing simple code conflict, typescript, and unique key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal.',
+    ],
     images: [
       '/templateHome.png',
       '/templateConsole.png',

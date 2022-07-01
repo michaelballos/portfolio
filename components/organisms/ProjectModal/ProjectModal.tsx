@@ -4,7 +4,8 @@ import {
   Text,
   Group,
   Button,
-  Stack
+  Stack,
+  RingProgress
 } from '@mantine/core';
 import Image from 'next/image';
 import { IModalDetails } from '../../organisms/Home/Home';
@@ -34,10 +35,40 @@ export default function ProjectModal({
     significance,
     images
   } = modalDetails;
-  const goalFormatted = goal.map((goal) => {
+  const goalFormatted = goal.map((goal, index) => {
     return (
-      <Text key={goal}>
-        - {goal}
+      <Group
+        noWrap
+        key={index}
+        style={{
+          marginBottom: '10px',
+        }}
+      >
+        <RingProgress
+          key={`${goal} ${new Date().getTime()}`}
+          size={20}
+          roundCaps
+          thickness={3}
+          sections={[
+            {
+              value: 100,
+              color: '#7c90c0',
+            },
+          ]}
+        />
+        <Text key={goal}>
+          {goal}
+        </Text>
+      </Group>
+    );
+  })
+  const projectSignificance = significance.map((quote) => {
+    return (
+      <Text
+        key={quote}
+        className={classes.description}
+      >
+        {quote}
       </Text>
     );
   })
@@ -50,6 +81,7 @@ export default function ProjectModal({
         height={200}
         layout='responsive'
         objectFit='contain'
+        loading='lazy'
       />
     )
   })
@@ -104,16 +136,20 @@ export default function ProjectModal({
             {goalFormatted}
           </div>
           <Text className={classes.heading}>
-            Significance
+            Significance &rarr; Contribution &rarr; Flaws
           </Text>
-          <div className={classes.description}>
-            {significance}
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1em',
+            }}
+          >
+            {projectSignificance}
           </div>
         </Stack>
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'column',
             width: '100%'
           }}
         >
