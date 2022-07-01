@@ -81,6 +81,7 @@ export default function ProjectModal({
         layout='responsive'
         objectFit='contain'
         loading='lazy'
+        alt={image}
       />
     )
   })
@@ -117,6 +118,7 @@ export default function ProjectModal({
             className={classes.link}
             href={link}
             target='_blank'
+            rel='noopener noreferrer'
           >
             View Project
           </a>

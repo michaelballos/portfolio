@@ -25,7 +25,7 @@ export default function Socials({ links }: ISocialsProps) {
         component="a"
         href={link}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         size="lg"
       >
         {icon}
