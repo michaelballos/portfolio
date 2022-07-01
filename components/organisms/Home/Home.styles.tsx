@@ -29,6 +29,9 @@ export const useStyles = createStyles((theme) => ({
     fontSize: "2em",
   },
 
+  /**
+   * width is linked with statsRing.styles.tsx
+   */
   projectCardsScrollArea: {
     height: "30em",
     width: "26em",

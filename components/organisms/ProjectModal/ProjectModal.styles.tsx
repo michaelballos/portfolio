@@ -5,6 +5,23 @@ export const useStyles = createStyles((theme) => ({
     fontFamily: 'tgHaidoGrotesk, sans-serif',
   },
 
+  link: {
+    padding: '.3em',
+    paddingLeft: '1em',
+    paddingRight: '1em',
+    borderRadius: '.3em',
+    backgroundColor:
+      theme.colorScheme === 'dark'
+        ? '#485c8c'
+        : '#f5c0c6',
+    '&:hover': {
+      backgroundColor:
+        theme.colorScheme === 'dark'
+          ? '#355091'
+          : '#eda1aa',
+    },
+  },
+
   description: {
     padding: '1.2em',
     backgroundColor:

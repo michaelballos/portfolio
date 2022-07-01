@@ -29,11 +29,14 @@ export default function Home() {
     title: 'Project',
     overview: 'default',
     link: 'sdfsdfas',
-    goal: ['default', 'tyooo'],
+    goal: [
+      'default',
+      'tyooo'
+    ],
     significance: 'it matters bro',
     images: [
-      'default',
-      'cool',
+      '/templateHome.png',
+      '/templateMap.png',
     ]
   });
   const { classes } = useStyles();

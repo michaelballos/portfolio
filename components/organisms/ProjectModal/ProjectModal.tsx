@@ -6,35 +6,15 @@ import {
   Button,
   Stack
 } from '@mantine/core';
+import Image from 'next/image';
 import { IModalDetails } from '../../organisms/Home/Home';
 import { useStyles } from './ProjectModal.styles';
-
-
 
 export interface  IRETemplateProps {
   isOpen: boolean;
   setOpen: (isOpen: boolean) => void;
   modalDetails: IModalDetails;
 }
-
-/**
-const modalDetails = {
-  title: 'Project Example',
-  link: 'link to projcet',
-  overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  goal: [
-    'Become the best developer',
-    'Code til I die',
-    'No code no gain',
-    'YURRRR'
-  ],
-  significance: 'very well get good',
-  images: [
-    'image =!',
-    'twoooo'
-  ]
-}
-*/
 
 export default function ProjectModal({
   isOpen,
@@ -48,9 +28,11 @@ export default function ProjectModal({
   }, [setOpen]);
   const {
     title,
+    link,
     overview,
     goal,
-    significance
+    significance,
+    images
   } = modalDetails;
   const goalFormatted = goal.map((goal) => {
     return (
@@ -59,11 +41,23 @@ export default function ProjectModal({
       </Text>
     );
   })
+  const imagesToRender = images.map((image) => {
+    return (
+      <Image
+        key={image}
+        src={image}
+        width={300}
+        height={200}
+        layout='responsive'
+        objectFit='contain'
+      />
+    )
+  })
   return (
     <Modal
       styles={{
         modal: {
-          width: '70em'
+          width: '120em',
         },
         title: {
           display: 'flex',
@@ -89,7 +83,8 @@ export default function ProjectModal({
           }}
         >
           <a
-            href='https://www.google.com'
+            className={classes.link}
+            href={link}
             target='_blank'
           >
             View Project
@@ -115,6 +110,15 @@ export default function ProjectModal({
             {significance}
           </div>
         </Stack>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            width: '100%'
+          }}
+        >
+          {imagesToRender}
+        </div>
       </Stack>
     </Modal>
   );

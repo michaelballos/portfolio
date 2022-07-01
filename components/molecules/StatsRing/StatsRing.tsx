@@ -42,6 +42,25 @@ const projectDetails = [
   {
     title: 'RE Template',
     link: 'https://github.com/particlespace/real-estate-listing-platform-starter-template',
+    overview: 'This was an Open Source project done at Particle Space. ' +
+      '',
+    goal: [
+      'Create an Open Source template for building Real Estate Listing websites',
+      'Provide a starting point or example on how to integrate Particle Space API for developers at HackMidwest or anyone building a listing platform',
+      ''
+    ],
+    significance: 'it matters okay',
+    images: [
+      '/templateHome.png',
+      '/templateConsole.png',
+      '/templateModal.png',
+      '/templateModalTwo.png',
+      '/templateMap.png',
+    ]
+  },
+  {
+    title: 'Properly',
+    link: 'https://chrome.google.com/webstore/detail/properly-by-particle-spac/fgbbcngkdhfkahipapobpdbkijlanpeb',
     overview: 'This was an open source template meant for creating listing platforms',
     goal: [
       'Create Listing Template',
@@ -54,7 +73,7 @@ const projectDetails = [
     ]
   },
   {
-    title: 'Properly',
+    title: 'JN Brand',
     link: 'https://chrome.google.com/webstore/detail/properly-by-particle-spac/fgbbcngkdhfkahipapobpdbkijlanpeb',
     overview: 'This was an open source template meant for creating listing platforms',
     goal: [
