@@ -12,7 +12,6 @@ import SkillsetText from "../../molecules/SkillsetText/SkillsetText";
 import ProjectKey from "../../molecules/ProjectKey/ProjectKey";
 import ProjectModal from '../ProjectModal/ProjectModal';
 import { useStyles } from "./Home.styles";
-import styles from './HideStatusScroll.module.css';
 
 export interface IModalDetails {
   title: string;
@@ -50,7 +49,7 @@ export default function HomePage() {
     element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
   return (
-    <div className={styles.scrollArea}>
+    <ScrollArea className={classes.scrollArea}>
       <Hero onClick={scrollToProject} />
       <div className={classes.projectPage} id="projects">
         <Group className={classes.projectAndKey} noWrap>
@@ -132,6 +131,6 @@ export default function HomePage() {
         isOpen={isOpen}
         setOpen={setOpen}
       />
-    </div>
+    </ScrollArea>
   );
 }

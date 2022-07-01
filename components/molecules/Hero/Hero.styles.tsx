@@ -5,10 +5,12 @@ export const useStyles = createStyles((theme) => ({
   hero: {
     position: "relative",
     height: "calc(100vh - 56px)",
+    width: "100vw",
   },
 
   container: {
     height: 700,
+    width: '100vw',
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
@@ -18,22 +20,28 @@ export const useStyles = createStyles((theme) => ({
     position: "relative",
     [theme.fn.smallerThan("sm")]: {
       height: 500,
+      width: 400,
+      paddingBottom: theme.spacing.xl * 3,
+    },
+    [theme.fn.smallerThan("sm")]: {
+      height: 500,
+      width: 300,
       paddingBottom: theme.spacing.xl * 3,
     },
   },
 
+
   title: {
+    width: "100%",
     color: theme.white,
     fontSize: 60,
     fontWeight: 900,
     lineHeight: 1.1,
     [theme.fn.smallerThan("sm")]: {
-      fontSize: 40,
-      lineHeight: 1.2,
+      fontSize: 27,
     },
     [theme.fn.smallerThan("xs")]: {
-      fontSize: 28,
-      lineHeight: 1.3,
+      fontSize: 20,
     },
   },
 

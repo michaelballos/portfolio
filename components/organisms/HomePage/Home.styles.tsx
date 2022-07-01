@@ -1,6 +1,11 @@
 import { createStyles } from "@mantine/core";
 
 export const useStyles = createStyles((theme) => ({
+  scrollArea: {
+    width: '100vw',
+    height: '200vw'
+  },
+
   projectPage: {
     backgroundColor: theme.colorScheme === "light" ? "#292d4a" : "",
     display: "flex",
