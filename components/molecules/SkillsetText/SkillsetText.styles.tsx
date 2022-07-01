@@ -21,7 +21,7 @@ export const useStyles = createStyles((theme) => ({
   skillsDescription: {
     fontSize: "1.2em",
     [theme.fn.smallerThan("xs")]: {
-      fontSize: '1em',
+      fontSize: '1.2em',
       textAlign: "center",
       marginBottom: '1.5em',
     },
