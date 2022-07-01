@@ -42,6 +42,7 @@ export default function Header({ links }: HeaderMiddleProps) {
       href={link.link}
       className={cx(classes.link, {
         [classes.linkActive]: active === link.link,
+
       })}
       onClick={(event) => {
         event.preventDefault();
