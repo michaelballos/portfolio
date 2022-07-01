@@ -5,8 +5,6 @@ import {
 } from 'react';
 import BlogCard from '../../molecules/BlogCard/BlogCard';
 import { SimpleGrid } from '@mantine/core';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function BlogsPage() {
   const ref = useRef();

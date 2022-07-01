@@ -272,18 +272,17 @@ export default function StatsRing({
         : status === "onHold"
           ? "orange"
           : "green";
-    const setModal = (data: IModalDetails) => {
-      setModalDetails(data);
-      setOpen(true);
-    }
-    const project = projectDetails.filter((project) => {
-      const { title } = project;
-      return label === title;
-    })
-    const openModelOnClick = useCallback(() => {
+
+
+    const openModelOnClick = useCallback(async() => {
+      const project = await projectDetails.filter((project) => {
+        const { title } = project;
+        return label === title;
+      })
       const [{...details}] = project;
-      setModal(details)
-    }, [project])
+      await setModalDetails(details);
+      await setOpen(true);
+    }, [])
 
     return (
       <Paper
