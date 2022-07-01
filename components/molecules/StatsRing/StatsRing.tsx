@@ -272,11 +272,13 @@ export default function StatsRing({
         : status === "onHold"
           ? "orange"
           : "green";
+
+    const project = projectDetails.filter((project) => {
+      const { title } = project;
+      return label === title;
+    })
+
     const openModelOnClick = useCallback(() => {
-      const project = projectDetails.filter((project) => {
-        const { title } = project;
-        return label === title;
-      })
       const [{...details}] = project;
       setModalDetails(details)
       setOpen(true)
