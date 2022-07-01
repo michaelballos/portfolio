@@ -4,8 +4,11 @@ import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
   hero: {
     position: "relative",
+    backgroundImage: "url(/hero.jpeg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
     height: "calc(100vh - 56px)",
-    width: '100vw',
   },
 
   container: {
@@ -15,7 +18,7 @@ export const useStyles = createStyles((theme) => ({
     justifyContent: "flex-end",
     alignItems: "flex-start",
     paddingBottom: theme.spacing.xl * 6,
-    zIndex: 2,
+    zIndex: 1,
     position: "relative",
     [theme.fn.smallerThan("sm")]: {
       height: 500,

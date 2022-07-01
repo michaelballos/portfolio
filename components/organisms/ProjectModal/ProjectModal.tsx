@@ -89,7 +89,7 @@ export default function ProjectModal({
     <Modal
       styles={{
         modal: {
-          width: '100em',
+          width: '120em',
         },
         title: {
           display: 'flex',
