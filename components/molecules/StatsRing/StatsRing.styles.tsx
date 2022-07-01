@@ -12,6 +12,9 @@ export const useStyles = createStyles((theme) => ({
     },
   },
 
+}));
+
+export const useCardStyles = createStyles((theme) => ({
   card: {
     /**
      * width one less than projectCardScrollArea in Home.styles.tsx
