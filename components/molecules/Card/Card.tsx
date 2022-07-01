@@ -73,7 +73,7 @@ const projectDetails = [
       `We didn${`'`}t want to hyper focus on an issue that wasn${`'`}t a breaking problem but if there was more time to spare I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience. `
     ],
     images: [
-      '/properlyNoDetect.jpg',
+      '/properlyNoDetected.jpg',
       '/properly.jpg',
       '/properlyBummer.jpg',
       '/properlyCopy.jpg',
