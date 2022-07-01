@@ -19,7 +19,7 @@ export interface IModalDetails {
   overview: string;
   link: string;
   goal: string[];
-  significance: [string, string, string];
+  significance: string[];
   images: string[];
 }
 
@@ -38,7 +38,7 @@ export default function Home() {
       'it matters bro',
       'take my word',
       'stop questioning everything'
-      ],
+    ],
     images: [
       '/templateHome.png',
       '/templateMap.png',
@@ -49,7 +49,6 @@ export default function Home() {
     const element = document.querySelector("#projects");
     element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
-
   return (
     <div className={styles.scrollArea}>
       <Hero onClick={scrollToProject} />

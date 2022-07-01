@@ -4,10 +4,6 @@ import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
   hero: {
     position: "relative",
-    backgroundImage: "url(/hero.jpeg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
     height: "calc(100vh - 56px)",
   },
 
