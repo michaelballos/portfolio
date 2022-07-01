@@ -19,9 +19,7 @@ export default function Hero({ onClick }: HeroProps) {
   return (
     <div className={classes.hero}>
       <Image
-        src='/hero.jpeg'
-        width={1200}
-        height={800}
+        src='/hero.jpg'
         layout='fill'
         objectFit='cover'
         objectPosition='center'

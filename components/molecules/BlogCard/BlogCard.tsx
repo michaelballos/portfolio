@@ -2,6 +2,8 @@ import {
   Text,
   Stack
 } from '@mantine/core';
+import Image from 'next/image';
+
 export interface BlogCardProps {
   width: string | number;
   height: string | number;
