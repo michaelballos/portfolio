@@ -47,11 +47,11 @@ const projectDetails = [
       'Overall the project has only faced simple code conflicts, typescript, and unique key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal. The last thing I will add is removing the mock data property details and have the API Queried onClick of the property listing card.'
     ],
     images: [
-      '/templateHome.png',
-      '/templateConsole.png',
-      '/templateModal.png',
-      '/templateModalTwo.png',
-      '/templateMap.png',
+      '/templateHome.jpg',
+      '/templateConsole.jpg',
+      '/templateModal.jpg',
+      '/templateModalTwo.jpg',
+      '/templateMap.jpg',
     ]
   },
   {
@@ -73,11 +73,11 @@ const projectDetails = [
       `We didn${`'`}t want to hyper focus on an issue that wasn${`'`}t a breaking problem but if there was more time to spare I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience. `
     ],
     images: [
-      '/properlyNoDetect.png',
-      '/properly.png',
-      '/properlyBummer.png',
-      '/properlyCopy.png',
-      '/properlyDropdown.png',
+      '/properlyNoDetect.jpg',
+      '/properly.jpg',
+      '/properlyBummer.jpg',
+      '/properlyCopy.jpg',
+      '/properlyDropdown.jpg',
     ]
   },
   {
@@ -98,10 +98,10 @@ const projectDetails = [
       'I chose Vimeo over Youtube because it has a higher quality playback due to their focus on encoding. All videos are embedded except for the landing page which is a compressed webm/mp4 file.',
     ],
     images: [
-      '/john.png',
-      '/johnCollage.png',
-      '/johnVideos.png',
-      '/johnContact.png',
+      '/john.jpg',
+      '/johnCollage.jpg',
+      '/johnVideos.jpg',
+      '/johnContact.jpg',
     ]
   },
   {
@@ -121,8 +121,8 @@ const projectDetails = [
       'The biggest flaw about the project is not having enought time to work on it. Thundurus is currently classified On Hold and new components will be as improved snippets of code from outside projects.'
     ],
     images: [
-      '/thundurusCode.png',
-      '/thundurus.png',
+      '/thundurusCode.jpg',
+      '/thundurus.jpg',
     ]
   },
   {
@@ -138,8 +138,8 @@ const projectDetails = [
       'The biggest improvement I can make on the bot is to make it more efficient by using asynchronous webscraping. The current bot is synchronous and will take a long time to run. The bot would be able to extract all the image links from the Archillect page in a matter of seconds.',
     ],
     images: [
-      '/archillectCode.png',
-      '/archillect.png',
+      '/archillectCode.jpg',
+      '/archillect.jpg',
     ]
   },
   {
@@ -181,10 +181,10 @@ const projectDetails = [
       'The biggest flaw was the limited time during the hackathon. We completed the UI in 36 hours but the API did not have enough time to get fully developed.',
     ],
     images: [
-      '/electaDashboard.png',
-      '/electaDocs.png',
-      '/electaRoute.png',
-      '/electaRoles.png',
+      '/electaDashboard.jpg',
+      '/electaDocs.jpg',
+      '/electaRoute.jpg',
+      '/electaRoles.jpg',
     ]
   },
   {
@@ -201,8 +201,8 @@ const projectDetails = [
       'The flaw of this project is the responsiveness.',
     ],
     images: [
-      '/calculator.png',
-      '/calculatorSolved.png',
+      '/calculator.jpg',
+      '/calculatorSolved.jpg',
     ]
   },
   {
@@ -219,8 +219,8 @@ const projectDetails = [
       'Huge flaw is that disgusting design.'
     ],
     images: [
-      '/counterReactCode.png',
-      '/counterReact.png',
+      '/counterReactCode.jpg',
+      '/counterReact.jpg',
     ]
   },
   {
@@ -237,8 +237,8 @@ const projectDetails = [
       'If I could travel back in time I would have told myself to use const instead of let, not hyperfocus on the CSS, and start coding in Typescript.'
     ],
     images: [
-      '/counterCode.png',
-      '/counter.png',
+      '/counterCode.jpg',
+      '/counter.jpg',
     ]
   },
 ]
