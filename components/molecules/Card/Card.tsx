@@ -156,12 +156,12 @@ const projectDetails = [
       'The biggest flaw is wasting time by having to manually update the docs when auto generated Documentation like Swagger exists. I also Noticed the colors were off on the details dropdown and will be updated when possible.',
     ],
     images: [
-      '/errorsLight.png',
-      '/errorsDark.png',
-      '/roadmapLight.png',
-      '/roadmapDark.png',
-      '/detailsLight.png',
-      '/detailsDark.png',
+      '/errorsLight.jpg',
+      '/errorsDark.jpg',
+      '/roadmapLight.jpg',
+      '/roadmapDark.jpg',
+      '/detailsLight.jpg',
+      '/detailsDark.jpg',
     ]
   },
   {
