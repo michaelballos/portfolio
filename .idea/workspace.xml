@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
-      <change afterPath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budget.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +139,7 @@
       <workItem from="1656677449150" duration="4938000" />
       <workItem from="1656691537744" duration="191000" />
       <workItem from="1656692599216" duration="14825000" />
-      <workItem from="1656707479245" duration="3425000" />
+      <workItem from="1656707479245" duration="4402000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
