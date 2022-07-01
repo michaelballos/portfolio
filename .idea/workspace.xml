@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
-      <change afterPath="$PROJECT_DIR$/components/molecules/BlogCard/BlogCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/organisms/BlogsPage/BlogsPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blogs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/BlogCard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Header/Header.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Header/Header.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Hero/Hero.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Hero/Hero.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/StatsRing/StatsRing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/organisms/Home/HideStatusScroll.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/HomePage/HideStatusScroll.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/organisms/Home/Home.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/HomePage/Home.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/organisms/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/HomePage/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/organisms/ProjectModal/ProjectModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/ProjectModal/ProjectModal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +138,7 @@
       <workItem from="1656676704233" duration="12000" />
       <workItem from="1656677449150" duration="4938000" />
       <workItem from="1656691537744" duration="191000" />
-      <workItem from="1656692599216" duration="12632000" />
+      <workItem from="1656692599216" duration="12757000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>

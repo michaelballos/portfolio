@@ -17,7 +17,7 @@ import {
   IconTool
 } from "@tabler/icons";
 import ProjectModal from '../../organisms/ProjectModal/ProjectModal';
-import { IModalDetails } from '../../organisms/Home/Home';
+import { IModalDetails } from '../../organisms/HomePage/HomePage';
 import { useStyles } from "./StatsRing.styles";
 
 interface StatsRingProps {

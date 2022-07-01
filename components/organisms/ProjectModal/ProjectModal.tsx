@@ -8,7 +8,7 @@ import {
   RingProgress
 } from '@mantine/core';
 import Image from 'next/image';
-import { IModalDetails } from '../../organisms/Home/Home';
+import { IModalDetails } from '../../organisms/HomePage/HomePage';
 import { useStyles } from './ProjectModal.styles';
 
 export interface  IRETemplateProps {
