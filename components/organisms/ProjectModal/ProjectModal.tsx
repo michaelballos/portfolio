@@ -24,7 +24,6 @@ export default function ProjectModal({
 }: IRETemplateProps) {
   const { classes } = useStyles();
   const onClose = useCallback(() => {
-    console.log('Closed modal')
     setOpen(false);
   }, [setOpen]);
   const {
