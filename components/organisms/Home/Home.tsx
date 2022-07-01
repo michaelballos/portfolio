@@ -19,7 +19,7 @@ export interface IModalDetails {
   overview: string;
   link: string;
   goal: string[];
-  significance: [string, string, string];
+  significance: string[];
   images: string[];
 }
 
