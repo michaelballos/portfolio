@@ -20,12 +20,7 @@ export const useStyles = createStyles((theme) => ({
     position: "relative",
     [theme.fn.smallerThan("sm")]: {
       height: 500,
-      width: 400,
-      paddingBottom: theme.spacing.xl * 3,
-    },
-    [theme.fn.smallerThan("sm")]: {
-      height: 500,
-      width: 300,
+      width: 450,
       paddingBottom: theme.spacing.xl * 3,
     },
   },
@@ -38,19 +33,20 @@ export const useStyles = createStyles((theme) => ({
     fontWeight: 900,
     lineHeight: 1.1,
     [theme.fn.smallerThan("sm")]: {
-      fontSize: 27,
+      fontSize: 40,
     },
     [theme.fn.smallerThan("xs")]: {
-      fontSize: 20,
+      fontSize: 25,
     },
   },
 
   description: {
     color: theme.white,
-    maxWidth: 600,
     [theme.fn.smallerThan("sm")]: {
       fontSize: theme.fontSizes.sm,
-      maxWidth: 400,
+    },
+    [theme.fn.smallerThan("xs")]: {
+      width: 300,
     },
   },
 

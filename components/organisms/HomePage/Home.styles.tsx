@@ -3,7 +3,7 @@ import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
   scrollArea: {
     width: '100vw',
-    height: '200vw'
+    height: 'max-content',
   },
 
   projectPage: {
