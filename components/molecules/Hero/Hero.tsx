@@ -42,7 +42,7 @@ export default function Hero({ onClick }: HeroProps) {
           size="xl"
           mt="xl"
         >
-          I{`'`}m a Full-Stack Software Developer with a passion for the design and end to end
+          I{`'`}m a Full-Stack Software Developer with a passion for design and end to end
           production of software and applications.
         </Text>
         <div className={classes.controlContainer}>

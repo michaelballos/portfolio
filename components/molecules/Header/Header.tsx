@@ -24,12 +24,14 @@ import Socials from "../Socials/Socials";
 import { useStyles } from "./Header.styles";
 import { useRouter } from "next/router";
 import BurgerNav from "../BurgerNav/BurgerNav";
+
 export interface HeaderMiddleProps {
   links: {
     link: string;
     label: string;
   }[];
 }
+
 export default function Header({ links }: HeaderMiddleProps) {
   const router = useRouter();
   const [
@@ -90,9 +92,7 @@ export default function Header({ links }: HeaderMiddleProps) {
         >
           {items}
         </Group>
-
         <Logo size="27px" />
-
         <Group
           className={classes.social}
           spacing={0}

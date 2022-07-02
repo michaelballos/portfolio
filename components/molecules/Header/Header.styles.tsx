@@ -14,13 +14,13 @@ export const useStyles = createStyles((theme) => ({
     },
   },
   links: {
-    width: 260,
+    width: 300,
     [theme.fn.smallerThan("sm")]: {
       display: "none",
     },
   },
   social: {
-    width: 260,
+    width: 300,
     [theme.fn.smallerThan("sm")]: {
       width: "auto",
       marginLeft: "auto",

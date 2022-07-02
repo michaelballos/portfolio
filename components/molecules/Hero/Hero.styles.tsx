@@ -33,6 +33,8 @@ export const useStyles = createStyles((theme) => ({
     },
     ['@media (max-height: 380px)']: {
       height: '23em',
+      width: 450,
+      paddingBottom: theme.spacing.xl * 3,
     },
   },
   title: {

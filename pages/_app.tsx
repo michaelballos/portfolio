@@ -32,6 +32,14 @@ const headerLinks = [
     link: "/blogs",
     label: "Blogs",
   },
+  {
+    link: "/resume",
+    label: "Resume",
+  },
+  {
+    link: "/contact",
+    label: "Contact",
+  }
 ];
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
@@ -43,7 +51,6 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
     'dark',
   );
-
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === "dark"
         ? "light"
