@@ -4,43 +4,34 @@ export const useStyles = createStyles((theme) => ({
   header: {
     position: "fixed",
   },
-
   inner: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     height: 56,
-
     [theme.fn.smallerThan("sm")]: {
       justifyContent: "flex-start",
     },
   },
-
   links: {
     width: 260,
-
     [theme.fn.smallerThan("sm")]: {
       display: "none",
     },
   },
-
   social: {
     width: 260,
-
     [theme.fn.smallerThan("sm")]: {
       width: "auto",
       marginLeft: "auto",
     },
   },
-
   burger: {
     marginRight: theme.spacing.md,
-
     [theme.fn.largerThan("sm")]: {
       display: "none",
     },
   },
-
   link: {
     display: "block",
     lineHeight: 1,
@@ -53,7 +44,6 @@ export const useStyles = createStyles((theme) => ({
         : theme.colors.gray[7],
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
-
     "&:hover": {
       backgroundColor:
         theme.colorScheme === "dark"
@@ -61,7 +51,6 @@ export const useStyles = createStyles((theme) => ({
           : theme.colors.gray[0],
     },
   },
-
   linkActive: {
     "&, &:hover": {
       backgroundColor: '#445b91',

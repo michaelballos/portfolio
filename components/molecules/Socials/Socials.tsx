@@ -10,7 +10,10 @@ export interface ISocialsProps {
 
 export default function Socials({ links }: ISocialsProps) {
   const iconLinks = links.map((iconLink) => {
-    const { link, icon } = iconLink;
+    const {
+      link,
+      icon
+    } = iconLink;
     return (
       <ActionIcon<"a">
         key={link}
@@ -32,6 +35,7 @@ export default function Socials({ links }: ISocialsProps) {
       </ActionIcon>
     );
   });
+
   return (
     <>
       {iconLinks}

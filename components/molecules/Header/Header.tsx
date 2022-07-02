@@ -11,23 +11,25 @@ import {
 } from "@mantine/core";
 import {
   BrandTwitter,
-  BrandLinkedin
+  BrandLinkedin,
 } from "tabler-icons-react";
 import { useBooleanToggle } from "@mantine/hooks";
-import { IconMail } from "@tabler/icons";
+import {
+  IconMail,
+  IconBrandGithub,
+} from "@tabler/icons";
 import ColorSchemeToggle from "../../atoms/ColorSchemeToggle/ColorSchemeToggle";
 import Logo from "../../atoms/Logo/Logo";
 import Socials from "../Socials/Socials";
 import { useStyles } from "./Header.styles";
 import { useRouter } from "next/router";
-
-interface HeaderMiddleProps {
+import BurgerNav from "../BurgerNav/BurgerNav";
+export interface HeaderMiddleProps {
   links: {
     link: string;
     label: string;
   }[];
 }
-
 export default function Header({ links }: HeaderMiddleProps) {
   const router = useRouter();
   const [
@@ -71,6 +73,11 @@ export default function Header({ links }: HeaderMiddleProps) {
       height={56}
     >
       <Container className={classes.inner}>
+        <BurgerNav
+          links={links}
+          opened={opened}
+          toggleOpened={toggleOpened}
+        />
         <Burger
           opened={opened}
           onClick={() => toggleOpened()}
@@ -104,12 +111,16 @@ export default function Header({ links }: HeaderMiddleProps) {
           <Socials
             links={[
               {
-                link: "https://twitter.com/michael_ballos",
-                icon: <BrandTwitter size={20} />,
+                link: "https://github.com/michaelballos",
+                icon: <IconBrandGithub size={20} />,
               },
               {
                 link: "https://www.linkedin.com/in/michaelballos/",
                 icon: <BrandLinkedin size={20} />,
+              },
+              {
+                link: "https://twitter.com/michael_ballos",
+                icon: <BrandTwitter size={20} />,
               },
               {
                 link: "mailto:ballos.michael@gmail.com",

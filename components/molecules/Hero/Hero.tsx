@@ -45,16 +45,17 @@ export default function Hero({ onClick }: HeroProps) {
           I{`'`}m a Full-Stack Software Developer with a passion for the design and end to end
           production of software and applications.
         </Text>
-
-        <Button
-          variant="gradient"
-          size="xl"
-          radius="xl"
-          className={classes.control}
-          onClick={onClick}
-        >
-          View my Stack
-        </Button>
+        <div className={classes.controlContainer}>
+          <Button
+            variant="gradient"
+            size="xl"
+            radius="xl"
+            className={classes.control}
+            onClick={onClick}
+          >
+            View my Stack
+          </Button>
+        </div>
       </Container>
     </div>
   );

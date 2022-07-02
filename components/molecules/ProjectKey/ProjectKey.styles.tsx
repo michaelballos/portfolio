@@ -10,7 +10,6 @@ export const useStyles = createStyles((theme) => ({
       justifyContent: "space-around",
     },
   },
-
   label: {
     fontSize: "13px",
     width: "max-content",
