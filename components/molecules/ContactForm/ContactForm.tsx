@@ -1,4 +1,10 @@
-import React from 'react';
+import React, {
+  useState,
+  useEffect,
+  FormEvent,
+  ChangeEvent,
+  SyntheticEvent,
+} from 'react';
 import {
   Paper,
   Text,
@@ -9,6 +15,9 @@ import {
   SimpleGrid,
   createStyles,
 } from '@mantine/core';
+import {
+  EventHandler
+} from '../../../../../../../Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react';
 import { ContactIconsList } from '../../atoms/ContactIcons/ContactIcons';
 import bg from './bg.svg';
 
@@ -74,16 +83,13 @@ const useStyles = createStyles((theme) => {
         paddingLeft: theme.spacing.md,
       },
     },
-
     title: {
       marginBottom: theme.spacing.xl * 1.5,
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-
       [BREAKPOINT]: {
         marginBottom: theme.spacing.xl,
       },
     },
-
     control: {
       backgroundColor: '#445b91',
       '&:hover': {
@@ -96,21 +102,73 @@ const useStyles = createStyles((theme) => {
   };
 });
 
+export interface IFetch {
+  name: string;
+  email: string;
+  message: string;
+}
+
 export default function ContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [isSubmitted, setSubmitted] = useState(false);
   const { classes } = useStyles();
+  const resetForm = (): void => {
+    console.log('Post was a Success! 🙌');
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+    setSubmitted(true);
+  }
+  const handleSubmit = async (event: SyntheticEvent) => {
+    event.preventDefault();
+    setSubmitted(true);
+    const data = {
+      name,
+      email,
+      message
+    }
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res: Response) => {
+      console.log('Response Recieved...')
+      res.status === 200
+        ? resetForm
+        : console.log('Post Failed 🫥')
+    });
+  };
+
 
   return (
-    <Paper shadow="md" radius="lg">
+    <Paper
+      shadow="md"
+      radius="lg"
+    >
       <div className={classes.wrapper}>
         <div className={classes.contacts}>
-          <Text size="lg" weight={700} className={classes.title} sx={{ color: '#fff' }}>
+          <Text
+            size="lg"
+            weight={700}
+            className={classes.title}
+            sx={{
+              color: '#fff'
+            }}
+          >
             Contact information
           </Text>
           <ContactIconsList variant="white" />
         </div>
         <form
           className={classes.form}
-          onSubmit={(event) => event.preventDefault()}
+          onSubmit={(event: FormEvent<HTMLFormElement>) => event.preventDefault()}
         >
           <Text
             size="lg"
@@ -130,10 +188,12 @@ export default function ContactForm() {
               <TextInput
                 label="Your name"
                 placeholder="Your name"
+                onChange={(event: ChangeEvent<HTMLInputElement>) => setName(event.target.value)}
               />
               <TextInput
                 label="Your email"
                 placeholder="hello@mantine.dev"
+                onChange={(event: ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)}
                 required
               />
             </SimpleGrid>
@@ -141,12 +201,15 @@ export default function ContactForm() {
               mt="md"
               label="Subject"
               placeholder="Subject"
+              onChange={(event: ChangeEvent<HTMLInputElement>) => setSubject(event.target.value)}
               required
             />
             <Textarea
               mt="md"
               label="Your message"
               placeholder="Please include all relevant information"
+              onChange={(event: ChangeEvent<HTMLTextAreaElement>) => setMessage(event.target.value)}
+              required
               minRows={3}
             />
             <Group
@@ -156,6 +219,7 @@ export default function ContactForm() {
               <Button
                 type="submit"
                 className={classes.control}
+                onClick={(event: SyntheticEvent) => handleSubmit(event)}
               >
                 Send message
               </Button>

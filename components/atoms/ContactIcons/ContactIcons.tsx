@@ -111,22 +111,22 @@ interface ContactIconsListProps {
 const MOCKDATA = [
   {
     title: 'Email',
-    description: 'hello@mantine.dev',
+    description: 'ballos.michael@gmail.com',
     icon: At
   },
   {
     title: 'Phone',
-    description: '+49 (800) 335 35 35',
+    description: '+1 (316) 226 2223',
     icon: Phone
   },
   {
     title: 'Address',
-    description: '844 Morris Park avenue',
+    description: '200 Main St, Kansas City, MO 64105',
     icon: MapPin
   },
   {
     title: 'Working hours',
-    description: '8 a.m. – 11 p.m.',
+    description: '4 a.m. – 11 p.m.',
     icon: Sun
   },
 ];
@@ -166,7 +166,6 @@ export function ContactIcons() {
       >
         <ContactIconsList />
       </Box>
-
       <Box
         sx={(theme) => ({
           padding: theme.spacing.xl,

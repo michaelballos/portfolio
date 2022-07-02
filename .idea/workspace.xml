@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
-      <change afterPath="$PROJECT_DIR$/components/atoms/ContactIcons/ContactIcons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/molecules/ContactForm/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/organisms/ContactPage/ContactPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/organisms/ResumePage/ResumePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/resume.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resume.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Header/Header.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Header/Header.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Hero/Hero.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Hero/Hero.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atoms/ContactIcons/ContactIcons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atoms/ContactIcons/ContactIcons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +145,7 @@
       <workItem from="1656707479245" duration="19184000" />
       <workItem from="1656744529184" duration="144000" />
       <workItem from="1656744865994" duration="180000" />
-      <workItem from="1656772396402" duration="12529000" />
+      <workItem from="1656772396402" duration="16511000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
