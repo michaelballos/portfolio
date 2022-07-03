@@ -208,14 +208,14 @@ const projectDetails = [
   {
     title: 'React Counter',
     link: 'https://github.com/michaelballos/react-counter-project',
-    overview: 'This was my very first React project. It was a recreation of my very first Javascript project using React and didn\'t have take me as long as the original.',
+    overview: 'This was my very first React project. It was a recreation of my very first Javascript project using React and didn\'t take as long as the original one using vanilla Javascript.',
     goal: [
       'React Incrementer',
       'React Decrementer'
     ],
     significance: [
-      'This was an important project as it was a milestone for me. For someone who struggled in creating the logic for two functions that was just the inverse of each other, reaching React and using Hooks showed me progress.',
-      'The logic was the same except Hooks were used to create the logic.',
+      'This was an important project as it was a milestone for me. For someone who struggled in creating the logic for two functions that was just the inverse of each other, reaching React and implementing Hooks showed progress.',
+      'The logic was a recreating of a button counter I prevoisly wrote except Hooks were used with the logic.',
       'Huge flaw is that disgusting design.'
     ],
     images: [
@@ -226,14 +226,14 @@ const projectDetails = [
   {
     title: 'Counter',
     link: 'https://github.com/michaelballos/counterProj',
-    overview: 'This was my very first project. It was a simple vanilla JS incremental/decremental counter. At that time in February I struggled with creating the logic for the counter.',
+    overview: 'This was my very first Javascript project. It was a simple vanilla JS incremental/decremental counter. At that time in February I struggled with creating the logic for the counter. ',
     goal: [
       'Incremental count',
       'Decremental count',
     ],
     significance: [
-      'This was very big for me. It was the start of my journey into Javascript.',
-      'A vanilla JS and CSS counter',
+      'This was an important project as it was the start of my life into programming. ',
+      'This was a vanilla JS and CSS counter. No frameworks or libraries were used. At that time I had no idea what NPM or YARN packages were. ',
       'If I could travel back in time I would have told myself to use const instead of let, not hyperfocus on the CSS, and start coding in Typescript.'
     ],
     images: [
