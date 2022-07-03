@@ -13,7 +13,7 @@ export const useStyles = createStyles((theme) => ({
     marginTop: "1em",
     [theme.fn.smallerThan("sm")]: {
       textAlign: "center",
-      fontSize: '1.5em'
+      fontSize: '1.8em'
     },
     ['@media (max-height: 620px)']: {
       fontSize: '1em',
@@ -24,8 +24,8 @@ export const useStyles = createStyles((theme) => ({
   },
   skillsDescription: {
     fontSize: "1.2em",
-    [theme.fn.smallerThan("xs")]: {
-      fontSize: '1.2em',
+    [theme.fn.smallerThan("sm")]: {
+      fontSize: '1.5em',
       textAlign: "center",
       marginBottom: '1.5em',
     },
