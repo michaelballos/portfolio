@@ -35,7 +35,7 @@ const projectDetails = [
     link: 'https://github.com/particlespace/real-estate-listing-platform-starter-template',
     overview: 'This was an Open Source project done at Particle Space. The project consisted of crafting a simple React template for Real Estate listing platforms. ' +
       'It utilized Particle Space API for property data and Google Maps API to pinpoint the property location. ' +
-      'The property modal is an incorporation of UI from a previous Chrome Extension project.',
+      'The property modal incorporated UI from a previous Chrome Extension project.',
     goal: [
       'Create an Open Source template for building Real Estate Listing applications',
       'Setup for easy integration of Particle Space API',
@@ -44,7 +44,7 @@ const projectDetails = [
     significance: [
       'Provides an easy starting point to integrate Particle Space API for developers at HackMidwest or anyone building a listing platform.',
       'In terms of the UI I handled the Header, provided solutions for UI problems such as Listing Cards and Map responsiveness, mocked the data in a JSON file, assisted with connecting the map markers based on longitude and latitude, finished the property details modal, and created Type Safe UI data query and manipulation.',
-      'Overall the project has only faced simple code conflicts, typescript, and unique key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal. The last thing I will add is removing the mock data property details and have the API Queried onClick of the property listing card.'
+      'Overall the project was completed only with simple code conflicts, Typescript, and Unique Key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal. The last thing I will add is removing the mock data property details and have the API Query Particle Space onClick of the property listing cards.'
     ],
     images: [
       '/templateHome.jpg',
@@ -57,7 +57,7 @@ const projectDetails = [
   {
     title: 'Properly',
     link: 'https://chrome.google.com/webstore/detail/properly-by-particle-spac/fgbbcngkdhfkahipapobpdbkijlanpeb',
-    overview: `Properly is a Chrome Extension that automates the Query for property data inside of Gmail. It stays open while surfing through Gmail and any addresses inside an Email${`'`}s Subject or Body line is detected by the extension and Particle Space${`'`}s API is Queried for data in the background.`,
+    overview: `Properly is a Chrome Extension that automates the Query for property data inside of Gmail. It stays open while surfing through Gmail and any property addresses detected inside an Email${`'`}s Subject or Body line is queried for property data using Particle Space${`'`}s API.`,
     goal: [
       'Build a product for non-technical users with the Particle Space API',
       'Detect adresses inside of Gmail',
@@ -65,12 +65,12 @@ const projectDetails = [
       'Keep bundle size minimal'
     ],
     significance: [
-      `Particle Space${`'`}s service is an API only usable by people with a technical background. This extension is a cool tool that a lay person can use day to day with the focus on targetting   
-       Real Estate Agents, Investors, and potential Home Buyers or Tenants`,
+      `Particle Space${`'`}s service is an API only usable by people with a technical background. This extension is a cool tool that any lay person can use day to day with. The primary target audience  
+       are Real Estate Agents, Investors, and potential Home Buyers or Tenants`,
       `I was tasked with creating Properly${`'`}s UI design and chose Mantine for the Frontend UI Library. Isaac Spiegel (Particle Space Developer) and I pair programmed the majority of Properly and completed the extension in a week using React as the Framework. While Isaac started on the Particle Space logo injection into the side Navigation, I started the initial design in an isolated Storybook environment.   
-       Grace (Particle Space Developer) created the logic for the detection of adresses. I noticed the detection didn${`'`}t work when Gmail${`'`}s UI was configured for a split Reading Pane which Grace fixed. I also worked on the logic for Querying and Hydrating the data into their designated Accordian categories. The last feature I contributed to the extension was a Button to copy all the data to the client's clipboard with formatted text using js-yaml.`,
-      `One of the issued we faced with the Extension was if the Chrome Web Store allowed DOM manipulation. Fortunately they did and we took inspiration from Hubspot and injected our logo into the side Navigation which opened the main side drawer. One of the bigger issues on top of that is our drawer opens and hovers over the rest of the page unlike Hubspot where their side drawer pushed the the page and made room for the drawer onOpen. ` +
-      `We didn${`'`}t want to hyper focus on an issue that wasn${`'`}t a breaking problem but if there was more time to spare I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience. `
+       Grace (Particle Space Developer) created the logic for the detection of adresses. I noticed the detection didn${`'`}t work when Gmail${`'`}s UI was configured for a split Reading Pane which was resolved by Grace. I also worked on the logic for Querying and Hydrating the data into their designated Accordian categories. The last feature I contributed to the extension was a Button to copy all the data to the client's clipboard with formatted text using js-yaml.`,
+      `One of the issued we faced with the Extension was if the Chrome Web Store allowed DOM manipulation. Fortunately they did and we took inspiration from Hubspot and injected our logo into the side Navigation which opened the main side drawer. One of the bigger issues on top of that is our drawer hovers over the rest of the page unlike Hubspot where their side drawer pushed the the page and made room for the drawer onOpen. ` +
+      `A solution wasn\t found but we also didn${`'`}t want to hyper focus on an issue that wasn${`'`}t a breaking problem but I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience.`
     ],
     images: [
       '/properlyNoDetected.jpg',
@@ -94,8 +94,8 @@ const projectDetails = [
     significance: [
       `A website is mandatory for any successful social media influencer. John${`'`}s website is a great example of how to create a website that is easy to use, easy to maintain, and easy to showcase produced work.`,
       'The website uses Next JS as the React Framework and Mantine for the UI Library. The current version of the website is a work in progress and is being updated with new content and features. Not all of the content is finalized and is subject to change. All the videos are placeholders and are not owned by John.',
-      'The biggest issue I face with the website is video management. Working with large quantities of videos can esily decrease the performance of the website. I am currently learning the best practices to maintain top performance. At first I thought of writing a Node JS application to manage video streaming but we both decided to use the Vimeo API instead. ' +
-      'I chose Vimeo over Youtube because it has a higher quality playback due to their focus on encoding. All videos are embedded except for the landing page which is a compressed webm/mp4 file.',
+      'The biggest issue I face with the website is video management. Working with large quantities of videos can esily decrease the performance of the website. I am currently learning the best practices to maintain top performance. At first I thought of writing a Node JS application to manage video upload and streaming but we both decided to use the Vimeo API instead. ' +
+      'I chose Vimeo over Youtube because it has a higher video quality playback becuase Youtube primarily focuses on large videos resulting in Vimeo having more time to focus on encoding. All videos are embedded except for the landing page which is a compressed webm/mp4 file.',
     ],
     images: [
       '/john.jpg',
@@ -117,7 +117,7 @@ const projectDetails = [
     significance: [
       'There are many UI Libraries available for React so there is no value in terms of rarity but there is value to me personally. I am a fan of the Mantine UI library and excited to see how Thundurus will improve over the long run. I plan on adding more features and components to the library than what Mantine currently offers. ' +
       'All my future applications will use Thundurus as the UI Library.',
-      'The current version of Thundurus is a work in progress and has barely been broken into. React is the chosen Framework and Storybook for isolated UI development. The project is a Monorepo using Lerna for ease of package management. There is only one component so far but I am planning on adding more components in the future.',
+      'The current version of Thundurus is a work in progress and has barely been broken into. React is the chosen Framework alongside Storybook for isolated UI development. The project uses Lerna Monorepo for ease of package management. There is only one component so far but I am planning on adding more components in the future.',
       'The biggest flaw about the project is not having enought time to work on it. Thundurus is currently classified On Hold and new components will be as improved snippets of code from outside projects.'
     ],
     images: [
@@ -167,7 +167,7 @@ const projectDetails = [
   {
     title: 'Electa',
     link: 'https://devpost.com/software/electa-jzbo79',
-    overview: 'Electa is an API service concept for automated delegation. The developer defines Qualifications for a Role and Electa will automatically assign the Qualified Users to that Role based on those Qualifications. This project was completed at HackKu 2022. ',
+    overview: 'Electa is an API service concept for automated delegation. The developer defines Qualifications for a Role and Electa will automatically assigns the Qualified Users to that Role based on those Qualifications. This project was completed at HackKu 2022. ',
     goal: [
       'Create Developer Dashboard',
       'Create Documentation',
