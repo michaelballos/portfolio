@@ -19,7 +19,7 @@ export default function Hero({ onClick }: HeroProps) {
   return (
     <div className={classes.hero}>
       <Image
-        src='/hero.jpg'
+        src='/hero.webp'
         layout='fill'
         objectFit='cover'
         objectPosition='center'
