@@ -3,6 +3,7 @@ import { createStyles } from '@mantine/core';
 export const useStyles = createStyles((theme) => ({
   heading: {
     fontFamily: 'tgHaidoGrotesk, sans-serif',
+    color: theme.colorScheme === 'dark' ? '#c1c2c5' : 'white',
   },
 
   link: {
