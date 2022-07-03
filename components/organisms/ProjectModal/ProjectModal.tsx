@@ -90,6 +90,8 @@ export default function ProjectModal({
       styles={{
         modal: {
           width: '80em',
+          height: 'max-content',
+          backgroundColor: 'transparent'
         },
         title: {
           display: 'flex',
@@ -151,7 +153,8 @@ export default function ProjectModal({
         </Stack>
         <div
           style={{
-            width: '100%'
+            width: '100%',
+            height: 700,
           }}
         >
           {imagesToRender}
