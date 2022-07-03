@@ -1,7 +1,6 @@
 # Michael Ballos
 
-
-## Getting Started
+Hey, thanks for checking out my website I hope you liked it. Feel free to message me about any bugs or suggestions. 
 
 First, Install dependencies:
 
