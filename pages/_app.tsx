@@ -67,6 +67,10 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
     <>
       <Head>
         <title>Michael Ballos</title>
+        <meta
+          name="description"
+          content="Michael Ballos is a Software Engineer based in Kansas City, MO. He is a full stack developer with a passion for building beautiful, responsive websites and applications."
+        />
       </Head>
       <ColorSchemeProvider
         colorScheme={colorScheme}

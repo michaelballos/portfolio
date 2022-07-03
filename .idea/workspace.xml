@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
-      <change beforePath="$PROJECT_DIR$/components/organisms/ResumePage/ResumePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/ResumePage/ResumePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/Socials/Socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Socials/Socials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="hero-fix" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +34,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="hero-fix" />
-                    <option name="lastUsedInstant" value="1656817725" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1656818908" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1656817686" />
+                    <option name="branchName" value="hero-fix" />
+                    <option name="lastUsedInstant" value="1656817725" />
                   </RecentBranch>
                 </list>
               </option>
@@ -59,26 +66,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaelballos/IdeaProjects/portfolio/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.15.0",
+    "javascript.nodejs.core.library.typings.version": "16.11.42",
+    "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />

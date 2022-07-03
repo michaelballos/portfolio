@@ -48,6 +48,7 @@ export default function Header({ links }: HeaderMiddleProps) {
   } = useStyles();
   const items = links.map((link) => (
     <a
+      aria-label={`Link to ${link.label}`}
       key={link.label}
       href={link.link}
       className={cx(classes.link, {
@@ -112,19 +113,19 @@ export default function Header({ links }: HeaderMiddleProps) {
             links={[
               {
                 link: "https://github.com/michaelballos",
-                icon: <IconBrandGithub size={20} />,
+                icon: <IconBrandGithub aria-label="github" size={20} />,
               },
               {
                 link: "https://www.linkedin.com/in/michaelballos/",
-                icon: <BrandLinkedin size={20} />,
+                icon: <BrandLinkedin aria-label="linkedin" size={20} />,
               },
               {
                 link: "https://twitter.com/michael_ballos",
-                icon: <BrandTwitter size={20} />,
+                icon: <BrandTwitter aria-label="twitter" size={20} />,
               },
               {
                 link: "mailto:ballos.michael@gmail.com",
-                icon: <IconMail size={20} />,
+                icon: <IconMail aria-label="email" size={20} />,
               },
             ]}
           />

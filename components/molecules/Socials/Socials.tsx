@@ -16,6 +16,8 @@ export default function Socials({ links }: ISocialsProps) {
     } = iconLink;
     return (
       <ActionIcon<"a">
+        aria-label={link.slice(0)}
+        title={link.slice(0)}
         key={link}
         sx={(theme) => ({
           "&:hover": {
