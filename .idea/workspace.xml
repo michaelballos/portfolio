@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font" />
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,12 +28,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="new" />
-                    <option name="lastUsedInstant" value="1656575060" />
+                    <option name="branchName" value="project-modal" />
+                    <option name="lastUsedInstant" value="1656578266" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1656574345" />
+                    <option name="lastUsedInstant" value="1656578151" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="new" />
+                    <option name="lastUsedInstant" value="1656575060" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="projects" />
@@ -49,13 +56,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2B8IuS4wqkbymnTArWtzf1NsF4T" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -63,9 +72,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/public",
+    "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/components/molecules/ContactForm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,12 +84,15 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/michaelballos/IdeaProjects/portfolio/node_modules/typescript/lib"
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/molecules/ContactForm" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/packages/app/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -90,6 +101,21 @@
       <recent name="$PROJECT_DIR$/packages/app/components/molecules/Hero" />
       <recent name="$PROJECT_DIR$/packages/app/components/atoms" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="portfolio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="portfolio" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +130,21 @@
       <workItem from="1656408320864" duration="4458000" />
       <workItem from="1656439234821" duration="871000" />
       <workItem from="1656465702169" duration="11714000" />
-      <workItem from="1656488533102" duration="50258000" />
+      <workItem from="1656488533102" duration="64739000" />
+      <workItem from="1656661875799" duration="46000" />
+      <workItem from="1656661927133" duration="4780000" />
+      <workItem from="1656667272912" duration="1371000" />
+      <workItem from="1656668739334" duration="470000" />
+      <workItem from="1656669553422" duration="6200000" />
+      <workItem from="1656676204639" duration="197000" />
+      <workItem from="1656676704233" duration="12000" />
+      <workItem from="1656677449150" duration="4938000" />
+      <workItem from="1656691537744" duration="191000" />
+      <workItem from="1656692599216" duration="14825000" />
+      <workItem from="1656707479245" duration="19184000" />
+      <workItem from="1656744529184" duration="144000" />
+      <workItem from="1656744865994" duration="180000" />
+      <workItem from="1656772396402" duration="39809000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
@@ -204,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656575157054</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add empty env file">
+      <created>1656790630459</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656790630459</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +283,8 @@
     <MESSAGE value="Extras from last commit" />
     <MESSAGE value="Extract action icons to own component for reusability" />
     <MESSAGE value="Resolve font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolve font" />
+    <MESSAGE value="Add empty env file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add empty env file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GetServerSidePropsContext } from "next";
+import { FormspreeProvider } from "@formspree/react";
 import { AppProps } from "next/app";
 import {
   getCookie,
@@ -15,6 +16,7 @@ import {
 import { NotificationsProvider } from "@mantine/notifications";
 import Header from "../components/molecules/Header/Header";
 import "../styles/globals.css";
+import '../styles/BlogCard.scss';
 
 const useStyles = createStyles(() => ({
   pageMargin: {
@@ -28,9 +30,17 @@ const headerLinks = [
     label: 'Home',
   },
   {
-    link: "/about",
-    label: "About",
+    link: "/blogs",
+    label: "Blogs",
   },
+  {
+    link: "/resume",
+    label: "Resume",
+  },
+  {
+    link: "/contact",
+    label: "Contact",
+  }
 ];
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
@@ -40,9 +50,8 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
     pageProps,
   } = props;
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
-    props.colorScheme,
+    'dark',
   );
-
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === "dark"
         ? "light"
@@ -70,12 +79,14 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           withGlobalStyles
           withNormalizeCSS
         >
+          <FormspreeProvider project="michael-ballos">
           <NotificationsProvider>
             <Header links={headerLinks} />
             <div className={classes.pageMargin}>
               <Component {...pageProps} />
             </div>
           </NotificationsProvider>
+          </FormspreeProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>

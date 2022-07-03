@@ -4,15 +4,12 @@ import { createStyles } from "@mantine/core";
 export const useStyles = createStyles((theme) => ({
   hero: {
     position: "relative",
-    backgroundImage: "url(/hero.jpeg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
     height: "calc(100vh - 56px)",
+    width: "100vw",
   },
-
   container: {
     height: 700,
+    width: '100vw',
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
@@ -22,36 +19,61 @@ export const useStyles = createStyles((theme) => ({
     position: "relative",
     [theme.fn.smallerThan("sm")]: {
       height: 500,
+      width: 450,
+      paddingBottom: theme.spacing.xl * 3,
+    },
+    [theme.fn.smallerThan("xs")]: {
+      width: 350,
+    },
+    ['@media (max-height: 620px)']: {
+      height: '30em',
+    },
+    ['@media (max-height: 420px)']: {
+      height: '26em',
+    },
+    ['@media (max-height: 380px)']: {
+      height: '23em',
+      width: 450,
       paddingBottom: theme.spacing.xl * 3,
     },
   },
-
   title: {
+    width: "100%",
     color: theme.white,
     fontSize: 60,
     fontWeight: 900,
     lineHeight: 1.1,
     [theme.fn.smallerThan("sm")]: {
       fontSize: 40,
-      lineHeight: 1.2,
     },
     [theme.fn.smallerThan("xs")]: {
-      fontSize: 28,
-      lineHeight: 1.3,
+      fontSize: 30,
+    },
+    ['@media (max-height: 420px)']: {
+      fontSize: 30
     },
   },
-
   description: {
     color: theme.white,
-    maxWidth: 600,
+  },
+  [theme.fn.smallerThan("sm")]: {
+    fontSize: theme.fontSizes.xl * 1.2,
+  },
+  [theme.fn.smallerThan("xs")]: {
+    width: 300,
+  },
+  ['@media (max-height: 420px)']: {
+    fontSize: 25,
+  },
+  controlContainer: {
+    width: 300,
     [theme.fn.smallerThan("sm")]: {
-      fontSize: theme.fontSizes.sm,
-      maxWidth: 400,
+      display: 'flex',
+      justifyContent: 'center',
     },
   },
-
   control: {
     marginTop: theme.spacing.xl * 1.5,
-    [theme.fn.smallerThan("sm")]: {},
+    backgroundImage: 'linear-gradient(45deg, #293758 0%, #445b91 100%)',
   },
 }));

@@ -1,73 +1,75 @@
-import React from "react";
-import { RingProgress, Text, Paper, Center, Group } from "@mantine/core";
-import { IconChecks, IconPlayerPause, IconTool } from "@tabler/icons";
-import { useStyles } from "./StatsRing.styles";
+import React, {
+  useMemo,
+  useState,
+  useCallback,
+  useEffect
+} from "react";
+import {
+  RingProgress,
+  Text,
+  Paper,
+  Center,
+  Group,
+  Button
+} from "@mantine/core";
+import {
+  IconChecks,
+  IconPlayerPause,
+  IconTool,
+  TablerIcon
+} from "@tabler/icons";
+import ProjectModal from '../../organisms/ProjectModal/ProjectModal';
+import { IModalDetails } from '../../organisms/HomePage/HomePage';
+import {
+  useCardStyles,
+  useStyles
+} from "./StatsRing.styles";
+import Card from '../../molecules/Card/Card';
 
-interface StatsRingProps {
-  data: {
-    id: string;
-    version: string;
-    label: string;
-    status: "inProgress" | "onHold" | "done";
-  }[];
-}
-
-const icons = {
+export const icons = {
   done: IconChecks,
   onHold: IconPlayerPause,
   inProgress: IconTool,
-};
+} as Record<string, TablerIcon>;
 
-export default function StatsRing({ data }: StatsRingProps) {
+const iconsKeys = Object.keys(icons);
+
+export type IconsKey = typeof iconsKeys[number];
+
+export interface StatsRingProps {
+  isOpen: boolean;
+  setOpen: (isOpen: boolean) => void;
+  setModalDetails: (setModalDetails: IModalDetails) => void;
+  data: {
+    id: string;
+    category: string;
+    label: string;
+    status: IconsKey;
+  }[];
+}
+
+export default function StatsRing({
+  data,
+  isOpen,
+  setOpen,
+  setModalDetails,
+}: StatsRingProps) {
   const { classes } = useStyles();
-  const cards = data.map((stat) => {
-    const { status, version, label, id } = stat;
-    const Icon = icons[status];
-    // eslint-disable-next-line no-nested-ternary
-    const color =
-      status === "inProgress"
-        ? "#00A8FF"
-        : status === "onHold"
-        ? "orange"
-        : "green";
-    return (
-      <Paper className={classes.card} withBorder radius="md" p="xs" key={id}>
-        <Group>
-          <RingProgress
-            key={color}
-            size={80}
-            roundCaps
-            thickness={8}
-            sections={[
-              {
-                value: 100,
-                color,
-              },
-            ]}
-            label={
-              <Center>
-                <Icon size={22} />
-              </Center>
-            }
-          />
-          <div>
-            <Text
-              key={version}
-              color="dimmed"
-              size="xs"
-              transform="uppercase"
-              weight={700}
-            >
-              {version}
-            </Text>
-            <Text key={label} weight={700} size="xl">
-              {label}
-            </Text>
-          </div>
-        </Group>
-      </Paper>
-    );
-  });
+  const cards = data.map((stat) => (
+    <Card
+      key={stat.id}
+      status={stat.status}
+      category={stat.category}
+      label={stat.label}
+      id={stat.id}
+      setModalDetails={setModalDetails}
+      setModalOpen={setOpen}
+    />
+  ));
 
-  return <div className={classes.cardsContainer}>{cards}</div>;
+  return (
+    <div className={classes.cardsContainer}>
+      {cards}
+    </div>
+  );
 }

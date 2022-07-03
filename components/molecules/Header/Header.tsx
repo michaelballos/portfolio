@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import React, {
+  useEffect,
+  useState
+} from "react";
+import Link from "next/link";
 import {
   Header as MantineHeader,
   Group,
@@ -7,16 +11,21 @@ import {
 } from "@mantine/core";
 import {
   BrandTwitter,
-  BrandLinkedin
+  BrandLinkedin,
 } from "tabler-icons-react";
 import { useBooleanToggle } from "@mantine/hooks";
-import { IconMail } from "@tabler/icons";
+import {
+  IconMail,
+  IconBrandGithub,
+} from "@tabler/icons";
 import ColorSchemeToggle from "../../atoms/ColorSchemeToggle/ColorSchemeToggle";
 import Logo from "../../atoms/Logo/Logo";
 import Socials from "../Socials/Socials";
 import { useStyles } from "./Header.styles";
+import { useRouter } from "next/router";
+import BurgerNav from "../BurgerNav/BurgerNav";
 
-interface HeaderMiddleProps {
+export interface HeaderMiddleProps {
   links: {
     link: string;
     label: string;
@@ -24,6 +33,7 @@ interface HeaderMiddleProps {
 }
 
 export default function Header({ links }: HeaderMiddleProps) {
+  const router = useRouter();
   const [
     opened,
     toggleOpened
@@ -44,13 +54,20 @@ export default function Header({ links }: HeaderMiddleProps) {
         [classes.linkActive]: active === link.link,
       })}
       onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
+        event.preventDefault()
+        setActive(link.link)
+        router.push(link.link);
       }}
     >
       {link.label}
     </a>
   ));
+  const path = router.pathname;
+  useEffect(() => {
+    path === '/'
+      ? setActive('/')
+      : setActive(path)
+  }, [path]);
 
   return (
     <MantineHeader
@@ -58,6 +75,11 @@ export default function Header({ links }: HeaderMiddleProps) {
       height={56}
     >
       <Container className={classes.inner}>
+        <BurgerNav
+          links={links}
+          opened={opened}
+          toggleOpened={toggleOpened}
+        />
         <Burger
           opened={opened}
           onClick={() => toggleOpened()}
@@ -70,9 +92,7 @@ export default function Header({ links }: HeaderMiddleProps) {
         >
           {items}
         </Group>
-
         <Logo size="27px" />
-
         <Group
           className={classes.social}
           spacing={0}
@@ -91,12 +111,16 @@ export default function Header({ links }: HeaderMiddleProps) {
           <Socials
             links={[
               {
-                link: "https://twitter.com/michael_ballos",
-                icon: <BrandTwitter size={20} />,
+                link: "https://github.com/michaelballos",
+                icon: <IconBrandGithub size={20} />,
               },
               {
                 link: "https://www.linkedin.com/in/michaelballos/",
                 icon: <BrandLinkedin size={20} />,
+              },
+              {
+                link: "https://twitter.com/michael_ballos",
+                icon: <BrandTwitter size={20} />,
               },
               {
                 link: "mailto:ballos.michael@gmail.com",

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import {
   Overlay,
   Container,
@@ -17,6 +18,14 @@ export default function Hero({ onClick }: HeroProps) {
 
   return (
     <div className={classes.hero}>
+      <Image
+        src='/hero.jpg'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        alt='Hero'
+        priority={true}
+      />
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
         opacity={1}
@@ -33,19 +42,20 @@ export default function Hero({ onClick }: HeroProps) {
           size="xl"
           mt="xl"
         >
-          I{`'`}m a Full-Stack Software Developer with a passion for the end to end
+          I{`'`}m a Full-Stack Software Developer with a passion for design and end to end
           production of software and applications.
         </Text>
-
-        <Button
-          variant="gradient"
-          size="xl"
-          radius="xl"
-          className={classes.control}
-          onClick={onClick}
-        >
-          View my Stack
-        </Button>
+        <div className={classes.controlContainer}>
+          <Button
+            variant="gradient"
+            size="xl"
+            radius="xl"
+            className={classes.control}
+            onClick={onClick}
+          >
+            View my Stack
+          </Button>
+        </div>
       </Container>
     </div>
   );

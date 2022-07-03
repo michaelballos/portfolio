@@ -1,6 +1,15 @@
-import React from "react";
-import Home from "../components/organisms/Home/Home";
+import React, {
+  useEffect,
+  useState
+} from "react";
+import Header from "../components/molecules/Header/Header";
+import Router from "next/router";
 
-export default function HomePage() {
-  return <Home />;
+export default function Home() {
+  useEffect(() => {
+    const {pathname} = Router
+    pathname == '/'
+      ? Router.push('/home')
+      : 'Page not found'
+  }, []);
 }
