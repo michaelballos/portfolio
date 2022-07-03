@@ -103,6 +103,27 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           name="description"
           content="Michael Ballos is a Software Engineer based in Kansas City, MO. He is a full stack developer with a passion for building beautiful, responsive websites and applications."
         />
+       <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="/apple-touch-icon.png"
+       />
+       <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="/favicon-32x32.png"
+       />
+       <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="/favicon-16x16.png"
+       />
+       <link
+         rel="manifest"
+         href="/site.webmanifest"
+       />
       </Head>
       <ColorSchemeProvider
         colorScheme={colorScheme}
@@ -129,7 +150,3 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
     </>
   );
 }
-
-export const getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
-  colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
-});
