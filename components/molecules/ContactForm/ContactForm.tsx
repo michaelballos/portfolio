@@ -16,9 +16,6 @@ import {
   SimpleGrid,
   createStyles,
 } from '@mantine/core';
-import {
-  EventHandler
-} from '../../../../../../../Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react';
 import { ContactIconsList } from '../../atoms/ContactIcons/ContactIcons';
 import { useForm } from '@formspree/react';
 import { useStyles } from './ContactForm.styles';
