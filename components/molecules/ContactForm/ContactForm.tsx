@@ -1,11 +1,3 @@
-import React, {
-  useState,
-  useEffect,
-  FormEvent,
-  ChangeEvent,
-  SyntheticEvent,
-} from 'react';
-import { showNotification } from '@mantine/notifications';
 import {
   Paper,
   Text,

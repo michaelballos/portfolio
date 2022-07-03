@@ -16,12 +16,6 @@
     "incremental": true,
     "noImplicitAny": true,
     "sourceMap": true,
-    "outDir": "./dist",
-    "paths": {
-      "*": [
-        "node_modules/*"
-      ]
-    },
   },
   "include": [
     "next-env.d.ts",
