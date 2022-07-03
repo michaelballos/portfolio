@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
-      <change beforePath="$PROJECT_DIR$/components/molecules/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/organisms/ResumePage/ResumePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/ResumePage/ResumePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,20 +27,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="project-modal" />
-                    <option name="lastUsedInstant" value="1656817213" />
+                    <option name="branchName" value="hero-fix" />
+                    <option name="lastUsedInstant" value="1656817725" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1656817177" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="new" />
-                    <option name="lastUsedInstant" value="1656575060" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="projects" />
-                    <option name="lastUsedInstant" value="1656574322" />
+                    <option name="lastUsedInstant" value="1656817686" />
                   </RecentBranch>
                 </list>
               </option>
