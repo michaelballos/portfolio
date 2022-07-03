@@ -13,7 +13,7 @@ export default function ResumePage() {
         }}
       >
         <Image
-          src="/resume.jpg"
+          src="/resume.webp"
           alt="Resume"
           priority={true}
           layout="responsive"
