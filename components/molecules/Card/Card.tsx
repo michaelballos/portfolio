@@ -65,7 +65,7 @@ const projectDetails = [
       'Keep bundle size minimal'
     ],
     significance: [
-      `Particle Space${`'`}s service is an API only usable by people with a technical background. This extension is a cool tool that any lay person can use day to day with. The primary target audience  
+      `Particle Space${`'`}s service is an API only usable by people with a technical background. This extension is a cool tool that a lay person can use day to day. The primary target audience  
        are Real Estate Agents, Investors, and potential Home Buyers or Tenants`,
       `I was tasked with creating Properly${`'`}s UI design and chose Mantine for the Frontend UI Library. Isaac Spiegel (Particle Space Developer) and I pair programmed the majority of Properly and completed the extension in a week using React as the Framework. While Isaac started on the Particle Space logo injection into the side Navigation, I started the initial design in an isolated Storybook environment.   
        Grace (Particle Space Developer) created the logic for the detection of adresses. I noticed the detection didn${`'`}t work when Gmail${`'`}s UI was configured for a split Reading Pane which was resolved by Grace. I also worked on the logic for Querying and Hydrating the data into their designated Accordian categories. The last feature I contributed to the extension was a Button to copy all the data to the client's clipboard with formatted text using js-yaml.`,

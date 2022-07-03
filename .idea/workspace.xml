@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1656837089820" duration="246000" />
       <workItem from="1656838727541" duration="1982000" />
       <workItem from="1656882990343" duration="133000" />
-      <workItem from="1656885562483" duration="217000" />
+      <workItem from="1656885562483" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
