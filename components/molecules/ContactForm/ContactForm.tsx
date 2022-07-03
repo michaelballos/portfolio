@@ -63,7 +63,7 @@ export default function ContactForm() {
               <TextInput
                 name="email"
                 label="Your email"
-                placeholder="hello@mantine.dev"
+                placeholder="Your email"
                 required
               />
             </SimpleGrid>
