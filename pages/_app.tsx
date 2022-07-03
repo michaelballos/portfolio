@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GetServerSidePropsContext } from "next";
+import { FormspreeProvider } from "@formspree/react";
 import { AppProps } from "next/app";
 import {
   getCookie,
@@ -78,12 +79,14 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           withGlobalStyles
           withNormalizeCSS
         >
+          <FormspreeProvider project="michael-ballos">
           <NotificationsProvider>
             <Header links={headerLinks} />
             <div className={classes.pageMargin}>
               <Component {...pageProps} />
             </div>
           </NotificationsProvider>
+          </FormspreeProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Resolve font">
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
+      <change afterPath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/contact.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/atoms/ContactIcons/ContactIcons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atoms/ContactIcons/ContactIcons.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/ContactForm/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/organisms/ContactPage/ContactPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/organisms/ContactPage/ContactPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +153,7 @@
       <workItem from="1656707479245" duration="19184000" />
       <workItem from="1656744529184" duration="144000" />
       <workItem from="1656744865994" duration="180000" />
-      <workItem from="1656772396402" duration="16511000" />
+      <workItem from="1656772396402" duration="34469000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
@@ -245,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656575157054</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add empty env file">
+      <created>1656790630459</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656790630459</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +292,8 @@
     <MESSAGE value="Extras from last commit" />
     <MESSAGE value="Extract action icons to own component for reusability" />
     <MESSAGE value="Resolve font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolve font" />
+    <MESSAGE value="Add empty env file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add empty env file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
