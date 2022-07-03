@@ -9,7 +9,8 @@ export default function ResumePage() {
       <div
         style={{
           width: 773,
-          height: 1000
+          height: 1000,
+          marginTop: '6em',
         }}
       >
         <Image

@@ -87,7 +87,7 @@ export default function ProjectModal({
   })
   return (
     <Modal
-      styles={{
+      styles={(theme) => ({
         modal: {
           width: '80em',
           height: 'max-content',
@@ -100,11 +100,15 @@ export default function ProjectModal({
           fontFamily: 'tgHaidoGrotesk, sans-serif',
           fontSize: '1.3em',
           marginLeft: '35px',
+          color:
+            theme.colorScheme === 'dark'
+              ? '#c1c2c5'
+              : 'white',
           ['@media (max-width: 450px)']: {
             fontSize: '1em',
           }
         },
-      }}
+      })}
       opened={isOpen}
       onClose={onClose}
       title={title}

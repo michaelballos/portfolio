@@ -15,6 +15,7 @@ import {
 } from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
 import Header from "../components/molecules/Header/Header";
+import Footer from "../components/molecules/Footer/Footer";
 import "../styles/globals.css";
 import '../styles/BlogCard.scss';
 
@@ -24,7 +25,7 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-const headerLinks = [
+const navLinks = [
   {
     link: "/home",
     label: 'Home',
@@ -42,6 +43,33 @@ const headerLinks = [
     label: "Contact",
   }
 ];
+const footerLinks = [
+  {
+    title: "Site Map",
+    links: navLinks,
+  },
+  {
+    title: "Resources",
+    links: [
+      {
+        label: "MDNDocs",
+        link: "https://developer.mozilla.org/en-US/"
+      },
+      {
+        label: "Design Patterns",
+        link: "https://refactoring.guru/"
+      },
+      {
+        label: "Warmup",
+        link: "https://www.speedcoder.net/"
+      },
+      {
+        label: "Quick Types",
+        link: "https://quicktype.io/"
+      }
+    ]
+  }
+]
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { classes } = useStyles();
@@ -85,10 +113,11 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         >
           <FormspreeProvider project="michael-ballos">
           <NotificationsProvider>
-            <Header links={headerLinks} />
+            <Header links={navLinks} />
             <div className={classes.pageMargin}>
               <Component {...pageProps} />
             </div>
+            <Footer data={footerLinks} />
           </NotificationsProvider>
           </FormspreeProvider>
         </MantineProvider>

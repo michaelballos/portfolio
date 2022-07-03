@@ -1,5 +1,13 @@
 import React, { ReactNode } from "react";
 import { ActionIcon } from "@mantine/core";
+import {
+  BrandTwitter,
+  BrandLinkedin,
+} from "tabler-icons-react";
+import {
+  IconMail,
+  IconBrandGithub,
+} from "@tabler/icons";
 
 export interface ISocialsProps {
   links: {
@@ -8,7 +16,26 @@ export interface ISocialsProps {
   }[];
 }
 
-export default function Socials({ links }: ISocialsProps) {
+const links = [
+    {
+      link: "https://github.com/michaelballos",
+      icon: <IconBrandGithub aria-label="github" size={20} />,
+    },
+{
+  link: "https://www.linkedin.com/in/michaelballos/",
+    icon: <BrandLinkedin aria-label="linkedin" size={20} />,
+},
+{
+  link: "https://twitter.com/michael_ballos",
+    icon: <BrandTwitter aria-label="twitter" size={20} />,
+},
+{
+  link: "mailto:ballos.michael@gmail.com",
+    icon: <IconMail aria-label="email" size={20} />,
+},
+]
+
+export default function Socials() {
   const iconLinks = links.map((iconLink) => {
     const {
       link,

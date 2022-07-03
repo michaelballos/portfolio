@@ -9,15 +9,8 @@ import {
   Container,
   Burger,
 } from "@mantine/core";
-import {
-  BrandTwitter,
-  BrandLinkedin,
-} from "tabler-icons-react";
+
 import { useBooleanToggle } from "@mantine/hooks";
-import {
-  IconMail,
-  IconBrandGithub,
-} from "@tabler/icons";
 import ColorSchemeToggle from "../../atoms/ColorSchemeToggle/ColorSchemeToggle";
 import Logo from "../../atoms/Logo/Logo";
 import Socials from "../Socials/Socials";
@@ -109,26 +102,7 @@ export default function Header({ links }: HeaderMiddleProps) {
           >
             <ColorSchemeToggle />
           </div>
-          <Socials
-            links={[
-              {
-                link: "https://github.com/michaelballos",
-                icon: <IconBrandGithub aria-label="github" size={20} />,
-              },
-              {
-                link: "https://www.linkedin.com/in/michaelballos/",
-                icon: <BrandLinkedin aria-label="linkedin" size={20} />,
-              },
-              {
-                link: "https://twitter.com/michael_ballos",
-                icon: <BrandTwitter aria-label="twitter" size={20} />,
-              },
-              {
-                link: "mailto:ballos.michael@gmail.com",
-                icon: <IconMail aria-label="email" size={20} />,
-              },
-            ]}
-          />
+          <Socials />
         </Group>
       </Container>
     </MantineHeader>
