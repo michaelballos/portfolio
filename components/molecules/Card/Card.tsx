@@ -47,11 +47,11 @@ const projectDetails = [
       'Overall the project was completed only with simple code conflicts, Typescript, and Unique Key problems. If the template were to be improved, my primary focus would be the aesthetics of the property details modal. The last thing I will add is removing the mock data property details and have the API Query Particle Space onClick of the property listing cards.'
     ],
     images: [
-      '/templateHome.jpg',
-      '/templateConsole.jpg',
-      '/templateModal.jpg',
-      '/templateModalTwo.jpg',
-      '/templateMap.jpg',
+      '/templateHome.webp',
+      '/templateConsole.webp',
+      '/templateModal.webp',
+      '/templateModalTwo.webp',
+      '/templateMap.webp',
     ]
   },
   {
@@ -73,11 +73,11 @@ const projectDetails = [
       `A solution wasn\t found but we also didn${`'`}t want to hyper focus on an issue that wasn${`'`}t a breaking problem but I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience.`
     ],
     images: [
-      '/properlyNoDetected.jpg',
-      '/properly.jpg',
-      '/properlyBummer.jpg',
-      '/properlyCopy.jpg',
-      '/properlyDropdown.jpg',
+      '/properlyNoDetected.webp',
+      '/properly.webp',
+      '/properlyBummer.webp',
+      '/properlyCopy.webp',
+      '/properlyDropdown.webp',
     ]
   },
   {
@@ -98,10 +98,10 @@ const projectDetails = [
       'I chose Vimeo over Youtube because it has a higher video quality playback becuase Youtube primarily focuses on large videos resulting in Vimeo having more time to focus on encoding. All videos are embedded except for the landing page which is a compressed webm/mp4 file.',
     ],
     images: [
-      '/john.jpg',
-      '/johnCollage.jpg',
-      '/johnVideos.jpg',
-      '/johnContact.jpg',
+      '/john.webp',
+      '/johnCollage.webp',
+      '/johnVideos.webp',
+      '/johnContact.webp',
     ]
   },
   {
@@ -121,8 +121,8 @@ const projectDetails = [
       'The biggest flaw about the project is not having enought time to work on it. Thundurus is currently classified On Hold and new components will be as improved snippets of code from outside projects.'
     ],
     images: [
-      '/thundurusCode.jpg',
-      '/thundurus.jpg',
+      '/thundurusCode.webp',
+      '/thundurus.webp',
     ]
   },
   {
@@ -138,8 +138,8 @@ const projectDetails = [
       'The biggest improvement I can make on the bot is to make it more efficient by using asynchronous webscraping. The current bot is synchronous and will take a long time to run. The bot would be able to extract all the image links from the Archillect page in a matter of seconds.',
     ],
     images: [
-      '/archillectCode.jpg',
-      '/archillect.jpg',
+      '/archillectCode.webp',
+      '/archillect.webp',
     ]
   },
   {
@@ -156,12 +156,12 @@ const projectDetails = [
       'The biggest flaw is wasting time by having to manually update the docs when auto generated Documentation like Swagger exists. I also Noticed the colors were off on the details dropdown and will be updated when possible.',
     ],
     images: [
-      '/errorsLight.jpg',
-      '/errorsDark.jpg',
-      '/roadmapLight.jpg',
-      '/roadmapDark.jpg',
-      '/detailsLight.jpg',
-      '/detailsDark.jpg',
+      '/errorsLight.webp',
+      '/errorsDark.webp',
+      '/roadmapLight.webp',
+      '/roadmapDark.webp',
+      '/detailsLight.webp',
+      '/detailsDark.webp',
     ]
   },
   {
@@ -181,10 +181,10 @@ const projectDetails = [
       'The biggest flaw was the limited time during the hackathon. We completed the UI in 36 hours but the API did not have enough time to get fully developed.',
     ],
     images: [
-      '/electaDashboard.jpg',
-      '/electaDocs.jpg',
-      '/electaRoute.jpg',
-      '/electaRoles.jpg',
+      '/electaDashboard.webp',
+      '/electaDocs.webp',
+      '/electaRoute.webp',
+      '/electaRoles.webp',
     ]
   },
   {
@@ -201,8 +201,8 @@ const projectDetails = [
       'The flaw of this project is the responsiveness.',
     ],
     images: [
-      '/calculator.jpg',
-      '/calculatorSolved.jpg',
+      '/calculator.webp',
+      '/calculatorSolved.webp',
     ]
   },
   {
@@ -219,8 +219,8 @@ const projectDetails = [
       'Huge flaw is that disgusting design.'
     ],
     images: [
-      '/counterReactCode.jpg',
-      '/counterReact.jpg',
+      '/counterReactCode.webp',
+      '/counterReact.webp',
     ]
   },
   {
@@ -237,8 +237,8 @@ const projectDetails = [
       'If I could travel back in time I would have told myself to use const instead of let, not hyperfocus on the CSS, and start coding in Typescript.'
     ],
     images: [
-      '/counterCode.jpg',
-      '/counter.jpg',
+      '/counterCode.webp',
+      '/counter.webp',
     ]
   },
 ]
