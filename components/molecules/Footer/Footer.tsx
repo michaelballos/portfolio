@@ -114,8 +114,9 @@ interface FooterLinksProps {
   data: {
     title: string;
     links: {
+      target?: string;
       label: string;
-      link: string
+      link: string;
     }[];
   }[];
 }
@@ -130,7 +131,7 @@ export default function Footer({ data }: FooterLinksProps) {
         className={classes.link}
         component="a"
         href={link.link}
-        onClick={(event) => event.preventDefault()}
+        target={link.target === 'blank' ? '_blank' : undefined}
       >
         {link.label}
       </Text>
@@ -149,7 +150,7 @@ export default function Footer({ data }: FooterLinksProps) {
         <div className={classes.logo}>
           <Logo size="25px" />
           <Text size="xs" color="dimmed" className={classes.description}>
-            Javascript Fanboy
+            Building applications 👨‍💻...
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>

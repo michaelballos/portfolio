@@ -52,18 +52,22 @@ const footerLinks = [
     title: "Resources",
     links: [
       {
+        target: "blank",
         label: "MDNDocs",
         link: "https://developer.mozilla.org/en-US/"
       },
       {
+        target: "blank",
         label: "Design Patterns",
         link: "https://refactoring.guru/"
       },
       {
+        target: "blank",
         label: "Warmup",
         link: "https://www.speedcoder.net/"
       },
       {
+        target: "blank",
         label: "Quick Types",
         link: "https://quicktype.io/"
       }
