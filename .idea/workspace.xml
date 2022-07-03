@@ -2,8 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
+      <change afterPath="$PROJECT_DIR$/public/archillect.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/archillectCode.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blogCard.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/calculator.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/calculatorSolved.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/counter.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/counterCode.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/counterReact.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/counterReactCode.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/detailsDark.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/detailsLight.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/electaDashboard.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/electaDocs.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/electaRoles.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/electaRoute.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/errorsDark.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/errorsLight.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hero.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/john.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/johnCollage.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/johnContact.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/johnVideos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/properly.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/properlyBummer.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/properlyCopy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/properlyDropdown.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/properlyNoDetected.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resume.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/roadmapDark.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/roadmapLight.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/templateConsole.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/templateHome.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/templateMap.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/templateModal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/templateModalTwo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/thundurus.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/thundurusCode.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/molecules/Card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/archillect.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/archillectCode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blogCard.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/calculator.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/calculatorSolved.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/counter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/counterCode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/counterReact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/counterReactCode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/detailsDark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/detailsLight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/electaDashboard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/electaDocs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/electaRoles.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/electaRoute.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/errorsDark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/errorsLight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/john.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/johnCollage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/johnContact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/johnVideos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/properly.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/properlyBummer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/properlyCopy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/properlyDropdown.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/properlyNoDetected.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resume.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/roadmapDark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/roadmapLight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templateConsole.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templateHome.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templateMap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templateModal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templateModalTwo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/thundurus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/thundurusCode.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +148,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/components/molecules/ContactForm",
+    "last_opened_file_path": "/Users/michaelballos/IdeaProjects/portfolio/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,8 +165,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/molecules/ContactForm" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/components/molecules/ContactForm" />
       <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/packages/app/public" />
     </key>
@@ -144,7 +219,7 @@
       <workItem from="1656707479245" duration="19184000" />
       <workItem from="1656744529184" duration="144000" />
       <workItem from="1656744865994" duration="180000" />
-      <workItem from="1656772396402" duration="39809000" />
+      <workItem from="1656772396402" duration="40937000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
