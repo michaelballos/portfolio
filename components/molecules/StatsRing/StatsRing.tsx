@@ -40,7 +40,7 @@ export interface StatsRingProps {
   isOpen: boolean;
   setOpen: (isOpen: boolean) => void;
   setModalDetails: (setModalDetails: IModalDetails) => void;
-  data: {
+  projectCards: {
     id: string;
     category: string;
     label: string;
@@ -49,19 +49,19 @@ export interface StatsRingProps {
 }
 
 export default function StatsRing({
-  data,
+  projectCards,
   isOpen,
   setOpen,
   setModalDetails,
 }: StatsRingProps) {
   const { classes } = useStyles();
-  const cards = data.map((stat) => (
+  const cards = projectCards.map((card) => (
     <Card
-      key={stat.id}
-      status={stat.status}
-      category={stat.category}
-      label={stat.label}
-      id={stat.id}
+      key={card.id}
+      status={card.status}
+      category={card.category}
+      label={card.label}
+      id={card.id}
       setModalDetails={setModalDetails}
       setModalOpen={setOpen}
     />

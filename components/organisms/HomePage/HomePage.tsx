@@ -22,16 +22,85 @@ export interface IModalDetails {
   images: string[];
 }
 
+const projectCards = [
+  {
+    id: "10",
+    category: "Particle Space",
+    label: "RE Template",
+    status: "inProgress",
+  },
+  {
+    id: "9",
+    category: "Particle Space",
+    label: "Properly",
+    status: "done",
+  },
+  {
+    id: "8",
+    category: "Web Development",
+    label: "JN Brand",
+    status: "inProgress",
+  },
+  {
+    id: "7",
+    category: "UI Library",
+    label: "Thundurus",
+    status: "onHold",
+  },
+  {
+    id: "6",
+    category: "Bot Crawler",
+    label: "Archillect Bot",
+    status: "done",
+  },
+  {
+    id: "5",
+    category: "Particle Space",
+    label: "Documentation",
+    status: "done",
+  },
+  {
+    id: "4",
+    category: "Hackathon",
+    label: "Electa",
+    status: "done",
+  },
+  {
+    id: "3",
+    category: "Learning",
+    label: "React Calculator",
+    status: "done",
+  },
+  {
+    id: "2",
+    category: "Learning",
+    label: "React Counter",
+    status: "done",
+  },
+  {
+    id: "1",
+    category: "Learning",
+    label: "counter",
+    status: "done",
+  },
+]
+
 export default function HomePage() {
-  const [isOpen, setOpen] = useState(false);
-  const [modalDetails, setModalDetails] = useState({
-    title: 'Project X',
-    overview: 'if ur reading this u found my easter egg',
-    link: 'https://pornhub.com',
+  const [
+    isOpen,
+    setOpen
+  ] = useState(false);
+  const [
+    modalDetails,
+    setModalDetails
+  ] = useState({
+    title: 'coding is fun',
+    overview: 'heres a jet engine',
+    link: 'https://www.youtube.com/watch?v=MgL0GW248mE',
     goal: [
       'you',
-      'me',
-      'elmo'
+      'get',
+      'it'
     ],
     significance: [
       'it matters bro',
@@ -43,83 +112,30 @@ export default function HomePage() {
       '/templateMap.png',
     ]
   });
+
   const { classes } = useStyles();
   const scrollToProject = useCallback(() => {
     const element = document.querySelector("#projects");
     element && element.scrollIntoView({ behavior: "smooth" });
   }, []);
+
   return (
     <ScrollArea className={classes.scrollArea}>
       <Hero onClick={scrollToProject} />
-      <div className={classes.projectPage} id="projects">
-        <Group className={classes.projectAndKey} noWrap>
+      <div
+        className={classes.projectPage}
+        id="projects"
+      >
+        <Group
+          className={classes.projectAndKey}
+          noWrap
+        >
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
               setModalDetails={setModalDetails}
               isOpen={isOpen}
               setOpen={setOpen}
-              data={[
-                {
-                  id: "10",
-                  category: "Particle Space",
-                  label: "RE Template",
-                  status: "inProgress",
-                },
-                {
-                  id: "9",
-                  category: "Particle Space",
-                  label: "Properly",
-                  status: "done",
-                },
-                {
-                  id: "8",
-                  category: "Web Development",
-                  label: "JN Brand",
-                  status: "inProgress",
-                },
-                {
-                  id: "7",
-                  category: "UI Library",
-                  label: "Thundurus",
-                  status: "onHold",
-                },
-                {
-                  id: "6",
-                  category: "Bot Crawler",
-                  label: "Archillect Bot",
-                  status: "done",
-                },
-                {
-                  id: "5",
-                  category: "Particle Space",
-                  label: "Documentation",
-                  status: "done",
-                },
-                {
-                  id: "4",
-                  category: "Hackathon",
-                  label: "Electa",
-                  status: "done",
-                },
-                {
-                  id: "3",
-                  category: "Learning",
-                  label: "React Calculator",
-                  status: "done",
-                },
-                {
-                  id: "2",
-                  category: "Learning",
-                  label: "React Counter",
-                  status: "done",
-                },
-                {
-                  id: "1",
-                  category: "Learning",
-                  label: "Counter",
-                  status: "done",
-                },
-              ]}
+              projectCards={projectCards}
             />
           </ScrollArea>
           <ProjectKey />
