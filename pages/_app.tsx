@@ -124,7 +124,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
        />
        <link
          rel="manifest"
-         href="/site.webmanifest"
+         href="/manifest.json"
        />
       </Head>
       <ColorSchemeProvider

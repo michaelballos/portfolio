@@ -108,7 +108,7 @@ interface ContactIconsListProps {
   variant?: ContactIconVariant;
 }
 
-const MOCKDATA = [
+const contact = [
   {
     title: 'Email',
     description: 'ballos.michael@gmail.com',
@@ -120,19 +120,14 @@ const MOCKDATA = [
     icon: Phone
   },
   {
-    title: 'Address',
-    description: '200 Main St, Kansas City, MO 64105',
-    icon: MapPin
-  },
-  {
     title: 'Working hours',
-    description: '4 a.m. – 11 p.m.',
+    description: '5 a.m. – 11 p.m.',
     icon: Sun
   },
 ];
 
 export function ContactIconsList({
-  data = MOCKDATA,
+  data = contact,
   variant
 }: ContactIconsListProps) {
   const items = data.map((item, index) =>

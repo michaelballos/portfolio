@@ -1,0 +1,29 @@
+{
+  "name": "Michael Ballos",
+  "short_name": "Portfolio",
+  "start_url": "/home",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/android-chrome-32x32.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

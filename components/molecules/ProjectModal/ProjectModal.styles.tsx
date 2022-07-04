@@ -37,4 +37,12 @@ export const useStyles = createStyles((theme) => ({
         ? '0 0 50px rgb(0 0 0 / 74%)'
         : '0 0 50px rgb(145 145 145 / 44%)',
   },
+
+  parallaxLayer: {
+    width: 'max-content',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingBottom: '15em',
+  },
 }));

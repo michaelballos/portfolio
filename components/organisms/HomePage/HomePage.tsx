@@ -10,7 +10,7 @@ import Hero from "../../molecules/Hero/Hero";
 import StatsRing from "../../molecules/StatsRing/StatsRing";
 import SkillsetText from "../../molecules/SkillsetText/SkillsetText";
 import ProjectKey from "../../molecules/ProjectKey/ProjectKey";
-import ProjectModal from '../ProjectModal/ProjectModal';
+import ProjectModal from '../../molecules/ProjectModal/ProjectModal';
 import { useStyles } from "./Home.styles";
 
 export interface IModalDetails {
@@ -80,7 +80,7 @@ const projectCards = [
   {
     id: "1",
     category: "Learning",
-    label: "counter",
+    label: "Counter",
     status: "done",
   },
 ]

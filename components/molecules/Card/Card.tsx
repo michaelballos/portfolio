@@ -18,7 +18,7 @@ import {
   IconTool,
   TablerIcon
 } from "@tabler/icons";
-import ProjectModal from '../../organisms/ProjectModal/ProjectModal';
+import ProjectModal from '../../molecules/ProjectModal/ProjectModal';
 import { IModalDetails } from '../../organisms/HomePage/HomePage';
 import {
   useCardStyles,
