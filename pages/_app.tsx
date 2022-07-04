@@ -18,6 +18,7 @@ import Header from "../components/molecules/Header/Header";
 import Footer from "../components/molecules/Footer/Footer";
 import "../styles/globals.css";
 import '../styles/BlogCard.scss';
+import '../styles/HeroButton.css';
 
 const useStyles = createStyles(() => ({
   pageMargin: {

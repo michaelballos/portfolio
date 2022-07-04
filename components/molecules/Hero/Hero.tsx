@@ -50,7 +50,7 @@ export default function Hero({ onClick }: HeroProps) {
             variant="gradient"
             size="xl"
             radius="xl"
-            className={classes.control}
+            className="heroButton"
             onClick={onClick}
           >
             View my Stack
