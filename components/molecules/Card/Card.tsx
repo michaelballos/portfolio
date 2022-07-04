@@ -69,8 +69,8 @@ const projectDetails = [
        are Real Estate Agents, Investors, and potential Home Buyers or Tenants`,
       `I was tasked with creating Properly${`'`}s UI design and chose Mantine for the Frontend UI Library. Isaac Spiegel (Particle Space Developer) and I pair programmed the majority of Properly and completed the extension in a week using React as the Framework. While Isaac started on the Particle Space logo injection into the side Navigation, I started the initial design in an isolated Storybook environment.   
        Grace (Particle Space Developer) created the logic for the detection of adresses. I noticed the detection didn${`'`}t work when Gmail${`'`}s UI was configured for a split Reading Pane which was resolved by Grace. I also worked on the logic for Querying and Hydrating the data into their designated Accordian categories. The last feature I contributed to the extension was a Button to copy all the data to the client's clipboard with formatted text using js-yaml.`,
-      `One of the issued we faced with the Extension was if the Chrome Web Store allowed DOM manipulation. Fortunately they did and we took inspiration from Hubspot and injected our logo into the side Navigation which opened the main side drawer. One of the bigger issues on top of that is our drawer hovers over the rest of the page unlike Hubspot where their side drawer pushed the the page and made room for the drawer onOpen. ` +
-      `A solution wasn\t found but we also didn${`'`}t want to hyper focus on an issue that wasn${`'`}t a breaking problem but I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience.`
+      `One of the issued we faced with the Extension was if the Chrome Web Store allowed DOM manipulation. Fortunately they did and we took inspiration from Hubspot and injected our logo into the side Navigation which opened the main side drawer. A flaw with the extension is the drawer hovers overing over the page and blocking Gmail's side Navigation. Hubspot has their side drawer push the page and make room for their drawer onOpen. ` +
+      `A solution wasn${`'`}t found but it also wasn${`'`}t a breaking problem but I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience.`
     ],
     images: [
       '/properlyNoDetected.webp',
@@ -92,7 +92,7 @@ const projectDetails = [
       'Learn about the best practices for video content'
     ],
     significance: [
-      `A website is mandatory for any successful social media influencer. John${`'`}s website is a great example of how to create a website that is easy to use, easy to maintain, and easy to showcase produced work.`,
+      `A website is mandatory for any successful Social Media Influencer. John${`'`}s website is a great example of how to create a website that is easy to use, easy to maintain, and easy to showcase produced work.`,
       'The website uses Next JS as the React Framework and Mantine for the UI Library. The current version of the website is a work in progress and is being updated with new content and features. Not all of the content is finalized and is subject to change. All the videos are placeholders and are not owned by John.',
       'The biggest issue I face with the website is video management. Working with large quantities of videos can esily decrease the performance of the website. I am currently learning the best practices to maintain top performance. At first I thought of writing a Node JS application to manage video upload and streaming but we both decided to use the Vimeo API instead. ' +
       'I chose Vimeo over Youtube because it has a higher video quality playback becuase Youtube primarily focuses on large videos resulting in Vimeo having more time to focus on encoding. All videos are embedded except for the landing page which is a compressed webm/mp4 file.',
@@ -118,7 +118,7 @@ const projectDetails = [
       'There are many UI Libraries available for React so there is no value in terms of rarity but there is value to me personally. I am a fan of the Mantine UI library and excited to see how Thundurus will improve over the long run. I plan on adding more features and components to the library than what Mantine currently offers. ' +
       'All my future applications will use Thundurus as the UI Library.',
       'The current version of Thundurus is a work in progress and has barely been broken into. React is the chosen Framework alongside Storybook for isolated UI development. The project uses Lerna Monorepo for ease of package management. There is only one component so far but I am planning on adding more components in the future.',
-      'The biggest flaw about the project is not having enought time to work on it. Thundurus is currently classified On Hold and new components will be as improved snippets of code from outside projects.'
+      'The biggest flaw about the project is not having enought time to work on it. A UI Component Library is not necessarily complicated to make but very time consuming to build. My time is better spent currently learning Graphql which is why it is classified as On Hold',
     ],
     images: [
       '/thundurusCode.webp',
@@ -128,7 +128,7 @@ const projectDetails = [
   {
     title: 'Archillect Bot',
     link: 'https://github.com/michaelballos/archillect',
-    overview: 'Archillect is an AI bot with an API that chooses aesthetically pleasing art from the internet. My bot crawls Archillect and synchronously extracts all the image links from the page.',
+    overview: 'Archillect is an AI bot with an API that chooses aesthetically pleasing art from the internet. My bot crawls Archillect\'s site and synchronously extracts all the image links from the page.',
     goal: [
       'Extract all the image links from the Archillect page',
     ],
@@ -247,7 +247,7 @@ const projectTitles = projectDetails.map(project => project.title)
 
 type ProjectTitle = (typeof projectTitles)[number]
 
-type CardProps = StatsRingProps['data'][number] & {
+type CardProps = StatsRingProps['projectCards'][number] & {
   label: ProjectTitle,
   setModalDetails: (details: (typeof projectDetails)[number]) => void,
   setModalOpen: (open: boolean) => void

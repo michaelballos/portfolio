@@ -43,6 +43,7 @@ const navLinks = [
     label: "Contact",
   }
 ];
+
 const footerLinks = [
   {
     title: "Site Map",
