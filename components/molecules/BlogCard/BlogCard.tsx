@@ -14,9 +14,9 @@ export default function BlogCard({
   height
 }: BlogCardProps) {
   return (
-    <div className="blog-card-container">
-    <div className="blog-card spring-fever">
-      <div className="title-content">
+    <div className="blogCardContainer">
+    <div className="blogCard springFever">
+      <div className="titleContent">
         <h3>COMING SOON</h3>
         <hr/>
         <div className="intro">
@@ -24,14 +24,14 @@ export default function BlogCard({
         </div>
       </div>
       {/*<!-- /.title-content -->*/}
-      <div className="card-info">
+      <div className="cardInfo">
         Lorem ipsum dolor sit amet, consectetur adipisicing
         elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua. Ut enim ad minim.
       </div>
       {/*<!-- /.card-info -->*/}
-      <div className="utility-info">
-        <ul className="utility-list">
+      <div className="utilityInfo">
+        <ul className="utilityList">
           <li className="comments">7</li>
           <li className="date">07-01-2022</li>
         </ul>
@@ -39,10 +39,10 @@ export default function BlogCard({
       {/*<!-- /.utility-info -->
       //<!-- overlays -->*/}
       <div
-        className="gradient-overlay"
+        className="gradientOverlay"
       ></div>
       <div
-        className="color-overlay"
+        className="colorOverlay"
       ></div>
     </div>
     </div>
