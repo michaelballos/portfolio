@@ -24,6 +24,12 @@ export interface IModalDetails {
 
 const projectCards = [
   {
+    id: "11",
+    category: "UI Library",
+    label: "Gh Projects Library",
+    status: "inProgress",
+  },
+  {
     id: "10",
     category: "Particle Space",
     label: "RE Template",

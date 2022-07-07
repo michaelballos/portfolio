@@ -4,6 +4,7 @@ export const useStyles = createStyles((theme) => ({
   scrollArea: {
     width: '100vw',
     height: 'max-content',
+    overflowX: 'hidden',
   },
   projectPage: {
     overflow: 'hidden',

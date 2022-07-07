@@ -31,6 +31,24 @@ import { icons } from "../../molecules/StatsRing/StatsRing";
 
 const projectDetails = [
   {
+    title: 'Gh Projects Library',
+    link: 'https://github.com/github-projects-board',
+    overview: 'A React Component Library to easily integrate Github Projects into your applications. Originally decided to build it for my website and hoping it will find value with another developer. ',
+    goal: [
+      'Good documentation',
+      'Well tested',
+      'Use component to display Github Projects Board, List, issues, etc.',
+    ],
+    significance: [
+      'Just a cool component library which will be benificial for developers, project managers, and other people who want to display Github Projects in their applications. ',
+      'The chosen Framework is React. I\'ll be using styled components for easy component styling and configuration. It will be written in Typescript and unit tested with Jest. The component will handle the GraphQl queries. ',
+      'No known bugs or issues yet.',
+    ],
+    images: [
+      '/initialBrainstorm.webp',
+    ],
+  },
+  {
     title: 'RE Template',
     link: 'https://github.com/particlespace/real-estate-listing-platform-starter-template',
     overview: 'This was an Open Source project done at Particle Space. The project consisted of crafting a simple React template for Real Estate listing platforms. ' +
