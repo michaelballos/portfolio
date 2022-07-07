@@ -33,7 +33,7 @@ const projectDetails = [
   {
     title: 'Gh Projects Library',
     link: 'https://github.com/github-projects-board',
-    overview: 'A React Component Library to easily integrate Github Projects into your applications. Originally decided to build it for my website and hoping it will find value with another developer. ',
+    overview: 'A React Component Library to easily integrate Github Projects into your applications. Originally decided to build it for my website and hoping it will find value for other developers. ',
     goal: [
       'Good documentation',
       'Well tested',
