@@ -19,7 +19,7 @@ export const useCardStyles = createStyles((theme) => ({
     /**
      * width one less than projectCardScrollArea in Home.styles.tsx
      */
-    width: "25em",
+    width: "28em",
     border: '1px solid #2d2d2d',
     boxShadow: "0px 0px 15px rgb(0 0 0 / 47%)",
     '&:hover': {

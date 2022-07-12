@@ -41,7 +41,8 @@ export const useStyles = createStyles((theme) => ({
    */
   projectCardsScrollArea: {
     height: "30em",
-    width: "26em",
+    width: "30em",
+    overflowX: "hidden",
     [theme.fn.smallerThan("sm")]: {
       width: "100vw",
       height: "max-content",

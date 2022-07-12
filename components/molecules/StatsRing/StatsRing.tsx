@@ -20,10 +20,7 @@ import {
 } from "@tabler/icons";
 import ProjectModal from '../../molecules/ProjectModal/ProjectModal';
 import { IModalDetails } from '../../organisms/HomePage/HomePage';
-import {
-  useCardStyles,
-  useStyles
-} from "./StatsRing.styles";
+import { useStyles } from "./StatsRing.styles";
 import Card from '../../molecules/Card/Card';
 
 export const icons = {

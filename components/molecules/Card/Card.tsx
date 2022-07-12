@@ -20,13 +20,8 @@ import {
 } from "@tabler/icons";
 import ProjectModal from '../../molecules/ProjectModal/ProjectModal';
 import { IModalDetails } from '../../organisms/HomePage/HomePage';
-import {
-  useCardStyles,
-  useStyles
-} from "../../molecules/StatsRing/StatsRing.styles";
-import {
-  StatsRingProps,
-} from '../../molecules/StatsRing/StatsRing';
+import { useStyles } from "./Card.styles";
+import { StatsRingProps } from '../../molecules/StatsRing/StatsRing';
 import { icons } from "../../molecules/StatsRing/StatsRing";
 
 const projectDetails = [
@@ -286,7 +281,7 @@ export default function Card({
       ? "orange"
       : "green";
 
-  const { classes } = useCardStyles();
+  const { classes } = useStyles();
   const project = projectDetails.find((project) => {
     const { title } = project;
     return label === title;
