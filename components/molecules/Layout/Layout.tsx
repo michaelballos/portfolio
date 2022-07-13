@@ -45,8 +45,8 @@ const footerLinks = [
       },
       {
         target: "blank",
-        label: "Warmup",
-        link: "https://www.speedcoder.net/"
+        label: "Algorithms",
+        link: "https://neetcode.io/"
       },
       {
         target: "blank",
