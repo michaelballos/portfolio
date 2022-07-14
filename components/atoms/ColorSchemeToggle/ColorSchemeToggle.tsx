@@ -18,6 +18,7 @@ export default function ColorSchemeToggle() {
   return (
     <Group position="center">
       <ActionIcon
+        aria-label="Toggle color scheme"
         onClick={() => toggleColorScheme()}
         size="lg"
         sx={(theme) => ({
@@ -37,8 +38,8 @@ export default function ColorSchemeToggle() {
         {colorScheme === "dark"
           ? (
             <SunIcon
-            width={20}
-            height={20}
+              width={20}
+              height={20}
             />
           ) : (
             <MoonIcon
