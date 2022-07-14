@@ -56,7 +56,7 @@ export default function Footer({ data }: FooterLinksProps) {
           <Logo size="25px" />
           <Text size="xs" color="dimmed" className={classes.description}>
             Feel free to message me about bugs, ideas, or work.
-            In the meantime i'll be building applications 👨‍💻...
+            In the meantime i{`'`}ll be building applications 👨‍💻...
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
