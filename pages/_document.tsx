@@ -1,6 +1,5 @@
 import Document, {
   DocumentContext,
-  DocumentInitialProps
 } from 'next/document';
 import {
   ServerStyles,
@@ -10,7 +9,7 @@ import {
 const stylesServer = createStylesServer();
 
 export default class _Document extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+  static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     // Add your app specific logic here
     return {
