@@ -4,32 +4,8 @@ import {
 } from '@mantine/core';
 import { HeaderMiddleProps } from '../Header/Header';
 import Link from 'next/link';
-export const useStyles = createStyles((theme) => ({
-  container: {
-    position: 'absolute',
-    top: 56,
-    left: 0,
-    width: '100vw',
-    height: 'calc(100vh - 56px)',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 0,
-    gap: '2em',
-    [theme.fn.largerThan("sm")]: {
-      display: 'none',
-    },
-  },
-  rainRainGoAway: {
-    display: 'none'
-  },
-  link: {
-    fontSize: '3em',
-    fontWeight: 500,
-    fontFamily: 'Roboto, sans-serif',
-  }
-}));
+import { useStyles } from './BurgerNav.styles';
+
 export interface IBurgerNavProps {
   opened: boolean;
   toggleOpened: (opened: boolean) => void;
@@ -39,6 +15,14 @@ const formatLink = (link: string) => {
   const removeSlash = link.replace(/\/$/, '');
   return removeSlash.charAt(1).toUpperCase() + removeSlash.slice(2);
 }
+/**
+ * This component is used to render the burger navigation.
+ * @param {boolean} opened
+ * @param {(opened: boolean) => void} toggleOpened
+ * @param {any} links
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function BurgerNav({
   opened,
   toggleOpened,

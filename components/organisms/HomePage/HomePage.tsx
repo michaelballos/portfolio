@@ -24,6 +24,12 @@ export interface IModalDetails {
 
 const projectCards = [
   {
+    id: "12",
+    category: "Web Development",
+    label: "JN Marketing Agency",
+    status: "inProgress",
+  },
+  {
     id: "11",
     category: "UI Library",
     label: "Gh Projects Library",
@@ -33,7 +39,7 @@ const projectCards = [
     id: "10",
     category: "Particle Space",
     label: "RE Template",
-    status: "inProgress",
+    status: "done",
   },
   {
     id: "9",
@@ -45,7 +51,7 @@ const projectCards = [
     id: "8",
     category: "Web Development",
     label: "JN Brand",
-    status: "inProgress",
+    status: "onHold",
   },
   {
     id: "7",

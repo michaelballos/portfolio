@@ -26,6 +26,28 @@ import { icons } from "../../molecules/StatsRing/StatsRing";
 
 const projectDetails = [
   {
+    title: "JN Marketing Agency",
+    link: '',
+    overview: "Web Development for a marketing agency based in Wichita, KS.",
+    goal: [
+      "Develop clean friendly UI/UX for the client's website.",
+      "Performance optimizations to ensure that the website is fast and responsive.",
+      "Create a responsive website that is optimized for mobile and desktop.",
+      "Perform a SEO optimization to increase the client's rankings in search engines.",
+      "Accessibility optimizations to ensure that the website is accessible to all users.",
+    ],
+    significance: [
+      "Every business needs a website, especially if that business involves online prescense.",
+      "The website is contemporary, colorful, and relaxing to help ease the decision-making process while navigating the site. It creates a subconsious feeling of security and peace of mind. So far I only have the mockup for the landing page.",
+      "Work in progress.",
+    ],
+    images: [
+      '/marketingComponents.webp',
+      '/marketingLandingPage.webp',
+      '/marketingParallax.webp',
+    ],
+  },
+  {
     title: 'Gh Projects Library',
     link: 'https://github.com/github-projects-board',
     overview: 'A React Component Library to easily integrate Github Projects into your applications. Originally decided to build it for my website and hoping it will find value for other developers. ',
@@ -96,7 +118,7 @@ const projectDetails = [
   {
     title: 'JN Brand',
     link: 'https://www.instagram.com/ngynjohn/',
-    overview: 'JN is a Social Media Influencer, Brand, and Content Creator. ngynjohn is his online presence and I am the current developer for his website.',
+    overview: 'JN is a Social Media Influencer, Brand, and Content Creator. ngynjohn is his online presence and I am the current developer for his website. (This project is onHold because we are prioritizing the development his Marketing Agency website)',
     goal: [
       `Expand John${`'`}s online presence with a new website`,
       'Create a product for John to promote and sell his brand',
@@ -120,7 +142,7 @@ const projectDetails = [
   {
     title: 'Thundurus',
     link: 'https://github.com/thundurusdev/thundurus',
-    overview: 'Mantine is a water type Pokemon but in programming i\'s my favorite Typescript UI library for React. Thundurus is a lightning type Pokemon which is a direct counter to Mantine and is the Typescript UI library i\'m building.',
+    overview: 'Mantine is a water type Pokemon but in programming i\'s my favorite Typescript UI library for React. Thundurus is a lightning type Pokemon which is a direct counter to Mantine and is the Typescript UI library i\'m building. (This project is onHold because it takes too long and is unecessary at the moment.)',
     goal: [
       'Create reusable testable components for all of my future projects',
       'Make Thundurus open source',
@@ -131,7 +153,7 @@ const projectDetails = [
       'There are many UI Libraries available for React so there is no value in terms of rarity but there is value to me personally. I am a fan of the Mantine UI library and excited to see how Thundurus will improve over the long run. I plan on adding more features and components to the library than what Mantine currently offers. ' +
       'All my future applications will use Thundurus as the UI Library.',
       'The current version of Thundurus is a work in progress and has barely been broken into. React is the chosen Framework alongside Storybook for isolated UI development. The project uses Lerna Monorepo for ease of package management. There is only one component so far but I am planning on adding more components in the future.',
-      'The biggest flaw about the project is not having enought time to work on it. A UI Component Library is not necessarily complicated to make but very time consuming to build. My time is better spent currently learning Graphql which is why it is classified as On Hold',
+      'The biggest flaw about the project is not having enought time to work on it. A UI Component Library is not necessarily complicated to make but very time consuming to build. My time is better spent currently learning Graphql.',
     ],
     images: [
       '/thundurusCode.webp',
