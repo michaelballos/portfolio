@@ -37,7 +37,7 @@ const projectDetails = [
       "Accessibility optimizations to ensure that the website is accessible to all users.",
     ],
     significance: [
-      "Every business needs a website, especially if that business involves online prescense.",
+      "Every business needs a website, especially if that business involves an online presence.",
       "The website is contemporary, colorful, and relaxing to help ease the decision-making process while navigating the site. It creates a subconsious feeling of security and peace of mind. So far I only have the mockup for the landing page.",
       "Work in progress.",
     ],
