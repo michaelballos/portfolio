@@ -46,15 +46,25 @@ export default function Hero({ onClick }: HeroProps) {
           production of software and applications.
         </Text>
         <div className={classes.controlContainer}>
-          <Button
-            variant="gradient"
-            size="xl"
-            radius="xl"
-            className="heroButton"
-            onClick={onClick}
-          >
-            View my Stack
-          </Button>
+          <div className="svg-wrapper">
+            <svg
+              height="60"
+              width="320"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                className="shape"
+                height="60"
+                width="320"
+              />
+            </svg>
+            <div
+              className="text"
+              onClick={onClick}
+            >
+              View my stack
+            </div>
+          </div>
         </div>
       </Container>
     </div>
