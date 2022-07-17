@@ -27,7 +27,7 @@ import { icons } from "../../molecules/StatsRing/StatsRing";
 const projectDetails = [
   {
     title: "JN Marketing Agency",
-    link: '',
+    link: 'https://github.com/ngynjohn',
     overview: "Web Development for a marketing agency based in Wichita, KS.",
     goal: [
       "Develop clean friendly UI/UX for the client's website.",
@@ -102,7 +102,7 @@ const projectDetails = [
     significance: [
       `Particle Space${`'`}s service is an API only usable by people with a technical background. This extension is a cool tool that a lay person can use day to day. The primary target audience  
        are Real Estate Agents, Investors, and potential Home Buyers or Tenants`,
-      `I was tasked with creating Properly${`'`}s UI design and chose Mantine for the Frontend UI Library. Isaac Spiegel (Particle Space Developer) and I pair programmed the majority of Properly and completed the extension in a week using React as the Framework. While Isaac started on the Particle Space logo injection into the side Navigation, I started the initial design in an isolated Storybook environment.   
+      `I was tasked with creating Properly${`'`}s UI design and chose Mantine for the Frontend UI Library. Isaac Spiegel (Particle Space Developer) and I pair programmed the majority of Properly and completed the extension in a week using React as the Framework. While Isaac started on the Particle Space logo injection into the side Navigation, I started the initial design in an isolated Storybook environment.
        Grace (Particle Space Developer) created the logic for the detection of adresses. I noticed the detection didn${`'`}t work when Gmail${`'`}s UI was configured for a split Reading Pane which was resolved by Grace. I also worked on the logic for Querying and Hydrating the data into their designated Accordian categories. The last feature I contributed to the extension was a Button to copy all the data to the client's clipboard with formatted text using js-yaml.`,
       `One of the issued we faced with the Extension was if the Chrome Web Store allowed DOM manipulation. Fortunately they did and we took inspiration from Hubspot and injected our logo into the side Navigation which opened the main side drawer. A flaw with the extension is the drawer hovers overing over the page and blocking Gmail's side Navigation. Hubspot has their side drawer push the page and make room for their drawer onOpen. ` +
       `A solution wasn${`'`}t found but it also wasn${`'`}t a breaking problem but I believe having a drawer that doesn${`'`}t cover any UI would result in a better user experience.`
