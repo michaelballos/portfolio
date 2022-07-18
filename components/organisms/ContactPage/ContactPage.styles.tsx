@@ -5,7 +5,7 @@ export const useStyles = createStyles((theme) => {
 
   return {
     container: {
-      marginTop: '6em'
+      height: '100vh'
     }
   };
 });
