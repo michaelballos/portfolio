@@ -22,13 +22,14 @@
 
 .text {
     display: flex;
+    align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 20px;
     letter-spacing: 5px;
-    line-height: 25px;
+    top: -70px;
     position: relative;
-    top: -48px;
+    height: 60px;
 }
 
 @keyframes draw {
