@@ -4,7 +4,9 @@ export const useStyles = createStyles((theme) => ({
   skillsContainer: {
     width: "35em",
     [theme.fn.smallerThan("xs")]: {
-      width: '20em'
+      width: '100vw',
+      paddingLeft: 12,
+      paddingRight: 12,
     },
   },
   skillsLabel: {
@@ -16,7 +18,7 @@ export const useStyles = createStyles((theme) => ({
       fontSize: '1.8em'
     },
     ['@media (max-height: 620px)']: {
-      fontSize: '1em',
+      fontSize: '1.3em',
     },
     ['@media (max-height: 420px)']: {
       textAlign: "center",
@@ -30,7 +32,7 @@ export const useStyles = createStyles((theme) => ({
       marginBottom: '1.5em',
     },
     ['@media (max-height: 620px)']: {
-      fontSize: '.7em',
+      fontSize: '1.1em',
     },
     ['@media (max-height: 420px)']: {
       textAlign: "center",

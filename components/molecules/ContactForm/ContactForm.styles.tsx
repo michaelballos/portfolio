@@ -15,6 +15,8 @@ export const useStyles = createStyles((theme) => {
       }`,
       [BREAKPOINT]: {
         flexDirection: 'column',
+        width: '100vw',
+        height: '100vh',
       },
     },
     form: {

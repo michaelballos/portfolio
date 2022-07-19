@@ -49,7 +49,7 @@ export const useStyles = createStyles((theme) => ({
       paddingBottom: '1em',
     },
     ['@media (max-height: 620px)']: {
-      height: '17em',
+      height: '10em',
     },
     ['@media (max-height: 420px)']: {
       height: '10em',
