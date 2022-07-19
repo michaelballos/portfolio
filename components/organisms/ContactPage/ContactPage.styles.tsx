@@ -5,7 +5,10 @@ export const useStyles = createStyles((theme) => {
 
   return {
     container: {
-      height: '100vh'
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
     }
   };
 });

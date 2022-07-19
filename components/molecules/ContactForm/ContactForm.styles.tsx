@@ -17,6 +17,7 @@ export const useStyles = createStyles((theme) => {
         flexDirection: 'column',
         width: '100vw',
         height: '100vh',
+        backgroundColor: 'transparent',
       },
     },
     form: {
@@ -61,15 +62,16 @@ export const useStyles = createStyles((theme) => {
       flex: '0 0 280px',
 
       [BREAKPOINT]: {
-        marginBottom: theme.spacing.sm,
+        padding: theme.spacing.sm,
         paddingLeft: theme.spacing.md,
+        flex: '0 0 245px',
       },
     },
     title: {
       marginBottom: theme.spacing.xl * 1.5,
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
       [BREAKPOINT]: {
-        marginBottom: theme.spacing.xl,
+        marginBottom: theme.spacing.sm,
       },
     },
     control: {
