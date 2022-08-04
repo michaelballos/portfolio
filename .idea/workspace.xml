@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Add empty env file">
-      <change afterPath="$PROJECT_DIR$/components/molecules/Layout/Layout.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/molecules/Layout/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/initialBrainstorm.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_30_22,_3_35_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_30_22__3_35_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="651a0770-9944-4f5e-8701-9ab78c9dc3fb" name="Changes" comment="Fix contact bugs">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resume.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/resume.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,35 +61,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.15.0",
-    "javascript.nodejs.core.library.typings.version": "16.11.42",
-    "last_opened_file_path": "/Users/michaelballos/ideaProjects/portfolio/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.42&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelballos/IdeaProjects/portfolio/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/michaelballos/IdeaProjects/portfolio/packages/app/node_modules/prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/components/molecules/ContactForm" />
       <recent name="$PROJECT_DIR$/styles" />
-      <recent name="$PROJECT_DIR$/packages/app/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/molecules/ProjectModal" />
@@ -159,6 +153,13 @@
       <workItem from="1656914896658" duration="1292000" />
       <workItem from="1656918878657" duration="516000" />
       <workItem from="1657184931376" duration="1265000" />
+      <workItem from="1657962962090" duration="7108000" />
+      <workItem from="1657990818596" duration="3323000" />
+      <workItem from="1658019934552" duration="382000" />
+      <workItem from="1658095016515" duration="1318000" />
+      <workItem from="1658203540527" duration="220000" />
+      <workItem from="1658211675908" duration="3645000" />
+      <workItem from="1659638648185" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="Move Next into packages directory">
       <created>1656402812595</created>
@@ -265,7 +266,56 @@
       <option name="project" value="LOCAL" />
       <updated>1656790630459</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add marketing projj and edit burger navigation">
+      <created>1657992167686</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657992167686</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix typo">
+      <created>1657992397171</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657992397171</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add link to marketing project">
+      <created>1658019968880</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658019968880</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Change hero button">
+      <created>1658096165731</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658096165731</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Edit hero button height">
+      <created>1658211998511</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658211998511</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fix mobile bugs">
+      <created>1658213289450</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658213289450</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fix contact bugs">
+      <created>1658215353261</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1658215353262</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +348,14 @@
     <MESSAGE value="Extract action icons to own component for reusability" />
     <MESSAGE value="Resolve font" />
     <MESSAGE value="Add empty env file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add empty env file" />
+    <MESSAGE value="Add marketing projj and edit burger navigation" />
+    <MESSAGE value="Fix typo" />
+    <MESSAGE value="Add link to marketing project" />
+    <MESSAGE value="Change hero button" />
+    <MESSAGE value="Edit hero button height" />
+    <MESSAGE value="Fix mobile bugs" />
+    <MESSAGE value="Fix contact bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix contact bugs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
