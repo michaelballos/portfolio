@@ -52,21 +52,20 @@ export default function StatsRing({
   setModalDetails,
 }: StatsRingProps) {
   const { classes } = useStyles();
-  const cards = projectCards.map((card) => (
-    <Card
-      key={card.id}
-      status={card.status}
-      category={card.category}
-      label={card.label}
-      id={card.id}
-      setModalDetails={setModalDetails}
-      setModalOpen={setOpen}
-    />
-  ));
 
   return (
     <div className={classes.cardsContainer}>
-      {cards}
+      {projectCards && projectCards.map((card) => (
+        <Card
+          key={card.id}
+          status={card.status}
+          category={card.category}
+          label={card.label}
+          id={card.id}
+          setModalDetails={setModalDetails}
+          setModalOpen={setOpen}
+        />
+      ))}
     </div>
   );
 }
