@@ -27,7 +27,7 @@ const projectCards = [
     id: "12",
     category: "Web Development",
     label: "JN Marketing Agency",
-    status: "inProgress",
+    status: "onHold",
   },
   {
     id: "11",
