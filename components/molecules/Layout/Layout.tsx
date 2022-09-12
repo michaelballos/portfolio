@@ -1,68 +1,18 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useStyles } from "./Layout.styles";
+import { headerLinks, footerLinks } from "../../../common/links";
 
-export interface ILayoutProps {
-  children: React.ReactNode | React.ReactNodeArray;
+export interface LayoutProps {
+  children: React.ReactNode;
 }
 
-const navLinks = [
-  {
-    link: "/home",
-    label: 'Home',
-  },
-  {
-    link: "/blogs",
-    label: "Blogs",
-  },
-  {
-    link: "/resume",
-    label: "Resume",
-  },
-  {
-    link: "/contact",
-    label: "Contact",
-  }
-];
-
-const footerLinks = [
-  {
-    title: "Site Map",
-    links: navLinks,
-  },
-  {
-    title: "Resources",
-    links: [
-      {
-        target: "blank",
-        label: "MDNDocs",
-        link: "https://developer.mozilla.org/en-US/"
-      },
-      {
-        target: "blank",
-        label: "Design Patterns",
-        link: "https://refactoring.guru/"
-      },
-      {
-        target: "blank",
-        label: "Algorithms",
-        link: "https://neetcode.io/"
-      },
-      {
-        target: "blank",
-        label: "Quick Types",
-        link: "https://quicktype.io/"
-      }
-    ]
-  }
-]
-
-export default function Layout({ children }: ILayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   const { classes } = useStyles();
 
   return (
     <div className="layout">
-      <Header links={navLinks} />
+      <Header links={headerLinks} />
         <main className={classes.pageMargin}>
           {children}
         </main>

@@ -9,7 +9,6 @@ import {
 import {
   Sun,
   Phone,
-  MapPin,
   At
 } from 'tabler-icons-react';
 
@@ -137,6 +136,7 @@ export function ContactIconsList({
       {...item}
     />
   );
+
   return (
     <Group direction="column">
       {items}

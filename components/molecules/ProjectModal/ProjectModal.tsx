@@ -3,7 +3,6 @@ import {
   Modal,
   Text,
   Group,
-  Button,
   Stack,
   RingProgress,
   Skeleton

@@ -1,24 +1,9 @@
-import React, {
-  useMemo,
-  useState,
-  useCallback,
-  useEffect
-} from "react";
-import {
-  RingProgress,
-  Text,
-  Paper,
-  Center,
-  Group,
-  Button
-} from "@mantine/core";
 import {
   IconChecks,
   IconPlayerPause,
   IconTool,
   TablerIcon
 } from "@tabler/icons";
-import ProjectModal from '../../molecules/ProjectModal/ProjectModal';
 import { IModalDetails } from '../../organisms/HomePage/HomePage';
 import { useStyles } from "./StatsRing.styles";
 import Card from '../../molecules/Card/Card';
@@ -34,7 +19,6 @@ const iconsKeys = Object.keys(icons);
 export type IconsKey = typeof iconsKeys[number];
 
 export interface StatsRingProps {
-  isOpen: boolean;
   setOpen: (isOpen: boolean) => void;
   setModalDetails: (setModalDetails: IModalDetails) => void;
   projectCards: {
@@ -47,7 +31,6 @@ export interface StatsRingProps {
 
 export default function StatsRing({
   projectCards,
-  isOpen,
   setOpen,
   setModalDetails,
 }: StatsRingProps) {

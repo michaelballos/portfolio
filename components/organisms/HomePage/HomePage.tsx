@@ -12,6 +12,7 @@ import SkillsetText from "../../molecules/SkillsetText/SkillsetText";
 import ProjectKey from "../../molecules/ProjectKey/ProjectKey";
 import ProjectModal from '../../molecules/ProjectModal/ProjectModal';
 import { useStyles } from "./Home.styles";
+import { projectsCardInfo } from '../../../common/projects';
 
 export interface IModalDetails {
   title: string;
@@ -22,80 +23,6 @@ export interface IModalDetails {
   images: string[];
 }
 
-const projectCards = [
-  {
-    id: "12",
-    category: "Web Development",
-    label: "JN Marketing Agency",
-    status: "inProgress",
-  },
-  {
-    id: "11",
-    category: "UI Library",
-    label: "Gh Projects Library",
-    status: "inProgress",
-  },
-  {
-    id: "10",
-    category: "Particle Space",
-    label: "RE Template",
-    status: "done",
-  },
-  {
-    id: "9",
-    category: "Particle Space",
-    label: "Properly",
-    status: "done",
-  },
-  {
-    id: "8",
-    category: "Web Development",
-    label: "JN Brand",
-    status: "onHold",
-  },
-  {
-    id: "7",
-    category: "UI Library",
-    label: "Thundurus",
-    status: "onHold",
-  },
-  {
-    id: "6",
-    category: "Bot Crawler",
-    label: "Archillect Bot",
-    status: "done",
-  },
-  {
-    id: "5",
-    category: "Particle Space",
-    label: "Documentation",
-    status: "done",
-  },
-  {
-    id: "4",
-    category: "Hackathon",
-    label: "Electa",
-    status: "done",
-  },
-  {
-    id: "3",
-    category: "Learning",
-    label: "React Calculator",
-    status: "done",
-  },
-  {
-    id: "2",
-    category: "Learning",
-    label: "React Counter",
-    status: "done",
-  },
-  {
-    id: "1",
-    category: "Learning",
-    label: "Counter",
-    status: "done",
-  },
-]
 
 export default function HomePage() {
   const [
@@ -145,9 +72,8 @@ export default function HomePage() {
           <ScrollArea className={classes.projectCardsScrollArea}>
             <StatsRing
               setModalDetails={setModalDetails}
-              isOpen={isOpen}
               setOpen={setOpen}
-              projectCards={projectCards}
+              projectCards={projectsCardInfo}
             />
           </ScrollArea>
           <ProjectKey />

@@ -1,21 +1,14 @@
 import React, { useState } from "react";
-import { GetServerSidePropsContext } from "next";
 import { FormspreeProvider } from "@formspree/react";
 import { AppProps } from "next/app";
-import {
-  getCookie,
-  setCookies,
-} from "cookies-next";
+import { setCookies } from "cookies-next";
 import Head from "next/head";
 import {
   ColorScheme,
   MantineProvider,
   ColorSchemeProvider,
-  createStyles,
 } from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
-import Header from "../components/molecules/Header/Header";
-import Footer from "../components/molecules/Footer/Footer";
 import "../styles/globals.css";
 import '../styles/BlogCard.scss';
 import '../styles/HeroButton.css';

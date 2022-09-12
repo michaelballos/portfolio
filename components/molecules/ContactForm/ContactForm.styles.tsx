@@ -16,7 +16,6 @@ export const useStyles = createStyles((theme) => {
       [BREAKPOINT]: {
         flexDirection: 'column',
         width: '100vw',
-        height: '100vh',
         backgroundColor: 'transparent',
       },
     },
@@ -59,7 +58,7 @@ export const useStyles = createStyles((theme) => {
       backgroundPosition: 'center',
       border: '1px solid transparent',
       padding: theme.spacing.xl,
-      flex: '0 0 280px',
+      flex: '0 0 500px',
 
       [BREAKPOINT]: {
         padding: theme.spacing.sm,

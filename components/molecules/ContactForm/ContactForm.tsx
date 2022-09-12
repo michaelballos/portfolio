@@ -1,19 +1,11 @@
 import {
   Paper,
   Text,
-  TextInput,
-  Textarea,
-  Button,
-  Group,
-  SimpleGrid,
-  createStyles,
 } from '@mantine/core';
 import { ContactIconsList } from '../../atoms/ContactIcons/ContactIcons';
-import { useForm } from '@formspree/react';
 import { useStyles } from './ContactForm.styles';
 
 export default function ContactForm() {
-  const [form, setUseForm ] = useForm('{moqroapl}');
   const { classes } = useStyles();
 
   return (
@@ -35,7 +27,7 @@ export default function ContactForm() {
           </Text>
           <ContactIconsList variant="white" />
         </div>
-        <form
+        {/**<form
           method="POST"
           className={classes.form}
           action="https://formspree.io/f/moqroapl"
@@ -94,7 +86,7 @@ export default function ContactForm() {
               </Button>
             </Group>
           </div>
-        </form>
+        </form>*/}
       </div>
     </Paper>
   );

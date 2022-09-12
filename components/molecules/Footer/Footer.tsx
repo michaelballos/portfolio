@@ -1,29 +1,16 @@
 import React from 'react';
 import {
-  createStyles,
   Text,
   Container,
-  ActionIcon,
   Group
 } from '@mantine/core';
-import {
-  BrandTwitter,
-  BrandYoutube,
-  BrandInstagram
-} from 'tabler-icons-react';
 import Logo from '../../atoms/Logo/Logo';
 import Socials from '../Socials/Socials';
 import { useStyles} from './Footer.styles';
+import { FooterLinksList } from '../../../common/links';
 
 interface FooterLinksProps {
-  data: {
-    title: string;
-    links: {
-      target?: string;
-      label: string;
-      link: string;
-    }[];
-  }[];
+  data: FooterLinksList;
 }
 
 export default function Footer({ data }: FooterLinksProps) {
@@ -49,6 +36,7 @@ export default function Footer({ data }: FooterLinksProps) {
       </div>
     );
   });
+
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
