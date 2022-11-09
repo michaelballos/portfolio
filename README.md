@@ -1,6 +1,6 @@
 # Michael Ballos
 
--- No longer updating
+*Outdated and no longer updating
 
 Hey, thanks for checking out my website I hope you liked it. Feel free to message me about any bugs or suggestions. 
 
